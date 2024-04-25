@@ -112,7 +112,7 @@ function App() {
                       alt={rankInfo.rank}
                     ></img>
                   </td>
-                  <td className={getRankClass(rankInfo.elo)}>{rankInfo.elo}</td>
+                  <td className={getRankClass(rankInfo.elo)}>{Math.round(rankInfo.elo)}</td>
                   <td>
                     <span className="wins">{rankInfo.wins}</span>/
                     <span className="losses">{rankInfo.losses}</span>
