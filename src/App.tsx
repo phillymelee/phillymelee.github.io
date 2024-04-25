@@ -34,10 +34,18 @@ function App() {
     if (ranks === undefined) {
       getRanks().then((ranks) => setRanks(ranks));
     }
+
     const interval = setInterval(() => {
-      getRanks().then((ranks) => setRanks(ranks));
-    }, refreshRate * 60 * 1000);
-    return () => clearInterval(interval);
+      const now = new Date();
+      // Check if the current minute is the 16th minute of the hour.
+      // We update the cache every 15th minute, so we should give an extra minute to process
+      if (now.getMinutes() % refreshRate + 1 === 0) {
+        getRanks().then((ranks) => setRanks(ranks));
+      }
+    }, 1000 * 60); // Run every minute
+  
+    // Clean up the interval on component unmount
+    return () => clearInterval(interval);  
   }, [ranks]);
 
   if (ranks === undefined)
