@@ -12,7 +12,7 @@ import {
 import { addPlayer } from "./utils/addPlayer";
 import { IAddPlayerResponse, IRankInfo } from "./utils/interfaces";
 
-const refreshRate = 5; // minutes
+const refreshRate = 15; // minutes
 
 function App() {
   const [ranks, setRanks] = useState<IRankInfo[]>();
