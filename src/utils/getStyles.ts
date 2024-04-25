@@ -50,23 +50,6 @@ import Bronze2Icon from "../assets/ranks/BronzeII.svg";
 import Bronze1Icon from "../assets/ranks/BronzeI.svg";
 import PendingIcon from "../assets/ranks/Pending.svg";
 
-export function getCharacterImage(character: string) {
-    return characterNameToIcon.get(character) ?? UnknownIcon;
-}
-
-export function getRankIcon(rank: string) {
-    return rankNameToIcon.get(rank) ?? PendingIcon;
-}
-
-export function getRankClass(elo: number): string {
-    if (elo < 1055) return "bronze";
-    if (elo < 1436) return "silver";
-    if (elo < 1752) return "gold";
-    if (elo < 2004) return "plat";
-    if (elo < 2192) return "diamond";
-    return "master";
-}
-
 const characterNameToIcon = new Map([
     ["BOWSER", BowserIcon],
     ["CAPTAIN_FALCON", FalconIcon],
@@ -117,3 +100,21 @@ const rankNameToIcon = new Map([
     ["Master 2", Master2Icon],
     ["Grandmaster", GrandMasterIcon]
 ]);
+
+
+export function getCharacterImage(character: string) {
+    return characterNameToIcon.get(character) ?? UnknownIcon;
+}
+
+export function getRankIcon(rank: string) {
+    return rankNameToIcon.get(rank) ?? PendingIcon;
+}
+
+export function getRankClass(elo: number): string {
+    if (elo < 1055) return "bronze";
+    if (elo < 1436) return "silver";
+    if (elo < 1752) return "gold";
+    if (elo < 2004) return "plat";
+    if (elo < 2192) return "diamond";
+    return "master";
+}
