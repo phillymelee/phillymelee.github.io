@@ -90,6 +90,13 @@ td {
   color: lightgray;
 }
 
+.slippiLink {
+  text-decoration: none;
+}
+
+.slippiLink:hover {
+  text-decoration: underline;
+}
 
 .wins {
   color: lightgreen;

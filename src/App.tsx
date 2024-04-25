@@ -92,8 +92,18 @@ function App() {
               return (
                 <tr className="row" key={rankInfo.code}>
                   <td>
-                    <div>{rankInfo.tag}</div>
-                    <div className="playerCode">{rankInfo.code}</div>
+                    <a
+                      className="slippiLink"
+                      href={`https://slippi.gg/user/${rankInfo.code.replace(
+                        "#",
+                        "-"
+                      )}`}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <div>{rankInfo.tag}</div>
+                      <div className="playerCode">{rankInfo.code}</div>
+                    </a>
                   </td>
                   <td>
                     <img
