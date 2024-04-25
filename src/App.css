@@ -98,15 +98,17 @@ td {
 }
 
 .successResult {
-  width: 50%;
+  width: 100%;
   font-size: calc(2px + 1.3vmin);
   color: lightgreen;
+  text-align: center;
 }
 
 .failResult {
-  width: 50%;
+  width: 100%;
   font-size: calc(2px + 1.3vmin);
   color: lightcoral;
+  text-align: center;
 }
 
 .footer {
