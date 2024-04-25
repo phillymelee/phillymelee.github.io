@@ -189,7 +189,10 @@ a:active {
   color: #4dc5ff;
 }
 
-.master {
+/* .master {
   color: #c343ff;
-}
+} */
 
+.master {
+  color: #ff0000;
+}
