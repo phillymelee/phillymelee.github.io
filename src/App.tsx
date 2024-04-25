@@ -37,9 +37,10 @@ function App() {
     if (ranks === undefined) {
       getRanks().then((ranks) => setRanks(ranks));
     }
-    setInterval(() => {
+    const interval = setInterval(() => {
       getRanks().then((ranks) => setRanks(ranks));
     }, refreshRate * 60 * 1000);
+    return () => clearInterval(interval);
   }, [ranks]);
 
   if (ranks === undefined)
