@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e851aa06.css",
-    "main.js": "/static/js/main.e89440c0.js",
+    "main.css": "/static/css/main.141e1095.css",
+    "main.js": "/static/js/main.7329d5d7.js",
     "static/media/logo.png": "/static/media/logo.b2b2030be0ce89cbb858.png",
     "static/media/FUDGE.jpg": "/static/media/FUDGE.573e8bb9040a199e6415.jpg",
     "static/media/bowser_default.png": "/static/media/bowser_default.502f9ee7fc954239fa5d.png",
@@ -48,11 +48,11 @@
     "static/media/BronzeIII.svg": "/static/media/BronzeIII.926dad245cc35e515006cdb08eedff70.svg",
     "static/media/BronzeI.svg": "/static/media/BronzeI.f4a5615366a7162c5cbe84a8fe3e3b72.svg",
     "index.html": "/index.html",
-    "main.e851aa06.css.map": "/static/css/main.e851aa06.css.map",
-    "main.e89440c0.js.map": "/static/js/main.e89440c0.js.map"
+    "main.141e1095.css.map": "/static/css/main.141e1095.css.map",
+    "main.7329d5d7.js.map": "/static/js/main.7329d5d7.js.map"
   },
   "entrypoints": [
-    "static/css/main.e851aa06.css",
-    "static/js/main.e89440c0.js"
+    "static/css/main.141e1095.css",
+    "static/js/main.7329d5d7.js"
   ]
 }
