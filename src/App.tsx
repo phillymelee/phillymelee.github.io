@@ -12,7 +12,8 @@ import {
 import { addPlayer } from "./utils/addPlayer";
 import { IAddPlayerResponse, IRankInfo } from "./utils/interfaces";
 
-const refreshRate = 15; // minutes
+const refreshRate = 15; // minutes between updates
+const updateOnMinutes = [1, 16, 31, 46]; // minutes of every hour to check if we should update
 
 function App() {
   const [ranks, setRanks] = useState<IRankInfo[]>();
@@ -37,9 +38,10 @@ function App() {
 
     const interval = setInterval(() => {
       const now = new Date();
-      // Check if the current minute is the 16th minute of the hour
-      // We update the cache every 15th minute, so we should give an extra minute to process
-      if (now.getMinutes() % (refreshRate + 1) === 0) {
+      // Check if the current minute is 1 minute after the 15th minute.
+      // The server updates the ranks every 15 minutes, so we should check 1 minute after each update
+      // to allow time for the server to processing
+      if (updateOnMinutes.includes(now.getMinutes())) {
         getRanks().then((ranks) => setRanks(ranks));
       }
     }, 1000 * 60); // Run every minute
