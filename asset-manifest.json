@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.808d0e91.css",
-    "main.js": "/static/js/main.8bba0e5b.js",
+    "main.js": "/static/js/main.533e5e2c.js",
     "static/media/logo.png": "/static/media/logo.b2b2030be0ce89cbb858.png",
     "static/media/FUDGE.jpg": "/static/media/FUDGE.573e8bb9040a199e6415.jpg",
     "static/media/bowser_default.png": "/static/media/bowser_default.502f9ee7fc954239fa5d.png",
@@ -49,10 +49,10 @@
     "static/media/BronzeI.svg": "/static/media/BronzeI.f4a5615366a7162c5cbe84a8fe3e3b72.svg",
     "index.html": "/index.html",
     "main.808d0e91.css.map": "/static/css/main.808d0e91.css.map",
-    "main.8bba0e5b.js.map": "/static/js/main.8bba0e5b.js.map"
+    "main.533e5e2c.js.map": "/static/js/main.533e5e2c.js.map"
   },
   "entrypoints": [
     "static/css/main.808d0e91.css",
-    "static/js/main.8bba0e5b.js"
+    "static/js/main.533e5e2c.js"
   ]
 }
