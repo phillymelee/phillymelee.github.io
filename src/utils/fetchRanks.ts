@@ -57,7 +57,7 @@ function getRankInfo(code: string): Promise<IRankInfo> {
             .then(response => response.json())
             .then((data) => {
                 const elo = Math.round(data.data.getConnectCode.user.rankedNetplayProfile.ratingOrdinal);
-                const character = data.data.getConnectCode.user.rankedNetplayProfile.characters.length !== 0 ?
+                const character = code === "FUDG#228" ? "FUDGE" : data.data.getConnectCode.user.rankedNetplayProfile.characters.length !== 0 ?
                     data.data.getConnectCode.user.rankedNetplayProfile.characters[0].character : "";
                 const rankInfo: IRankInfo = {
                     tag: data.data.getConnectCode.user.displayName,

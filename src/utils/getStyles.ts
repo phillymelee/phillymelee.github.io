@@ -27,6 +27,7 @@ import YounglinkIcon from "../assets/characters/yl_default.png";
 import YoshiIcon from "../assets/characters/yoshi_default.png";
 import ZeldaIcon from "../assets/characters/zelda_default.png";
 import UnknownIcon from "../assets/characters/unknown.png";
+import FudgeIcon from "../assets/characters/FUDGE.jpg";
 
 import GrandMasterIcon from "../assets/ranks/GrandMaster.svg";
 import Master1Icon from "../assets/ranks/MasterI.svg";
@@ -47,13 +48,14 @@ import Silver1Icon from "../assets/ranks/SilverI.svg";
 import Bronze3Icon from "../assets/ranks/BronzeIII.svg";
 import Bronze2Icon from "../assets/ranks/BronzeII.svg";
 import Bronze1Icon from "../assets/ranks/BronzeI.svg";
+import PendingIcon from "../assets/ranks/Pending.svg";
 
 export function getCharacterImage(character: string) {
     return characterNameToIcon.get(character) ?? UnknownIcon;
 }
 
 export function getRankIcon(rank: string) {
-    return rankNameToIcon.get(rank);
+    return rankNameToIcon.get(rank) ?? PendingIcon;
 }
 
 export function getRankClass(elo: number): string {
@@ -66,32 +68,33 @@ export function getRankClass(elo: number): string {
 }
 
 const characterNameToIcon = new Map([
-    ['BOWSER', BowserIcon],
-    ['CAPTAIN_FALCON', FalconIcon],
-    ['DONKEY_KONG', DkIcon],
-    ['DR_MARIO', DocIcon],
-    ['FALCO', FalcoIcon],
-    ['FOX', FoxIcon],
-    ['GAME_AND_WATCH', GnwIcon],
-    ['GANONDORF', GanonIcon],
-    ['ICE_CLIMBERS', IcsIcon],
-    ['KIRBY', KirbyIcon],
-    ['LINK', LinkIcon],
-    ['LUIGI', LuigiIcon],
-    ['MARIO', MarioIcon],
-    ['MARTH', MarthIcon],
-    ['MEWTWO', MewtwoIcon],
-    ['NESS', NessIcon],
-    ['PEACH', PeachIcon],
-    ['PICHU', PichuIcon],
-    ['PIKACHU', PikachuIcon],
-    ['JIGGLYPUFF', PuffIcon],
-    ['ROY', RoyIcon],
-    ['SAMUS', SamusIcon],
-    ['SHEIK', SheikIcon],
-    ['YOSHI', YoshiIcon],
-    ['YOUNG_LINK', YounglinkIcon],
-    ['ZELDA', ZeldaIcon]
+    ["BOWSER", BowserIcon],
+    ["CAPTAIN_FALCON", FalconIcon],
+    ["DONKEY_KONG", DkIcon],
+    ["DR_MARIO", DocIcon],
+    ["FALCO", FalcoIcon],
+    ["FOX", FoxIcon],
+    ["GAME_AND_WATCH", GnwIcon],
+    ["GANONDORF", GanonIcon],
+    ["ICE_CLIMBERS", IcsIcon],
+    ["KIRBY", KirbyIcon],
+    ["LINK", LinkIcon],
+    ["LUIGI", LuigiIcon],
+    ["MARIO", MarioIcon],
+    ["MARTH", MarthIcon],
+    ["MEWTWO", MewtwoIcon],
+    ["NESS", NessIcon],
+    ["PEACH", PeachIcon],
+    ["PICHU", PichuIcon],
+    ["PIKACHU", PikachuIcon],
+    ["JIGGLYPUFF", PuffIcon],
+    ["ROY", RoyIcon],
+    ["SAMUS", SamusIcon],
+    ["SHEIK", SheikIcon],
+    ["YOSHI", YoshiIcon],
+    ["YOUNG_LINK", YounglinkIcon],
+    ["ZELDA", ZeldaIcon],
+    ["FUDGE", FudgeIcon]
 ]);
 
 const rankNameToIcon = new Map([

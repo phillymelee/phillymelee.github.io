@@ -77,7 +77,7 @@ function App() {
               <th>Rank</th>
               <th>Rating</th>
               <th>W/L</th>
-              <th>Character</th>
+              <th>Main</th>
             </tr>
           </thead>
           <tbody>
