@@ -42,36 +42,27 @@ async function getPlayers(): Promise<string[]> {
     return response.json();
 };
 
-function getRankInfo(code: string): Promise<IRankInfo> {
-    return new Promise((resolve, reject) => {
-        const requestOptions = {
-            method: "POST",
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                "operationName": "AccountManagementPageQuery",
-                "variables": { "cc": code, "uid": code },
-                "query": "fragment userProfilePage on User {\n  fbUid\n  displayName\n  connectCode {\n    code\n    __typename\n  }\n  status\n  activeSubscription {\n    level\n    hasGiftSub\n    __typename\n  }\n  rankedNetplayProfile {\n    id\n    ratingOrdinal\n    ratingUpdateCount\n    wins\n    losses\n    dailyGlobalPlacement\n    dailyRegionalPlacement\n    continent\n    characters {\n      id\n      character\n      gameCount\n      __typename\n    }\n    __typename\n  }\n  __typename\n}\n\nquery AccountManagementPageQuery($cc: String!, $uid: String!) {\n  getUser(fbUid: $uid) {\n    ...userProfilePage\n    __typename\n  }\n  getConnectCode(code: $cc) {\n    user {\n      ...userProfilePage\n      __typename\n    }\n    __typename\n  }\n}\n"
-            }),
-        };
-        fetch("https://gql-gateway-dot-slippi.uc.r.appspot.com/graphql", requestOptions)
-            .then(response => response.json())
-            .then((data) => {
-                const elo = Math.round(data.data.getConnectCode.user.rankedNetplayProfile.ratingOrdinal);
-                const character = code === "FUDG#228" ? "FUDGE" : data.data.getConnectCode.user.rankedNetplayProfile.characters.length !== 0 ?
-                    data.data.getConnectCode.user.rankedNetplayProfile.characters[0].character : "";
-                const rankInfo: IRankInfo = {
-                    tag: data.data.getConnectCode.user.displayName,
-                    code: code,
-                    rank: convertElo(elo),
-                    elo,
-                    wins: data.data.getConnectCode.user.rankedNetplayProfile.wins ?? 0,
-                    losses: data.data.getConnectCode.user.rankedNetplayProfile.losses ?? 0,
-                    character,
-                };
-                resolve(rankInfo);
-            })
-            .catch(error => reject(error));
-    });
-
+async function getRankInfo(code: string): Promise<IRankInfo> {
+    const requestOptions = {
+        method: "POST",
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            "operationName": "AccountManagementPageQuery",
+            "variables": { "cc": code, "uid": code },
+            "query": "fragment userProfilePage on User {\n  fbUid\n  displayName\n  connectCode {\n    code\n    __typename\n  }\n  status\n  activeSubscription {\n    level\n    hasGiftSub\n    __typename\n  }\n  rankedNetplayProfile {\n    id\n    ratingOrdinal\n    ratingUpdateCount\n    wins\n    losses\n    dailyGlobalPlacement\n    dailyRegionalPlacement\n    continent\n    characters {\n      id\n      character\n      gameCount\n      __typename\n    }\n    __typename\n  }\n  __typename\n}\n\nquery AccountManagementPageQuery($cc: String!, $uid: String!) {\n  getUser(fbUid: $uid) {\n    ...userProfilePage\n    __typename\n  }\n  getConnectCode(code: $cc) {\n    user {\n      ...userProfilePage\n      __typename\n    }\n    __typename\n  }\n}\n"
+        }),
+    };
+    const data = await (await fetch("https://gql-gateway-dot-slippi.uc.r.appspot.com/graphql", requestOptions)).json();
+    const elo = Math.round(data.data.getConnectCode.user.rankedNetplayProfile.ratingOrdinal);
+    const character = code === "FUDG#228" ? "FUDGE" : data.data.getConnectCode.user.rankedNetplayProfile.characters.length !== 0 ?
+        data.data.getConnectCode.user.rankedNetplayProfile.characters[0].character : "";
+    return {
+        tag: data.data.getConnectCode.user.displayName,
+        code: code,
+        rank: convertElo(elo),
+        elo,
+        wins: data.data.getConnectCode.user.rankedNetplayProfile.wins ?? 0,
+        losses: data.data.getConnectCode.user.rankedNetplayProfile.losses ?? 0,
+        character,
+    };
 };
-
