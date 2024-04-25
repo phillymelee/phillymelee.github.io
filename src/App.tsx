@@ -37,9 +37,8 @@ function App() {
 
     const interval = setInterval(() => {
       const now = new Date();
-      // Check if the current minute is the 16th minute of the hour.
-      // We update the cache every 15th minute, so we should give an extra minute to process
-      if (now.getMinutes() % (refreshRate + 1) === 0) {
+      // Check if the current minute is the 15th minute of the hour, if so fetch new cache
+      if (now.getMinutes() % refreshRate === 0) {
         getRanks().then((ranks) => setRanks(ranks));
       }
     }, 1000 * 60); // Run every minute
