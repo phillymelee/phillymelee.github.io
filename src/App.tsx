@@ -3,29 +3,26 @@
 import { useEffect, useState } from "react";
 import logo from "./assets/logo.png";
 import "./App.css";
-import { IRankInfo, getRanks } from "./utils/fetchRanks";
+import { getRanks } from "./utils/fetchRanks";
 import {
   getCharacterImage,
   getRankClass,
   getRankIcon,
 } from "./utils/getStyles";
-import { IResponse, addPlayer } from "./utils/addPlayer";
+import { addPlayer } from "./utils/addPlayer";
+import { IAddPlayerResponse, IRankInfo } from "./utils/interfaces";
 
-const refreshRate = 2; // minutes
+const refreshRate = 5; // minutes
 
 function App() {
   const [ranks, setRanks] = useState<IRankInfo[]>();
-  const [result, setResult] = useState<IResponse>();
+  const [result, setResult] = useState<IAddPlayerResponse>();
 
   // Player Input
   const Input = () => {
     const handleKeyDown = async (event: any) => {
       if (event.key === "Enter") {
         const response = await addPlayer(event.target.value);
-        if (response.status === 200) {
-          // Refresh player list if successful
-          getRanks().then((ranks) => setRanks(ranks));
-        }
         setResult(response);
       }
     };

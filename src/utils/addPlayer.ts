@@ -1,16 +1,13 @@
 // addPlayer.ts
 
-export interface IResponse {
-    status: number;
-    message: string;
-}
+import { IAddPlayerResponse } from "./interfaces";
 
-export async function addPlayer(code: string): Promise<IResponse> {
+export async function addPlayer(code: string): Promise<IAddPlayerResponse> {
     const requestOptions = {
         method: "POST",
         headers: { code }
     };
-    const response = await (fetch("https://addplayers-tsno6gjbiq-uc.a.run.app", requestOptions));
-    const message = (await response.json()).message;
-    return { status: response.status, message };
-}
+    const response = await (fetch("https://addplayer-tsno6gjbiq-uc.a.run.app", requestOptions));
+    const responseJson = await response.json();
+    return { status: response.status, message: responseJson.message };
+};
