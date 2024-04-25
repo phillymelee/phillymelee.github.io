@@ -116,6 +116,14 @@ td {
   margin-left: 5px;
   border-radius: 5px;
   border: 0;
+  color: white;
+  font-size: calc(4px + 1.3vmin);
+  background-color: #393e47;
+}
+
+.inputBox:focus {
+  outline-width: 1px;
+  outline-color: #393e47;
 }
 
 .successResult {
