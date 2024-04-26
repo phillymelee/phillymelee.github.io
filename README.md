@@ -1,6 +1,6 @@
 # [phillymelee.github.io](https://phillymelee.github.io/)
 
-## Overvier
+## Overview
 
 A simple webpage that displays the [Slippi](https://slippi.gg/) ranks of participating Philadelphia melee players.
 
