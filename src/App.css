@@ -150,6 +150,32 @@ td {
   outline-color: #393e47;
 }
 
+.spinner-container {
+  position: absolute;
+  margin-left: .4em;
+  vertical-align: middle;
+}
+
+.spinner {
+  border: 2px solid #393e47;
+  border-top: 2px solid #ffffff;
+  border-radius: 50%;
+  width: calc(4px + 1.3vmin);
+  height: calc(4px + 1.3vmin);
+  animation: spin 1.2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .successResult {
   font-size: calc(2px + 1.3vmin);
   color: lightgreen;

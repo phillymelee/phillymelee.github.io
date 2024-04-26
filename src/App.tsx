@@ -21,14 +21,31 @@ function App() {
 
   // Player Input
   const Input = () => {
+    const [waiting, setWaiting] = useState(false);
     const handleKeyDown = async (event: any) => {
       if (event.key === "Enter") {
+        setWaiting(true);
         const response = await addPlayer(event.target.value);
+        setWaiting(false);
         setResult(response);
       }
     };
 
-    return <input className="inputBox" type="text" onKeyDown={handleKeyDown} />;
+    return (
+      <span>
+        <input
+          disabled={waiting}
+          className="inputBox"
+          type="text"
+          onKeyDown={handleKeyDown}
+        />
+        {waiting && (
+          <span className="spinner-container">
+            <div className="spinner"></div>
+          </span>
+        )}
+      </span>
+    );
   };
 
   useEffect(() => {
