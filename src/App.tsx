@@ -112,7 +112,19 @@ function App() {
                       alt={rankInfo.rank}
                     ></img>
                   </td>
-                  <td className={getRankClass(rankInfo.elo)}>{Math.round(rankInfo.elo)}</td>
+                  <td className={getRankClass(rankInfo.elo)}>
+                    {Math.round(rankInfo.elo)}
+                    {rankInfo.rankChange === "up" ? (
+                      <span className="upIcon">
+                        <i className="fas fa-arrow-up"></i>
+                      </span>
+                    ) : null}
+                    {rankInfo.rankChange === "down" ? (
+                      <span className="downIcon">
+                        <i className="fas fa-arrow-down"></i>
+                      </span>
+                    ) : null}
+                  </td>
                   <td>
                     <span className="wins">{rankInfo.wins}</span>/
                     <span className="losses">{rankInfo.losses}</span>

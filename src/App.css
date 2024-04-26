@@ -98,6 +98,22 @@ td {
   text-decoration: underline;
 }
 
+.upIcon {
+  position: absolute;
+  margin-left: 5px;
+  font-size: calc(6px + 1.4vmin);
+  margin-top: calc(calc(8px + 2vmin) - calc(6px + 1.4vmin));
+  color: lightgreen;
+}
+
+.downIcon {
+  position: absolute;
+  margin-left: 5px;
+  font-size: calc(6px + 1.4vmin);
+  margin-top: calc(calc(8px + 2vmin) - calc(6px + 1.4vmin));
+  color: lightcoral;
+}
+
 .wins {
   color: lightgreen;
 }
