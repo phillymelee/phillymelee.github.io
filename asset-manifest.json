@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.ad3f7c56.css",
+    "main.css": "/static/css/main.c826e58a.css",
     "main.js": "/static/js/main.e5a50405.js",
     "static/media/logo.png": "/static/media/logo.b2b2030be0ce89cbb858.png",
     "static/media/FUDGE.jpg": "/static/media/FUDGE.573e8bb9040a199e6415.jpg",
@@ -48,11 +48,11 @@
     "static/media/BronzeIII.svg": "/static/media/BronzeIII.926dad245cc35e515006cdb08eedff70.svg",
     "static/media/BronzeI.svg": "/static/media/BronzeI.f4a5615366a7162c5cbe84a8fe3e3b72.svg",
     "index.html": "/index.html",
-    "main.ad3f7c56.css.map": "/static/css/main.ad3f7c56.css.map",
+    "main.c826e58a.css.map": "/static/css/main.c826e58a.css.map",
     "main.e5a50405.js.map": "/static/js/main.e5a50405.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad3f7c56.css",
+    "static/css/main.c826e58a.css",
     "static/js/main.e5a50405.js"
   ]
 }
