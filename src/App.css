@@ -102,7 +102,7 @@ td {
   position: absolute;
   margin-left: 5px;
   font-size: calc(6px + 1.4vmin);
-  margin-top: calc(calc(8px + 2vmin) - calc(6px + 1.4vmin));
+  margin-top: calc(calc(8px + 2vmin) - calc(6px + 1.4vmin) - 2px);
   color: lightgreen;
 }
 
@@ -110,7 +110,7 @@ td {
   position: absolute;
   margin-left: 5px;
   font-size: calc(6px + 1.4vmin);
-  margin-top: calc(calc(8px + 2vmin) - calc(6px + 1.4vmin));
+  margin-top: calc(calc(8px + 2vmin) - calc(6px + 1.4vmin) - 2px);
   color: lightcoral;
 }
 
