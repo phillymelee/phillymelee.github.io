@@ -88,9 +88,11 @@ export const getPlayerRanks = onRequest({ cors: true }, async (request, response
  * Fetches player list from players.json, gets their rank/info from Slippi, and updates cache.json
  */
 exports.cacheManage = onSchedule("*/15 * * * *", async (event) => {
-  // We will update each player's `yesterdayElo` value at 4am every day
+  // We will update each player's `yesterdayElo` value at 9:00AM UTC
+  // This will be either 4 or 5 AM EST depending on daylight savings
+  // Either way, this should be a good time to update yesterday's elo
   const time = new Date(event.scheduleTime);
-  const newDay = time.getHours() === 4 && time.getMinutes() === 0;
+  const newDay = time.getHours() === 9 && time.getMinutes() === 0;
   const logMessage = newDay ? "Updating Cache - New Day" : "Updating cache";
   
   logger.info(logMessage, { structuredData: true });
