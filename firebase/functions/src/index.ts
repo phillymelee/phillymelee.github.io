@@ -93,7 +93,7 @@ exports.cacheManage = onSchedule("*/15 * * * *", async (event) => {
   const newDay = time.getHours() === 4 && time.getMinutes() === 0;
   const logMessage = newDay ? "Updating Cache - New Day" : "Updating cache";
   
-  logger.log(logMessage, { structuredData: true });
+  logger.info(logMessage, { structuredData: true });
 
   const storage = getStorage();
 
@@ -144,6 +144,6 @@ exports.cacheManage = onSchedule("*/15 * * * *", async (event) => {
   const cacheFileRef = ref(storage, "cache.json");
   const updatedContent = JSON.stringify(newCacheObject);
   const blob = new Blob([updatedContent], { type: 'application/json' });
-  logger.log("Cache updated:", newCacheObject, { structuredData: true });
+  logger.info("Cache updated:", newCacheObject, { structuredData: true });
   await uploadBytes(cacheFileRef, blob);
 });
