@@ -88,14 +88,21 @@ export const getPlayerRanks = onRequest({ cors: true }, async (request, response
  * Fetches player list from players.json, gets their rank/info from Slippi, and updates cache.json
  */
 exports.cacheManage = onSchedule("*/15 * * * *", async (event) => {
-  logger.log("Updating Cache", { structuredData: true });
+  // We will update each player's `yesterdayElo` value at 4am every day
+  const time = new Date(event.scheduleTime);
+  const newDay = time.getHours() === 4 && time.getMinutes() === 0;
+  const logMessage = newDay ? "Updating Cache - New Day" : "Updating cache";
+  
+  logger.log(logMessage, { structuredData: true });
 
   const storage = getStorage();
 
   // Get old cache
   const fileRef = ref(storage, "cache.json");
   const url = await getDownloadURL(fileRef);
-  const oldRanks: IRankInfo[] = (await (await fetch(url)).json()).playerRanks;
+  const yesterdayElos: { [key: string]: number | undefined } = {};
+  const cachePlayerRanks: IRankInfo[] = (await (await fetch(url)).json()).playerRanks;
+  cachePlayerRanks.forEach((rank: IRankInfo) => yesterdayElos[rank.code] = rank.yesterdayElo);
 
   // Get player list
   const playersFileRef = ref(storage, "players.json");
@@ -109,14 +116,19 @@ exports.cacheManage = onSchedule("*/15 * * * *", async (event) => {
   for (let i = 0; i < playerRanks.length; i++) {
     const code = playerRanks[i].code;
     let change = "none";
-    for (let j = 0; j < oldRanks.length; j++) {
-      if (oldRanks[j].code === code) {
-        if (playerRanks[i].elo > oldRanks[j].elo) {
+    // If it's a new day, then we should set yesterdayElo to the current elo
+    // Everyone will have change "none" for this cycle
+    if (newDay) {
+      playerRanks[i].yesterdayElo = playerRanks[i].elo;
+    } else {
+      // Otherwise, we should compare the current elo to the elo from yesterday (if it exists)
+      const yesterdayElo = code in yesterdayElos ? yesterdayElos[code] : undefined;
+      if (yesterdayElo !== undefined) {
+        if (playerRanks[i].elo > yesterdayElo) {
           change = "up";
-        } else if (playerRanks[i].elo < oldRanks[j].elo) {
+        } else if (playerRanks[i].elo < yesterdayElo) {
           change = "down";
         }
-        break;
       }
     }
     playerRanks[i].rankChange = change;

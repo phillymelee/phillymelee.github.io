@@ -12,6 +12,7 @@ export interface IRankInfo {
     wins: number;
     losses: number;
     character: string;
+    yesterdayElo?: number;
     rankChange?: string;
 }
 
