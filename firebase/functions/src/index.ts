@@ -123,6 +123,8 @@ exports.cacheManage = onSchedule("*/15 * * * *", async (event) => {
     } else {
       // Otherwise, we should compare the current elo to the elo from yesterday (if it exists)
       const yesterdayElo = code in yesterdayElos ? yesterdayElos[code] : undefined;
+      // Make sure we carryover yesterdayElo to the new cache
+      playerRanks[i].yesterdayElo = yesterdayElo;
       if (yesterdayElo !== undefined) {
         if (playerRanks[i].elo > yesterdayElo) {
           change = "up";
