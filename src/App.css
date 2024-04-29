@@ -40,6 +40,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -61,28 +62,56 @@ table {
   border-spacing: 0 0.5em;
 }
 
+thead::after {
+  content: "";
+  display: block;
+  height: 0.5em;
+  width: 100%;
+}
+
 tr td:first-of-type {
-border-top-left-radius: 10px;
-border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 tr td:last-of-type {
-border-top-right-radius: 10px;
-border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-table, th, td {
+table,
+th,
+td {
   border-collapse: collapse;
 }
 
 td {
-    /* top right bottom left */
+  /* top right bottom left */
   padding: 0.4em 0.8em 0.4em 0.8em;
 }
 
 .row:hover {
   border-radius: 15px;
   background-color: #393e47;
+}
+
+.row:hover .playerPosition {
+  background-color: #30353e;
+}
+
+.playerPosition {
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(2.2vmin);
+  color: lightgray;
+  line-height: 0;
+  width: calc(4.3vmin);
+  height: calc(4.3vmin);
+  margin: 0 auto;
+  border-radius: 100%;
+  background-color: #24272e;
 }
 
 .playerCode {
@@ -123,6 +152,9 @@ td {
 }
 
 .rankIcon {
+  position: relative;
+  top: -1px;
+  display: block;
   height: calc(10px + 3.5vmin);
   width: auto;
 }
@@ -167,13 +199,23 @@ td {
 
 /* Safari */
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .successResult {
@@ -194,7 +236,7 @@ td {
 }
 
 .skaht {
-  font-size: calc(4px + 1,5vmin);
+  font-size: calc(4px + 1, 5vmin);
   font-style: italic;
 }
 

@@ -97,6 +97,7 @@ function App() {
         <table>
           <thead>
             <tr>
+              <th>Position</th>
               <th>Player</th>
               <th>Rank</th>
               <th>Rating</th>
@@ -105,9 +106,12 @@ function App() {
             </tr>
           </thead>
           <tbody>
-            {ranks.map((rankInfo) => {
+            {ranks.map((rankInfo, index) => {
               return (
                 <tr className="row" key={rankInfo.code}>
+                  <td>
+                    <span className="playerPosition">{index + 1}</span>
+                  </td>
                   <td>
                     <a
                       className="slippiLink"
@@ -122,7 +126,7 @@ function App() {
                       <div className="playerCode">{rankInfo.code}</div>
                     </a>
                   </td>
-                  <td>
+                  <td align="center">
                     <img
                       className="rankIcon"
                       src={getRankIcon(rankInfo.rank)}
