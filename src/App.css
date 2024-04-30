@@ -1,14 +1,22 @@
-.App {
-  text-align: center;
+/**
+ * App
+ */
+html,
+body {
   background-color: #282c34;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  justify-content: center;
 }
 
+.App {
+  min-height: 100vh;
+  margin: calc(25px + 2.5vmin) calc(2vmin);
+  justify-content: center;
+  text-align: center;
+  color: #e8e8e8;
+}
+
+/**
+ * Logo
+ */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -18,22 +26,6 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  font-size: calc(12px + 3vmin);
-  margin: calc(15px + 1vmin);
-}
-
-.App-body {
-  font-size: calc(8px + 2vmin);
-  justify-content: center;
-  height: 100%;
-  margin-bottom: 15px;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -46,27 +38,72 @@
   }
 }
 
-.title {
-  font-weight: 600;
-  font-size: calc(25px + 2vmin);
+/**
+ * Header
+ */
+.App-header {
+  margin: 0 calc(15px + 1.5vmin);
 }
 
-.updated {
-  font-size: calc(4px + 1.5vmin);
-  color: lightgray;
+h1.title {
+  font-weight: 600;
+  font-size: calc(15px + 3vmin);
+  margin: 0 0 calc(.75vmin) 0;
+}
+
+h2.updated {
+  font-size: calc(8px + 1.5vmin);
+  font-weight: 400;
+  margin: 0;
+  color: #98a2b6;
+}
+
+/**
+ * Body
+ */
+.App-body {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: calc(10px + 2vmin);
+  justify-content: center;
+  height: 100%;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/**
+ * Table
+ */
+.tableWrapper {
+  overflow-x: auto;
 }
 
 table {
-  margin-top: 15px;
-  border-collapse: separate;
-  border-spacing: 0 0.5em;
+  margin: calc(25px + 2.5vmin) 0 0;
+  width: 100%;
 }
 
-thead::after {
-  content: "";
-  display: block;
-  height: 0.5em;
-  width: 100%;
+@media (min-width: 360px) {
+  table {
+    margin: calc(25px + 2.5vmin) 0 calc(20px + .25vmin) 0;
+  }
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+}
+
+thead th {
+  padding-top: 0;
+  padding-bottom: calc(15px + 1vmin);
 }
 
 tr td:first-of-type {
@@ -79,15 +116,16 @@ tr td:last-of-type {
   border-bottom-right-radius: 10px;
 }
 
-table,
 th,
 td {
-  border-collapse: collapse;
+  padding: 0.5em 0.3em 0.5em 0.3em;
 }
 
-td {
-  /* top right bottom left */
-  padding: 0.4em 0.8em 0.4em 0.8em;
+@media (min-width: 596px) {
+  th,
+  td {
+    padding: 0.4em 0.8em 0.4em 0.8em;
+  }
 }
 
 .row:hover {
@@ -95,105 +133,238 @@ td {
   background-color: #393e47;
 }
 
-.row:hover .playerPosition {
-  background-color: #30353e;
-}
-
-.playerPosition {
+/**
+ * Rank
+ */
+.playerRank {
   pointer-events: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(2px + 2vmin);
-  color: lightgray;
-  line-height: 0;
-  width: calc(6px + 3.7vmin);
-  height: calc(6px + 3.7vmin);
-  margin: 0 auto;
-  border-radius: 100%;
-  background-color: #24272e;
 }
 
-.playerCode {
-  font-size: calc(1.5vmin);
-  color: lightgray;
+.playerRankHash {
+  margin-right: 1px;
+  font-weight: 300;
 }
 
-.slippiLink {
+/**
+ * Player Info
+ */
+.playerInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playerInfoSlippiLink {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
 }
 
-.slippiLink:hover {
+.playerInfoSlippiLink:hover .playerInfoTag {
   text-decoration: underline;
+  color: #ffffff;
 }
 
-.upIcon {
-  position: absolute;
-  margin-left: 5px;
-  font-size: calc(6px + 1.4vmin);
-  margin-top: calc(calc(8px + 2vmin) - calc(6px + 1.4vmin) - 1px);
-  color: lightgreen;
+.playerInfoTag {
+  font-size: calc(5px + 3vmin);
+  margin-bottom: 2px;
 }
 
-.downIcon {
-  position: absolute;
-  margin-left: 5px;
-  font-size: calc(6px + 1.4vmin);
-  margin-top: calc(calc(8px + 2vmin) - calc(6px + 1.4vmin) - 1px);
-  color: lightcoral;
+@media (min-width: 360px) {
+  .playerInfoTag {
+    font-size: calc(5px + 2.5vmin);
+  }
 }
 
-.wins {
-  color: lightgreen;
+@media (min-width: 596px) {
+  .playerInfoTag {
+    font-size: calc(5px + 2vmin);
+  }
 }
 
-.losses {
-  color: lightcoral;
+.playerInfoCode {
+  font-size: calc(5px + 2vmin);
+  color: #98a2b6;
 }
 
-.rankIcon {
+@media (min-width: 596px) {
+  .playerInfoCode {
+    font-size: calc(5px + 1vmin);
+  }
+}
+
+/**
+ * Rating
+ */
+.playerRating {
+  pointer-events: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.playerRatingIcon {
+  display: block;
+  height: auto;
+  width: calc(15px + 3.5vmin);
+  max-width: calc(15px + 3.5vmin);
+  margin-right: calc(5px + .75vmin);
+}
+
+.playerRatingIcon.grandmaster {
+  transform: scale(1.08);
+}
+
+.playerRatingElo {
   position: relative;
   top: -1px;
-  display: block;
-  height: calc(10px + 3.5vmin);
+  font-size: calc(5px + 2vmin);
+}
+
+.bronze {
+  color: #d59d4e;
+}
+
+.silver {
+  color: #e5e5e5;
+}
+
+.gold {
+  color: #ffc534;
+}
+
+.plat {
+  color: #08e3d9;
+}
+
+.diamond {
+  color: #4dc5ff;
+}
+
+.master {
+  /* color: #c343ff; @todo Master? */
+  color: #ff0000; /* Grandmaster */
+}
+
+.playerRatingChangeIcon {
+  position: absolute;
+  right: calc(-10px - 1.5vmin);
+  display: none;
+  font-size: calc(6px + 1.4vmin);
+}
+
+@media (min-width: 596px) {
+  .playerRatingChangeIcon {
+    display: inherit;
+  }
+}
+
+.playerRatingChangeIconUp {
+  color: lightgreen;
+}
+
+.playerRatingChangeIconDown {
+  color: lightcoral;
+}
+
+/**
+ * W/L Ratio
+ */
+.playerRatio {
+  pointer-events: none;
+  font-size: calc(5px + 2vmin);
+}
+
+.playerRatioWins {
+  color: lightgreen;
+}
+
+.playerRatioDivider {
+  position: relative;
+  top: -2px;
+  font-size: calc(4px + 2vmin);
+  padding: 0 calc(2px + .25vmin);
+}
+
+.playerRatioLosses {
+  color: lightcoral;
+}
+
+/**
+ * Character
+ */
+.playerCharacter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playerCharacterIcon {
+  position: relative;
+  top: -1px;
+  height: calc(10px + 3vmin);
   width: auto;
 }
 
-.characterIcon {
-  height: calc(10px + 3.5vmin);
-  width: auto;
+.playerCharacterIcon[alt="FALCO"] {
+  transform: translateX(-3px);
 }
 
-.input {
-  font-size: calc(5px + 1.5vmin);
+/**
+ * Player Input
+ */
+.playerInput {
+  position: relative;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: calc(20px + .25vmin);
+  font-size: 18px;
 }
 
-.inputBox {
-  margin-left: 5px;
+@media (min-width: 360px) {
+  .playerInput {
+    display: flex;
+  }
+}
+
+.playerInputBoxContainer {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.playerInputBox {
+  margin-left: 8px;
   border-radius: 5px;
   border: 0;
-  color: white;
-  font-size: calc(4px + 1.3vmin);
+  padding: 5px 7px 3px 7px;
+  font-size: 18px;
+  color: #e8e8e8;
   background-color: #393e47;
 }
 
-.inputBox:focus {
-  outline-width: 1px;
-  outline-color: #393e47;
+.playerInputBox:focus {
+  outline: none;
 }
 
-.spinner-container {
+.playerInputSpinnerContainer {
   position: absolute;
-  margin-left: .4em;
-  vertical-align: middle;
+  right: -30px;
 }
 
-.spinner {
+.playerInputSpinner {
   border: 2px solid #393e47;
   border-top: 2px solid #ffffff;
   border-radius: 50%;
-  width: calc(4px + 1.3vmin);
-  height: calc(4px + 1.3vmin);
+  width: 18px;
+  height: 18px;
   animation: spin 1.2s linear infinite;
 }
 
@@ -218,25 +389,36 @@ td {
   }
 }
 
-.successResult {
-  font-size: calc(2px + 1.3vmin);
-  color: lightgreen;
+.submissionResult {
+  display: none;
+  font-size: 14px;
   text-align: center;
+  margin-top: 8px;
+}
+
+@media (min-width: 360px) {
+  .submissionResult {
+    display: inherit;
+  }
+}
+
+.successResult {
+  color: lightgreen;
 }
 
 .failResult {
-  font-size: calc(2px + 1.3vmin);
   color: lightcoral;
-  text-align: center;
 }
 
+/**
+ * Footer
+ */
 .footer {
-  margin-bottom: 15px;
-  font-size: calc(3px + 1vmin);
+  margin-top: 20px;
+  font-size: 14px;
 }
 
 .skaht {
-  font-size: calc(4px + 1, 5vmin);
   font-style: italic;
 }
 
@@ -246,37 +428,9 @@ td {
 }
 
 a {
-  color: white;
+  color: #e8e8e8;
 }
 
 a:active {
   color: none;
-}
-
-.bronze {
-  color: #d59d4e;
-}
-
-.silver {
-  color: #e5e5e5;
-}
-
-.gold {
-  color: #ffc534;
-}
-
-.plat {
-  color: #08e3d9;
-}
-
-.diamond {
-  color: #4dc5ff;
-}
-
-/* .master {
-  color: #c343ff;
-} */
-
-.master {
-  color: #ff0000;
 }
