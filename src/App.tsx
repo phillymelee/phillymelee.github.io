@@ -32,16 +32,16 @@ function App() {
     };
 
     return (
-      <span>
+      <span className="playerInputBoxContainer">
         <input
           disabled={waiting}
-          className="inputBox"
+          className="playerInputBox"
           type="text"
           onKeyDown={handleKeyDown}
         />
         {waiting && (
-          <span className="spinner-container">
-            <div className="spinner"></div>
+          <span className="playerInputSpinnerContainer">
+            <div className="playerInputSpinner"></div>
           </span>
         )}
       </span>
@@ -66,20 +66,21 @@ function App() {
     return () => clearInterval(interval);
   }, [ranks]);
 
-  if (ranks === undefined)
+  if (ranks === undefined) {
     return (
-      <div className="App">
+      <div className="App logoView">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
         </header>
       </div>
     );
+  }
 
   let resultDiv;
   if (result !== undefined) {
     const success = result.status === 200;
     resultDiv = (
-      <div className={success ? "successResult" : "failResult"}>
+      <div className={`submissionResult ${success ? "successResult" : "failResult"}`}>
         {result.message}
       </div>
     );
@@ -88,77 +89,91 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className="title">Philly Melee Leaderboard</div>
-        <div className="updated">
-          Updates automatically every {refreshRate} minutes
-        </div>
+        <h1 className="title">Philly Melee Leaderboard</h1>
+        <h2 className="updated">Updates automatically every {refreshRate} minutes</h2>
       </header>
       <div className="App-body">
-        <table>
-          <thead>
-            <tr>
-              <th>Player</th>
-              <th>Rank</th>
-              <th>Rating</th>
-              <th>W/L</th>
-              <th>Main</th>
-            </tr>
-          </thead>
-          <tbody>
-            {ranks.map((rankInfo) => {
-              return (
-                <tr className="row" key={rankInfo.code}>
-                  <td>
-                    <a
-                      className="slippiLink"
-                      href={`https://slippi.gg/user/${rankInfo.code.replace(
-                        "#",
-                        "-"
-                      )}`}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <div>{rankInfo.tag}</div>
-                      <div className="playerCode">{rankInfo.code}</div>
-                    </a>
-                  </td>
-                  <td>
-                    <img
-                      className="rankIcon"
-                      src={getRankIcon(rankInfo.rank)}
-                      alt={rankInfo.rank}
-                    ></img>
-                  </td>
-                  <td className={getRankClass(rankInfo.elo)}>
-                    {Math.round(rankInfo.elo)}
-                    {rankInfo.rankChange === "up" ? (
-                      <span className="upIcon">
-                        <i className="fas fa-arrow-up"></i>
-                      </span>
-                    ) : null}
-                    {rankInfo.rankChange === "down" ? (
-                      <span className="downIcon">
-                        <i className="fas fa-arrow-down"></i>
-                      </span>
-                    ) : null}
-                  </td>
-                  <td>
-                    <span className="wins">{rankInfo.wins}</span>/
-                    <span className="losses">{rankInfo.losses}</span>
-                  </td>
-                  <td>
-                    <img
-                      className="characterIcon"
-                      alt={rankInfo.character}
-                      src={`${getCharacterImage(rankInfo.character)}`}
-                    ></img>
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-        <div className="input">
+        <div className="tableWrapper">
+          <table>
+            <thead>
+              <tr>
+                <th className="playerRankHead">Rank</th>
+                <th className="playerInfoHead">Player</th>
+                <th className="playerRatingHead">Rating</th>
+                <th className="playerRatioHead">W/L</th>
+                <th className="playerCharacterHead">Main</th>
+              </tr>
+            </thead>
+            <tbody>
+              {ranks.map((playerInfo, index) => {
+                return (
+                  <tr className="row" key={playerInfo.code}>
+                    <td className="playerRankCell">
+                      <div className="playerRank">
+                        <span className="playerRankHash">#</span>
+                        <span className="playerRankValue">{
+                          `${index + 1}`
+                        }</span>
+                      </div>
+                    </td>
+                    <td className="playerInfoCell">
+                      <div className="playerInfo">
+                        <a
+                          className="playerInfoSlippiLink"
+                          href={`https://slippi.gg/user/${playerInfo.code.replace("#", "-")}`}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <span className="playerInfoTag">{playerInfo.tag}</span>
+                          <span className="playerInfoCode">{playerInfo.code}</span>
+                        </a>
+                      </div>
+                    </td>
+                    <td className="playerRatingCell">
+                      <div className="playerRating">
+                        <img
+                          className={`playerRatingIcon ${playerInfo.rank.toLowerCase()}`}
+                          src={getRankIcon(playerInfo.rank)}
+                          alt={playerInfo.rank}
+                        ></img>
+                        <span className={`playerRatingElo ${getRankClass(playerInfo.elo)}`}>{
+                          Math.round(playerInfo.elo)
+                        }</span>
+                        {playerInfo.rankChange === "up" ? (
+                          <span className="playerRatingChangeIcon playerRatingChangeIconUp">
+                            <i className="fas fa-arrow-up"></i>
+                          </span>
+                        ) : null}
+                        {playerInfo.rankChange === "down" ? (
+                          <span className="playerRatingChangeIcon playerRatingChangeIconDown">
+                            <i className="fas fa-arrow-down"></i>
+                          </span>
+                        ) : null}
+                      </div>
+                    </td>
+                    <td className="playerRatioCell">
+                      <div className="playerRatio">
+                        <span className="playerRatioWins">{playerInfo.wins}</span>
+                        <span className="playerRatioDivider">/</span>
+                        <span className="playerRatioLosses">{playerInfo.losses}</span>
+                      </div>
+                    </td>
+                    <td className="playerCharacterCell">
+                      <div className="playerCharacter">
+                        <img
+                          className="playerCharacterIcon"
+                          alt={playerInfo.character}
+                          src={`${getCharacterImage(playerInfo.character)}`}
+                        ></img>
+                      </div>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+        <div className="playerInput">
           Add Player:<Input></Input>
         </div>
         {resultDiv}
