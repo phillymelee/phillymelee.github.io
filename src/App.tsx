@@ -97,10 +97,10 @@ function App() {
             <thead>
               <tr>
                 <th className="playerRankHead">Rank</th>
-                <th className="playerTagHead">Player</th>
+                <th className="playerInfoHead">Player</th>
                 <th className="playerRatingHead">Rating</th>
                 <th className="playerRatioHead">W/L</th>
-                <th className="playerMainHead">Main</th>
+                <th className="playerCharacterHead">Main</th>
               </tr>
             </thead>
             <tbody>
