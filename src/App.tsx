@@ -66,14 +66,15 @@ function App() {
     return () => clearInterval(interval);
   }, [ranks]);
 
-  if (ranks === undefined)
+  if (ranks === undefined) {
     return (
-      <div className="App">
+      <div className="App logoView">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
         </header>
       </div>
     );
+  }
 
   let resultDiv;
   if (result !== undefined) {

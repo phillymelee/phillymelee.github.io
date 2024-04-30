@@ -14,6 +14,15 @@ body {
   color: #e8e8e8;
 }
 
+.App.logoView {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+}
+
 /**
  * Logo
  */
