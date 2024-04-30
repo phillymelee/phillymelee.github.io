@@ -24,9 +24,9 @@ initializeApp(firebaseConfig);
  * Adds a valid player connect code to players.json
  */
 export const addPlayer = onRequest({ cors: true }, async (request, response) => {
-  logger.info("Add Players:", { structuredData: true });
-
   let code = request.headers.code;
+  logger.info("Add Player:", code, { structuredData: true });
+  
   if (code === undefined || typeof code !== "string") {
     logger.info("Bad request: Missing player code", { structuredData: true });
     response.status(400).send({ message: "Missing player code." });
@@ -45,7 +45,7 @@ export const addPlayer = onRequest({ cors: true }, async (request, response) => 
 
   const data = await (await fetch("https://gql-gateway-dot-slippi.uc.r.appspot.com/graphql", requestOptions)).json();
   if (data.data.getConnectCode === null) {
-    logger.info(`Bad request: Player code ${code} not found`, { structuredData: true });
+    logger.info(`Bad request: Player code ${code} not found.`, { structuredData: true });
     response.status(400).send({ message: `Player code ${code} not found.` });
     return;
   }
@@ -73,7 +73,7 @@ export const addPlayer = onRequest({ cors: true }, async (request, response) => 
 
 // Gets player ranks from cache.json
 export const getPlayerRanks = onRequest({ cors: true }, async (request, response) => {
-  logger.info("Get Player Ranks:", { structuredData: true });
+  logger.info("Get Player Ranks", { structuredData: true });
   const storage = getStorage();
   const fileRef = ref(storage, "cache.json");
   const url = await getDownloadURL(fileRef);
@@ -93,8 +93,8 @@ exports.cacheManage = onSchedule("*/15 * * * *", async (event) => {
   // Either way, this should be a good time to update yesterday's elo
   const time = new Date(event.scheduleTime);
   const newDay = time.getHours() === 9 && time.getMinutes() === 0;
-  const logMessage = newDay ? "Updating Cache - New Day" : "Updating cache";
-  
+  const logMessage = newDay ? "Updating Cache (New Day)" : "Updating cache";
+
   logger.info(logMessage, { structuredData: true });
 
   const storage = getStorage();
