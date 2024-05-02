@@ -328,6 +328,10 @@ td {
   transform: translateX(-3px);
 }
 
+.MARTH:hover {
+  content: url("./assets/misc/vomit.png")
+}
+
 /**
  * Player Input
  */

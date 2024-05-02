@@ -191,7 +191,7 @@ function App() {
                           </a>
                         ) : (
                           <img
-                            className="playerCharacterIcon"
+                            className={`playerCharacterIcon ${playerInfo.character}`}
                             alt={playerInfo.character}
                             src={`${getCharacterImage(playerInfo.character)}`}
                           ></img>
