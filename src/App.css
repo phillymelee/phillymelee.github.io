@@ -98,6 +98,10 @@ table {
   width: 100%;
 }
 
+.PORK\#582 {
+  border-bottom: 1px solid white;
+}
+
 @media (min-width: 360px) {
   table {
     margin: calc(25px + 2.5vmin) 0 calc(20px + .25vmin) 0;

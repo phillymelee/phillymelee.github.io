@@ -113,7 +113,7 @@ function App() {
             <tbody>
               {ranks.map((playerInfo, index) => {
                 return (
-                  <tr className="row" key={playerInfo.code}>
+                  <tr className={`row ${playerInfo.code}`} key={playerInfo.code}>
                     <td className="playerRankCell">
                       <div className="playerRank">
                         <span className="playerRankHash">#</span>
