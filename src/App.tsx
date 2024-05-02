@@ -1,7 +1,7 @@
 // App.tsx
 
 import { useEffect, useState } from "react";
-import logo from "./assets/logo.png";
+import logo from "./assets/misc/logo.png";
 import "./App.css";
 import { getRanks } from "./utils/fetchRanks";
 import {
@@ -80,7 +80,11 @@ function App() {
   if (result !== undefined) {
     const success = result.status === 200;
     resultDiv = (
-      <div className={`submissionResult ${success ? "successResult" : "failResult"}`}>
+      <div
+        className={`submissionResult ${
+          success ? "successResult" : "failResult"
+        }`}
+      >
         {result.message}
       </div>
     );
@@ -90,7 +94,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1 className="title">Philly Melee Leaderboard</h1>
-        <h2 className="updated">Updates automatically every {refreshRate} minutes</h2>
+        <h2 className="updated">
+          Updates automatically every {refreshRate} minutes
+        </h2>
       </header>
       <div className="App-body">
         <div className="tableWrapper">
@@ -111,21 +117,28 @@ function App() {
                     <td className="playerRankCell">
                       <div className="playerRank">
                         <span className="playerRankHash">#</span>
-                        <span className="playerRankValue">{
-                          `${index + 1}`
-                        }</span>
+                        <span className="playerRankValue">{`${
+                          index + 1
+                        }`}</span>
                       </div>
                     </td>
                     <td className="playerInfoCell">
                       <div className="playerInfo">
                         <a
                           className="playerInfoSlippiLink"
-                          href={`https://slippi.gg/user/${playerInfo.code.replace("#", "-")}`}
+                          href={`https://slippi.gg/user/${playerInfo.code.replace(
+                            "#",
+                            "-"
+                          )}`}
                           target="_blank"
                           rel="noreferrer"
                         >
-                          <span className="playerInfoTag">{playerInfo.tag}</span>
-                          <span className="playerInfoCode">{playerInfo.code}</span>
+                          <span className="playerInfoTag">
+                            {playerInfo.tag}
+                          </span>
+                          <span className="playerInfoCode">
+                            {playerInfo.code}
+                          </span>
                         </a>
                       </div>
                     </td>
@@ -136,9 +149,13 @@ function App() {
                           src={getRankIcon(playerInfo.rank)}
                           alt={playerInfo.rank}
                         ></img>
-                        <span className={`playerRatingElo ${getRankClass(playerInfo.elo)}`}>{
-                          Math.round(playerInfo.elo)
-                        }</span>
+                        <span
+                          className={`playerRatingElo ${getRankClass(
+                            playerInfo.elo
+                          )}`}
+                        >
+                          {Math.round(playerInfo.elo)}
+                        </span>
                         {playerInfo.rankChange === "up" ? (
                           <span className="playerRatingChangeIcon playerRatingChangeIconUp">
                             <i className="fas fa-arrow-up"></i>
@@ -153,18 +170,32 @@ function App() {
                     </td>
                     <td className="playerRatioCell">
                       <div className="playerRatio">
-                        <span className="playerRatioWins">{playerInfo.wins}</span>
+                        <span className="playerRatioWins">
+                          {playerInfo.wins}
+                        </span>
                         <span className="playerRatioDivider">/</span>
-                        <span className="playerRatioLosses">{playerInfo.losses}</span>
+                        <span className="playerRatioLosses">
+                          {playerInfo.losses}
+                        </span>
                       </div>
                     </td>
                     <td className="playerCharacterCell">
                       <div className="playerCharacter">
-                        <img
-                          className="playerCharacterIcon"
-                          alt={playerInfo.character}
-                          src={`${getCharacterImage(playerInfo.character)}`}
-                        ></img>
+                        {playerInfo.character === "FUDGE" ? (
+                          <a href={require("./assets/misc/fudgington.png")}>
+                            <img
+                              className="playerCharacterIcon"
+                              alt={playerInfo.character}
+                              src={`${getCharacterImage(playerInfo.character)}`}
+                            ></img>
+                          </a>
+                        ) : (
+                          <img
+                            className="playerCharacterIcon"
+                            alt={playerInfo.character}
+                            src={`${getCharacterImage(playerInfo.character)}`}
+                          ></img>
+                        )}
                       </div>
                     </td>
                   </tr>
