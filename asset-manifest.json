@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.c2809f36.css",
-    "main.js": "/static/js/main.4208c9d4.js",
+    "main.css": "/static/css/main.4888f75f.css",
+    "main.js": "/static/js/main.eceafc8e.js",
     "static/media/fudgington.png": "/static/media/fudgington.4778c8b98e503bb1dcb9.png",
     "static/media/logo.png": "/static/media/logo.b2b2030be0ce89cbb858.png",
+    "static/media/vomit.png": "/static/media/vomit.f0e20ab43b5150d3a294.png",
     "static/media/FUDGE.jpg": "/static/media/FUDGE.573e8bb9040a199e6415.jpg",
     "static/media/bowser_default.png": "/static/media/bowser_default.502f9ee7fc954239fa5d.png",
     "static/media/peach_default.png": "/static/media/peach_default.2822040b37afdf57d6c0.png",
@@ -49,11 +50,11 @@
     "static/media/BronzeIII.svg": "/static/media/BronzeIII.926dad245cc35e515006cdb08eedff70.svg",
     "static/media/BronzeI.svg": "/static/media/BronzeI.f4a5615366a7162c5cbe84a8fe3e3b72.svg",
     "index.html": "/index.html",
-    "main.c2809f36.css.map": "/static/css/main.c2809f36.css.map",
-    "main.4208c9d4.js.map": "/static/js/main.4208c9d4.js.map"
+    "main.4888f75f.css.map": "/static/css/main.4888f75f.css.map",
+    "main.eceafc8e.js.map": "/static/js/main.eceafc8e.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2809f36.css",
-    "static/js/main.4208c9d4.js"
+    "static/css/main.4888f75f.css",
+    "static/js/main.eceafc8e.js"
   ]
 }
