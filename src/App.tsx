@@ -112,8 +112,13 @@ function App() {
             </thead>
             <tbody>
               {ranks.map((playerInfo, index) => {
+                // Check if the previous player was Porkers. If so, we can put the porkers line above this player.
+                // We would prefer to simply check if this player is Porkers, but strange CSS bugs on mobile make this
+                // approach easier.
+                // TODO: Make this less janky
+                const shouldHavePorkersLine = index !== 0 && ranks[index - 1].code === "PORK#582" ? "porkersLine" : "";
                 return (
-                  <tr className={`row ${playerInfo.code}`} key={playerInfo.code}>
+                  <tr className={`row ${shouldHavePorkersLine}`} key={playerInfo.code}>
                     <td className="playerRankCell">
                       <div className="playerRank">
                         <span className="playerRankHash">#</span>
