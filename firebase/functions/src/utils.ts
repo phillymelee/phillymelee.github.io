@@ -1,6 +1,8 @@
 // fetchRanks.ts
 
 import { RateLimiter } from "limiter";
+import * as logger from "firebase-functions/logger";
+// import { getDownloadURL, getStorage, ref, uploadBytes } from "@firebase/storage";
 
 const limiter = new RateLimiter({ tokensPerInterval: 1, interval: 'second' });
 
@@ -17,11 +19,12 @@ export interface IRankInfo {
 }
 
 export async function getRanks(players: string[]): Promise<IRankInfo[]> {
-    return (await Promise.all(players.map(getRankInfo)))
+    return (
+        (await Promise.all(players.map(getRankInfo))).filter((rankInfo => rankInfo !== undefined)) as IRankInfo[])
         .filter((rankInfo => rankInfo.wins + rankInfo.losses >= 5)).sort((a, b) => b.elo - a.elo);
 };
 
-async function getRankInfo(code: string): Promise<IRankInfo> {
+async function getRankInfo(code: string): Promise<IRankInfo | undefined> {
     const requestOptions = {
         method: "POST",
         headers: { 'Content-Type': 'application/json' },
@@ -33,6 +36,15 @@ async function getRankInfo(code: string): Promise<IRankInfo> {
     };
     await limiter.removeTokens(1);
     const data = await (await fetch("https://gql-gateway-dot-slippi.uc.r.appspot.com/graphql", requestOptions)).json();
+
+    if (data.data.getConnectCode === null) {
+        // If the player no longer exists return undefined.
+        // For now, we will not remove the player from the list. It's possible Slippi services are down and
+        // all players are temporarily unavailable. We don't want to remove all players in that case.
+        // TODO: Find a way to remove players that no longer exist if this becomes an issue.
+        logger.info(`Player ${code} not found while updating.`, { structuredData: true });
+        return undefined;
+    }
 
     const elo = data.data.getConnectCode.user.rankedNetplayProfile.ratingOrdinal;
     // Get most played character
@@ -82,3 +94,20 @@ function convertElo(elo: number): string {
     // if (elo < 2350) return "Master 2";
     return "Grandmaster";
 };
+
+/**
+ * Not used for now.
+ */
+// async function removePlayer(code: string): Promise<void> {
+//     const storage = getStorage();
+//     const fileRef = ref(storage, "players.json");
+//     const url = await getDownloadURL(fileRef);
+//     const players = await (await fetch(url)).json();
+//     const newPlayers = players.filter((player: string) => player !== code);
+
+//     const updatedContent = JSON.stringify(newPlayers);
+//     const blob = new Blob([updatedContent], { type: 'application/json' });
+//     await uploadBytes(fileRef, blob);
+
+//     logger.info(`Player ${code} removed.`, { structuredData: true });
+// }
