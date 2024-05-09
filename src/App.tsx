@@ -116,9 +116,15 @@ function App() {
                 // We would prefer to simply check if this player is Porkers, but strange CSS bugs on mobile make this
                 // approach easier.
                 // TODO: Make this less janky
-                const shouldHavePorkersLine = index !== 0 && ranks[index - 1].code === "PORK#582" ? "porkersLine" : "";
+                const shouldHavePorkersLine =
+                  index !== 0 && ranks[index - 1].code === "PORK#582"
+                    ? "porkersLine"
+                    : "";
                 return (
-                  <tr className={`row ${shouldHavePorkersLine}`} key={playerInfo.code}>
+                  <tr
+                    className={`row ${shouldHavePorkersLine}`}
+                    key={playerInfo.code}
+                  >
                     <td className="playerRankCell">
                       <div className="playerRank">
                         <span className="playerRankHash">#</span>
@@ -131,10 +137,14 @@ function App() {
                       <div className="playerInfo">
                         <a
                           className="playerInfoSlippiLink"
-                          href={`https://slippi.gg/user/${playerInfo.code.replace(
-                            "#",
-                            "-"
-                          )}`}
+                          href={
+                            playerInfo.code !== "IGHT#1"
+                              ? `https://slippi.gg/user/${playerInfo.code.replace(
+                                  "#",
+                                  "-"
+                                )}`
+                              : require("./assets/misc/ight.png")
+                          }
                           target="_blank"
                           rel="noreferrer"
                         >
