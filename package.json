@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "homepage": "https://phillymelee.github.io/",
-  "dependencies": {
-    "firebase": "^10.11.0"
-  },
   "devDependencies": {
     "@types/node": "^16.18.10",
     "@types/react": "^18.0.26",
