@@ -49,15 +49,15 @@ function App() {
   };
 
   // Helper for rendering character icons
-  const renderCharacterIcon = (playerInfo: IRankInfo) => {
-    switch (playerInfo.character) {
+  const renderCharacterIcon = (character: IRankInfo["character"]) => {
+    switch (character) {
       case "FUDGE":
         return (
           <a href={require("./assets/misc/fudgington.png")}>
             <img
               className="playerCharacterIcon"
-              alt={playerInfo.character}
-              src={`${getCharacterImage(playerInfo.character)}`}
+              alt={character}
+              src={`${getCharacterImage(character)}`}
             ></img>
           </a>
         );
@@ -66,19 +66,44 @@ function App() {
           <a href={require("./assets/misc/ight.png")}>
             <img
               className="playerCharacterIcon"
-              alt={playerInfo.character}
-              src={`${getCharacterImage(playerInfo.character)}`}
+              alt={character}
+              src={`${getCharacterImage(character)}`}
             ></img>
           </a>
         );
       default:
         return (
           <img
-            className={`playerCharacterIcon ${playerInfo.character}`}
-            alt={playerInfo.character}
-            src={`${getCharacterImage(playerInfo.character)}`}
+            className={`playerCharacterIcon ${character}`}
+            alt={character}
+            src={`${getCharacterImage(character)}`}
           ></img>
         );
+    }
+  };
+
+  const renderChangeIcon = (change: IRankInfo["rankChange"]) => {
+    switch (change) {
+      case "up":
+        return (
+          <span className="playerRatingChangeIcon playerRatingChangeIconUp">
+            <i className="fas fa-arrow-up"></i>
+          </span>
+        );
+      case "down":
+        return (
+          <span className="playerRatingChangeIcon playerRatingChangeIconDown">
+            <i className="fas fa-arrow-down"></i>
+          </span>
+        );
+      case "new":
+        return (
+          <span className="playerRatingChangeIcon playerRatingChangeIconNew">
+            ✨
+          </span>
+        );
+      default:
+        return null;
     }
   };
 
@@ -201,16 +226,7 @@ function App() {
                         >
                           {Math.round(playerInfo.elo)}
                         </span>
-                        {playerInfo.rankChange === "up" ? (
-                          <span className="playerRatingChangeIcon playerRatingChangeIconUp">
-                            <i className="fas fa-arrow-up"></i>
-                          </span>
-                        ) : null}
-                        {playerInfo.rankChange === "down" ? (
-                          <span className="playerRatingChangeIcon playerRatingChangeIconDown">
-                            <i className="fas fa-arrow-down"></i>
-                          </span>
-                        ) : null}
+                        {renderChangeIcon(playerInfo.rankChange)}
                       </div>
                     </td>
                     <td className="playerRatioCell">
@@ -226,7 +242,7 @@ function App() {
                     </td>
                     <td className="playerCharacterCell">
                       <div className="playerCharacter">
-                        {renderCharacterIcon(playerInfo)}
+                        {renderCharacterIcon(playerInfo.character)}
                       </div>
                     </td>
                   </tr>

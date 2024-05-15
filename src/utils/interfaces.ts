@@ -8,7 +8,7 @@ export interface IRankInfo {
     wins: number;
     losses: number;
     character: string;
-    rankChange: "up" | "down" | "none";
+    rankChange: "up" | "down" | "new" | "none";
 }
 
 export interface IAddPlayerResponse {

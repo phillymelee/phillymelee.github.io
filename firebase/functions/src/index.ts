@@ -133,6 +133,9 @@ exports.cacheManage = onSchedule("*/15 * * * *", async (event) => {
         } else if (playerRanks[i].elo < yesterdayElo) {
           change = "down";
         }
+      } else {
+        // If yesterdayElo is undefined, then the player is new
+        change = "new";
       }
     }
     playerRanks[i].rankChange = change;

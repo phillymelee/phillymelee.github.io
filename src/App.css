@@ -294,6 +294,10 @@ td {
   color: lightcoral;
 }
 
+.playerRatingChangeIconNew {
+  right: calc(-13px - 1.9vmin);
+}
+
 /**
  * W/L Ratio
  */
