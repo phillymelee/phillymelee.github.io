@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2a717245.css",
-    "main.js": "/static/js/main.6cd6a6b1.js",
+    "main.js": "/static/js/main.dc3c18c5.js",
     "static/media/ight.png": "/static/media/ight.90802e79d2fac622a38d.png",
     "static/media/fudgington.png": "/static/media/fudgington.4778c8b98e503bb1dcb9.png",
     "static/media/logo.png": "/static/media/logo.b2b2030be0ce89cbb858.png",
@@ -12,6 +12,7 @@
     "static/media/ics_default.png": "/static/media/ics_default.e4393d93e7a0b677f9e1.png",
     "static/media/sheik_default.png": "/static/media/sheik_default.b82980a4f391a232a197.png",
     "static/media/ganon_default.png": "/static/media/ganon_default.ae73ee1821a4b163ebb1.png",
+    "static/media/falcon_blue.png": "/static/media/falcon_blue.f037bb28d16610e12d55.png",
     "static/media/fox_default.png": "/static/media/fox_default.7f88e0735dfcdc7a3615.png",
     "static/media/doc_default.png": "/static/media/doc_default.505e19f69cebc2b91986.png",
     "static/media/link_default.png": "/static/media/link_default.f9a6603630765449bb95.png",
@@ -52,10 +53,10 @@
     "static/media/BronzeI.svg": "/static/media/BronzeI.f4a5615366a7162c5cbe84a8fe3e3b72.svg",
     "index.html": "/index.html",
     "main.2a717245.css.map": "/static/css/main.2a717245.css.map",
-    "main.6cd6a6b1.js.map": "/static/js/main.6cd6a6b1.js.map"
+    "main.dc3c18c5.js.map": "/static/js/main.dc3c18c5.js.map"
   },
   "entrypoints": [
     "static/css/main.2a717245.css",
-    "static/js/main.6cd6a6b1.js"
+    "static/js/main.dc3c18c5.js"
   ]
 }
