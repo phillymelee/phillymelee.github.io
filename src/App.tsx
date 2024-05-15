@@ -48,6 +48,40 @@ function App() {
     );
   };
 
+  // Helper for rendering character icons
+  const renderCharacterIcon = (playerInfo: IRankInfo) => {
+    switch (playerInfo.character) {
+      case "FUDGE":
+        return (
+          <a href={require("./assets/misc/fudgington.png")}>
+            <img
+              className="playerCharacterIcon"
+              alt={playerInfo.character}
+              src={`${getCharacterImage(playerInfo.character)}`}
+            ></img>
+          </a>
+        );
+      case "IGHT":
+        return (
+          <a href={require("./assets/misc/ight.png")}>
+            <img
+              className="playerCharacterIcon"
+              alt={playerInfo.character}
+              src={`${getCharacterImage(playerInfo.character)}`}
+            ></img>
+          </a>
+        );
+      default:
+        return (
+          <img
+            className="playerCharacterIcon"
+            alt={playerInfo.character}
+            src={`${getCharacterImage(playerInfo.character)}`}
+          ></img>
+        );
+    }
+  };
+
   useEffect(() => {
     if (ranks === undefined) {
       getRanks().then((ranks) => setRanks(ranks));
@@ -137,14 +171,10 @@ function App() {
                       <div className="playerInfo">
                         <a
                           className="playerInfoSlippiLink"
-                          href={
-                            playerInfo.code !== "IGHT#1"
-                              ? `https://slippi.gg/user/${playerInfo.code.replace(
-                                  "#",
-                                  "-"
-                                )}`
-                              : require("./assets/misc/ight.png")
-                          }
+                          href={`https://slippi.gg/user/${playerInfo.code.replace(
+                            "#",
+                            "-"
+                          )}`}
                           target="_blank"
                           rel="noreferrer"
                         >
@@ -196,21 +226,7 @@ function App() {
                     </td>
                     <td className="playerCharacterCell">
                       <div className="playerCharacter">
-                        {playerInfo.character === "FUDGE" ? (
-                          <a href={require("./assets/misc/fudgington.png")}>
-                            <img
-                              className="playerCharacterIcon"
-                              alt={playerInfo.character}
-                              src={`${getCharacterImage(playerInfo.character)}`}
-                            ></img>
-                          </a>
-                        ) : (
-                          <img
-                            className={`playerCharacterIcon ${playerInfo.character}`}
-                            alt={playerInfo.character}
-                            src={`${getCharacterImage(playerInfo.character)}`}
-                          ></img>
-                        )}
+                        {renderCharacterIcon(playerInfo)}
                       </div>
                     </td>
                   </tr>

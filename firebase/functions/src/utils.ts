@@ -51,7 +51,11 @@ async function getRankInfo(code: string): Promise<IRankInfo | undefined> {
     let character: string;
     if (code === "FUDG#228") {
         character = "FUDGE";
-    } else {
+    }
+    else if (code === "IGHT#1") {
+        character = "IGHT";
+    }
+    else {
         const characters = data.data.getConnectCode.user.rankedNetplayProfile.characters;
         if (characters.length === 0) {
             character = "";

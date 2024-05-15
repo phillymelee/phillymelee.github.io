@@ -28,6 +28,7 @@ import YoshiIcon from "../assets/characters/yoshi_default.png";
 import ZeldaIcon from "../assets/characters/zelda_default.png";
 import UnknownIcon from "../assets/characters/unknown.png";
 import FudgeIcon from "../assets/characters/FUDGE.jpg";
+import IghtIcon from "../assets/characters/falcon_blue.png";
 
 import GrandMasterIcon from "../assets/ranks/GrandMaster.svg";
 import Master1Icon from "../assets/ranks/MasterI.svg";
@@ -77,7 +78,8 @@ const characterNameToIcon = new Map([
     ["YOSHI", YoshiIcon],
     ["YOUNG_LINK", YounglinkIcon],
     ["ZELDA", ZeldaIcon],
-    ["FUDGE", FudgeIcon]
+    ["FUDGE", FudgeIcon],
+    ["IGHT", IghtIcon]
 ]);
 
 const rankNameToIcon = new Map([
