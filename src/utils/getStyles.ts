@@ -33,7 +33,7 @@ import IghtIcon from "../assets/characters/falcon_blue.png";
 import GrandMasterIcon from "../assets/ranks/GrandMaster.svg";
 import Master1Icon from "../assets/ranks/MasterI.svg";
 import Master2Icon from "../assets/ranks/MasterII.svg";
-// import Master3Icon from "../assets/ranks/MasterIII.svg";
+import Master3Icon from "../assets/ranks/MasterIII.svg";
 import Diamond1Icon from "../assets/ranks/DiamondI.svg";
 import Diamond2Icon from "../assets/ranks/DiamondII.svg";
 import Diamond3Icon from "../assets/ranks/DiamondIII.svg";
@@ -100,6 +100,7 @@ const rankNameToIcon = new Map([
     ["Diamond 3", Diamond3Icon],
     ["Master 1", Master1Icon],
     ["Master 2", Master2Icon],
+    ["Master 3", Master3Icon],
     ["Grandmaster", GrandMasterIcon]
 ]);
 
@@ -112,11 +113,13 @@ export function getRankIcon(rank: string) {
     return rankNameToIcon.get(rank) ?? PendingIcon;
 }
 
-export function getRankClass(elo: number): string {
-    if (elo < 1055) return "bronze";
-    if (elo < 1436) return "silver";
-    if (elo < 1752) return "gold";
-    if (elo < 2004) return "plat";
-    if (elo < 2192) return "diamond";
+export function getRankClass(elo: number, rank: string): string {
+    if (elo < 1054.87) return "bronze";
+    if (elo < 1435.48) return "silver";
+    if (elo < 1751.83) return "gold";
+    if (elo < 2003.92) return "plat";
+    if (elo < 2191.75) return "diamond";
+    // Check if the player is GM first. If not then they are master.
+    if (rank === "Grandmaster") return "grandmaster";
     return "master";
 }

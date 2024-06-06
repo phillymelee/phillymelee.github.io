@@ -47,6 +47,9 @@ async function getRankInfo(code: string): Promise<IRankInfo | undefined> {
     }
 
     const elo = data.data.getConnectCode.user.rankedNetplayProfile.ratingOrdinal;
+    // It seems that the dailyGlobalPlacement is only available for the top 300 players.
+    const isTop300 = data.data.getConnectCode.user.rankedNetplayProfile.dailyGlobalPlacement !== null;
+
     // Get most played character
     let character: string;
     if (code === "FUDG#228") {
@@ -69,7 +72,7 @@ async function getRankInfo(code: string): Promise<IRankInfo | undefined> {
     return {
         tag: data.data.getConnectCode.user.displayName,
         code,
-        rank: convertElo(elo),
+        rank: convertElo(elo, isTop300),
         elo,
         wins: data.data.getConnectCode.user.rankedNetplayProfile.wins ?? 0,
         losses: data.data.getConnectCode.user.rankedNetplayProfile.losses ?? 0,
@@ -77,7 +80,7 @@ async function getRankInfo(code: string): Promise<IRankInfo | undefined> {
     };
 };
 
-function convertElo(elo: number): string {
+function convertElo(elo: number, isTop300: boolean): string {
     if (elo < 765.43) return "Bronze 1";
     if (elo < 913.72) return "Bronze 2";
     if (elo < 1054.87) return "Bronze 3";
@@ -93,10 +96,11 @@ function convertElo(elo: number): string {
     if (elo < 2073.67) return "Diamond 1";
     if (elo < 2136.28) return "Diamond 2";
     if (elo < 2191.75) return "Diamond 3";
-    // TODO: How do master ranks work exactly?
-    // if (elo < 2275) return "Master 1";
-    // if (elo < 2350) return "Master 2";
-    return "Grandmaster";
+    // Special case: If the player is top 300 and their elo is at least master level (2191.75), then they are Grandmaster.
+    if (isTop300) return "Grandmaster";
+    if (elo < 2275) return "Master 1";
+    if (elo < 2350) return "Master 2";
+    return "Master 3";
 };
 
 /**

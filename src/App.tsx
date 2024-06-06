@@ -221,7 +221,8 @@ function App() {
                         ></img>
                         <span
                           className={`playerRatingElo ${getRankClass(
-                            playerInfo.elo
+                            playerInfo.elo,
+                            playerInfo.rank
                           )}`}
                         >
                           {Math.round(playerInfo.elo)}

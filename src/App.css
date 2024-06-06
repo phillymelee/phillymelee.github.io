@@ -269,8 +269,11 @@ td {
 }
 
 .master {
-  /* color: #c343ff; @todo Master? */
-  color: #ff0000; /* Grandmaster */
+  color: #c343ff;
+}
+
+.grandmaster {
+  color: #ff0000;
 }
 
 .playerRatingChangeIcon {
