@@ -268,7 +268,7 @@ function App() {
             <i className="fab fa-github social-icon"></i>
           </a>
           <a
-            href="https://twitter.com/skaht12"
+            href="https://twitter.com/skahtman"
             target="_blank"
             rel="noreferrer"
           >
