@@ -1,4 +1,4 @@
-const { Client, GatewayIntentBits, EmbedBuilder } = require("discord.js");
+const { Client, Intents, MessageEmbed } = require("discord.js");
 const { getStorage } = require("firebase-admin/storage");
 const dotenv = require("dotenv");
 const admin = require('firebase-admin');
@@ -28,11 +28,10 @@ const getPlayerRanks = async () => {
 
 const client = new Client({
   intents: [
-    GatewayIntentBits.Guilds,
-    GatewayIntentBits.GuildMessages,
-    GatewayIntentBits.MessageContent,
-    GatewayIntentBits.GuildPresences,
-    GatewayIntentBits.GuildMembers,
+    Intents.FLAGS.GUILDS,
+    Intents.FLAGS.GUILD_MESSAGES,
+    Intents.FLAGS.GUILD_PRESENCES,
+    Intents.FLAGS.GUILD_MEMBERS,
   ],
 });
 
@@ -100,7 +99,7 @@ client.on("messageCreate", async (message) => {
       0
     );
 
-    const embedMsg = new EmbedBuilder()
+    const embedMsg = new MessageEmbed()
       .setColor("#f6a524") // match philly melee logo
       .setTitle("🏆 Philly Melee Leaderboard")
       .setURL("https://phillymelee.github.io/")
