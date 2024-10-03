@@ -1,28 +1,28 @@
 const { Client, GatewayIntentBits, EmbedBuilder } = require("discord.js");
-const { getStorage, ref, getDownloadURL } = require("firebase/storage");
-const { initializeApp } = require("@firebase/app");
+const { getStorage } = require("firebase-admin/storage");
 const dotenv = require("dotenv");
+const admin = require('firebase-admin');
 
 const logoUrl = process.env.LOGO_URL;
 
 dotenv.config();
-const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API_KEY,
-  authDomain: process.env.AUTH_DOMAIN,
-  projectId: process.env.PROJECT_ID,
+
+admin.initializeApp({
+  credential: admin.credential.cert(
+    require(process.env.GOOGLE_APPLICATION_CREDENTIALS)
+  ),
   storageBucket: process.env.STORAGE_BUCKET,
-  messagingSenderId: process.env.MESSAGING_SENDER_ID,
-  appId: process.env.APP_ID,
-  measurementId: process.env.MEASUREMENT_ID,
-};
-initializeApp(firebaseConfig);
+});
 
 // Gets player ranks from cache.json
 const getPlayerRanks = async () => {
-  const storage = getStorage();
-  const fileRef = ref(storage, "cache.json");
-  const url = await getDownloadURL(fileRef);
-  const cache = await (await fetch(url)).json();
+  const storage = getStorage(); // Get the storage instance
+  const bucket = storage.bucket(); // Get the default storage bucket
+  const file = bucket.file("cache.json"); // Reference the cache.json file
+  // Download the file as a buffer
+  const [fileContent] = await file.download();
+  // Parse JSON from the file content
+  const cache = JSON.parse(fileContent.toString("utf8")); // Ensure it's a string
   return cache;
 };
 
