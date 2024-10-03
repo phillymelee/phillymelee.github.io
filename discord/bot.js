@@ -41,8 +41,8 @@ client.once("ready", () => {
 
 client.on("messageCreate", async (message) => {
   if (
-    message.content.startsWith("!lb") ||
-    message.content.startsWith("!leaderboard")
+    message.content.toLocaleLowerCase().startsWith("!lb") ||
+    message.content.toLocaleLowerCase().startsWith("!leaderboard")
   ) {
     const args = message.content.split(" ");
     args.shift().toLowerCase(); // !lb
