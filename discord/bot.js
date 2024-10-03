@@ -84,6 +84,11 @@ client.on("messageCreate", async (message) => {
       msg += `${place} **${player.tag}** (${player.code}) - ${Math.round(
         player.elo
       )}${rankChange}\n`;
+
+      // Porkers line
+      if (player.code === "PORK#582" && i !== playersSlice.length - 1) {
+        msg+= "-----------------------------------------\n";
+      }
     }
 
     const now = new Date();
