@@ -70,6 +70,8 @@ client.on("messageCreate", async (message) => {
           ? " ↑"
           : player.rankChange === "down"
           ? " ↓"
+          : player.rankChange === "new"
+          ? " ✦︎"
           : "";
 
       let place = `${(page - 1) * 15 + (i + 1)}.`;
