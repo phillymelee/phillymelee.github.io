@@ -22,6 +22,7 @@ const commandMap = {
   "!leaderboard": generateLeaderboardMsg,
   "!addplayer": addPlayer,
   "!help": generateHelpMsg,
+  "!lbHelp": generateHelpMsg,
 };
 
 admin.initializeApp({
