@@ -1,30 +1,12 @@
-const { Client, Intents, MessageEmbed } = require("discord.js");
-const { getStorage } = require("firebase-admin/storage");
+const { Client, Intents } = require("discord.js");
 const dotenv = require("dotenv");
-const admin = require('firebase-admin');
-
-const logoUrl = process.env.LOGO_URL;
-
+const admin = require("firebase-admin");
+const {
+  generateLeaderboardMsg,
+  addPlayer,
+  generateHelpMsg,
+} = require("./utils");
 dotenv.config();
-
-admin.initializeApp({
-  credential: admin.credential.cert(
-    require(process.env.GOOGLE_APPLICATION_CREDENTIALS)
-  ),
-  storageBucket: process.env.STORAGE_BUCKET,
-});
-
-// Gets player ranks from cache.json
-const getPlayerRanks = async () => {
-  const storage = getStorage(); // Get the storage instance
-  const bucket = storage.bucket(); // Get the default storage bucket
-  const file = bucket.file("cache.json"); // Reference the cache.json file
-  // Download the file as a buffer
-  const [fileContent] = await file.download();
-  // Parse JSON from the file content
-  const cache = JSON.parse(fileContent.toString("utf8")); // Ensure it's a string
-  return cache;
-};
 
 const client = new Client({
   intents: [
@@ -35,97 +17,37 @@ const client = new Client({
   ],
 });
 
+const commandMap = {
+  "!lb": generateLeaderboardMsg,
+  "!leaderboard": generateLeaderboardMsg,
+  "!addplayer": addPlayer,
+  "!help": generateHelpMsg,
+};
+
+admin.initializeApp({
+  credential: admin.credential.cert(
+    require(process.env.GOOGLE_APPLICATION_CREDENTIALS)
+  ),
+  storageBucket: process.env.STORAGE_BUCKET,
+});
+
 client.once("ready", () => {
   console.log("Ready!");
 });
 
 client.on("messageCreate", async (message) => {
-  if (
-    message.content.toLocaleLowerCase().startsWith("!lb") ||
-    message.content.toLocaleLowerCase().startsWith("!leaderboard")
-  ) {
-    const args = message.content.split(" ");
-    args.shift().toLowerCase(); // !lb
-    const param = args.join(" "); // Everything after !lb
-    const num = Number(param);
-    let page = 1;
-    if (!isNaN(num) && num > 0) {
-      page = num;
+  const lowerMessage = message.content.toLocaleLowerCase();
+  const command = Object.keys(commandMap).find((cmd) =>
+    lowerMessage.startsWith(cmd)
+  );
+  if (command) {
+    try {
+      const msg = await commandMap[command](message);
+      message.channel.send(msg);
+    } catch (error) {
+      console.error(error);
+      message.channel.send("An error occurred, please try again later.");
     }
-
-    const ranks = await getPlayerRanks();
-    const players = ranks.playerRanks;
-
-    if ((page - 1) * 15 > players.length) {
-      page = 1;
-    }
-
-    const playersSlice = players.slice((page - 1) * 15, page * 15);
-
-    let msg = "";
-    for (let i = 0; i < playersSlice.length; i++) {
-      const player = playersSlice[i];
-      const rankChange =
-        player.rankChange === "up"
-          ? " ↑"
-          : player.rankChange === "down"
-          ? " ↓"
-          : player.rankChange === "new"
-          ? " ✦︎"
-          : "";
-
-      let place = `${(page - 1) * 15 + (i + 1)}.`;
-      if (place === "1.") {
-        place = "🥇";
-      } else if (place === "2.") {
-        place = "🥈";
-      } else if (place === "3.") {
-        place = "🥉";
-      }
-
-      msg += `${place} **${player.tag}** (${player.code}) - ${Math.round(
-        player.elo
-      )}${rankChange}\n`;
-
-      // Porkers line
-      if (player.code === "PORK#582" && i !== playersSlice.length - 1) {
-        msg+= "-----------------------------------------\n";
-      }
-    }
-
-    const now = new Date();
-    const options = {
-      timeZone: "America/New_York",
-      hour: "numeric",
-      minute: "numeric",
-      hour12: true,
-    };
-    const lastUpdate = now.setMinutes(
-      Math.floor(now.getMinutes() / 15) * 15,
-      0,
-      0
-    );
-
-    const embedMsg = new MessageEmbed()
-      .setColor("#f6a524") // match philly melee logo
-      .setTitle("🏆 Philly Melee Leaderboard")
-      .setURL("https://phillymelee.github.io/")
-      .setDescription("Ratings are updated every 15 minutes")
-      .setThumbnail(logoUrl)
-      .addFields({
-        name: `Last updated: ${new Date(lastUpdate).toLocaleString(
-          "en-US",
-          options
-        )}`,
-        value: msg,
-        inline: false,
-      })
-      .setTimestamp()
-      .setFooter({
-        text: `Page ${page} of ${Math.ceil(players.length / 15)}`,
-      });
-
-    message.channel.send({ embeds: [embedMsg] });
   }
 });
 
