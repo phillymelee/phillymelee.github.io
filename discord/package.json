@@ -9,6 +9,7 @@
   "dependencies": {
     "discord.js": "^13.17.1",
     "dotenv": "^16.4.5",
-    "firebase-admin": "^11.0.1"
+    "firebase-admin": "^11.0.1",
+    "node-fetch": "^2.7.0"
   }
 }

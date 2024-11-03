@@ -1,3 +1,4 @@
+const fetch = require("node-fetch");
 const { MessageEmbed } = require("discord.js");
 const { getStorage } = require("firebase-admin/storage");
 
@@ -106,7 +107,6 @@ async function addPlayer(message) {
     return "Please provide a player code.";
   }
   const code = args[1].toLocaleUpperCase();
-  console.log(code);
 
   const requestOptions = {
     method: "POST",
