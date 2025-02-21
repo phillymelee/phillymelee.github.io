@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7f5bc71c.css",
-    "main.js": "/static/js/main.69497071.js",
+    "main.js": "/static/js/main.8be62436.js",
     "static/media/ight.png": "/static/media/ight.90802e79d2fac622a38d.png",
     "static/media/fudgington.png": "/static/media/fudgington.4778c8b98e503bb1dcb9.png",
     "static/media/logo.png": "/static/media/logo.b2b2030be0ce89cbb858.png",
@@ -54,10 +54,10 @@
     "static/media/BronzeI.svg": "/static/media/BronzeI.f4a5615366a7162c5cbe84a8fe3e3b72.svg",
     "index.html": "/index.html",
     "main.7f5bc71c.css.map": "/static/css/main.7f5bc71c.css.map",
-    "main.69497071.js.map": "/static/js/main.69497071.js.map"
+    "main.8be62436.js.map": "/static/js/main.8be62436.js.map"
   },
   "entrypoints": [
     "static/css/main.7f5bc71c.css",
-    "static/js/main.69497071.js"
+    "static/js/main.8be62436.js"
   ]
 }
