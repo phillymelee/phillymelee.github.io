@@ -467,3 +467,23 @@ a {
 a:active {
   color: none;
 }
+
+.eloDelta {
+  background-color: #393e47;
+  color: #fff;
+  text-align: center;
+  padding: 3px 3px;
+  border-radius: 10px;
+  font-size: calc(6px + 1vmin);
+  margin-left: 3em;
+  position: absolute;
+  z-index: 1;  
+}
+
+.positive {
+  color: lightgreen;
+}
+
+.negative{
+  color: lightcoral;
+}

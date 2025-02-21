@@ -82,6 +82,26 @@ function App() {
     }
   };
 
+  const onHoverStart = (
+    e: React.MouseEvent<HTMLElement>,
+    eloDelta: number
+  ): void => {
+    if (eloDelta !== 0) {
+      const span = document.createElement("span");
+      const isPositive = eloDelta > 0;
+      span.className = `eloDelta ${isPositive ? "positive" : "negative"}`;
+      span.innerText = `${isPositive ? "+" : ""}${Math.round(eloDelta)}`;
+      e.currentTarget.appendChild(span);
+    }
+  };
+
+  const onHoverEnd = (e: React.MouseEvent<HTMLElement>): void => {
+    const span = e.currentTarget.querySelector(".eloDelta");
+    if (span) {
+      e.currentTarget.removeChild(span);
+    }
+  };
+
   const renderChangeIcon = (change: IRankInfo["rankChange"]) => {
     switch (change) {
       case "up":
@@ -212,7 +232,16 @@ function App() {
                         </a>
                       </div>
                     </td>
-                    <td className="playerRatingCell">
+                    <td
+                      className="playerRatingCell"
+                      // Render elo delta on hover
+                      onMouseEnter={(e) => {
+                        onHoverStart(e, playerInfo.eloDelta);
+                      }}
+                      onMouseLeave={(e) => {
+                        onHoverEnd(e);
+                      }}
+                    >
                       <div className="playerRating">
                         <img
                           className={`playerRatingIcon ${playerInfo.rank.toLowerCase()}`}

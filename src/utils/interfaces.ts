@@ -9,6 +9,7 @@ export interface IRankInfo {
     losses: number;
     character: string;
     rankChange: "up" | "down" | "new" | "none";
+    eloDelta: number;
 }
 
 export interface IAddPlayerResponse {
