@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1d5950ec.css",
-    "main.js": "/static/js/main.f26b7d52.js",
+    "main.css": "/static/css/main.7e4fe997.css",
+    "main.js": "/static/js/main.b0d00928.js",
     "static/media/ight.png": "/static/media/ight.90802e79d2fac622a38d.png",
     "static/media/fudgington.png": "/static/media/fudgington.4778c8b98e503bb1dcb9.png",
     "static/media/logo.png": "/static/media/logo.b2b2030be0ce89cbb858.png",
@@ -53,11 +53,11 @@
     "static/media/BronzeIII.svg": "/static/media/BronzeIII.926dad245cc35e515006cdb08eedff70.svg",
     "static/media/BronzeI.svg": "/static/media/BronzeI.f4a5615366a7162c5cbe84a8fe3e3b72.svg",
     "index.html": "/index.html",
-    "main.1d5950ec.css.map": "/static/css/main.1d5950ec.css.map",
-    "main.f26b7d52.js.map": "/static/js/main.f26b7d52.js.map"
+    "main.7e4fe997.css.map": "/static/css/main.7e4fe997.css.map",
+    "main.b0d00928.js.map": "/static/js/main.b0d00928.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d5950ec.css",
-    "static/js/main.f26b7d52.js"
+    "static/css/main.7e4fe997.css",
+    "static/js/main.b0d00928.js"
   ]
 }
