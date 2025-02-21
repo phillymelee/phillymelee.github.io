@@ -269,14 +269,6 @@ function App() {
             <i className="fab fa-github social-icon"></i>
           </a>
           <a
-            href="https://twitter.com/skahtman"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i className="fab fa-twitter social-icon"></i>
-          </a>
-
-          <a
             href="https://discord.gg/zjKk9vEQNp"
             target="_blank"
             rel="noreferrer"
