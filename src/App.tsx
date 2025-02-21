@@ -90,16 +90,14 @@ function App() {
       const span = document.createElement("span");
       const isPositive = eloDelta > 0;
       span.className = `eloDelta ${isPositive ? "positive" : "negative"}`;
+      span.id = "eloDelta";
       span.innerText = `${isPositive ? "+" : ""}${Math.round(eloDelta)}`;
       e.currentTarget.appendChild(span);
     }
   };
 
   const onHoverEnd = (e: React.MouseEvent<HTMLElement>): void => {
-    const span = e.currentTarget.querySelector(".eloDelta");
-    if (span) {
-      e.currentTarget.removeChild(span);
-    }
+    document.getElementById("eloDelta")?.remove();
   };
 
   const renderChangeIcon = (change: IRankInfo["rankChange"]) => {
