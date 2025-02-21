@@ -118,6 +118,7 @@ exports.cacheManage = onSchedule("*/15 * * * *", async (event) => {
   for (let i = 0; i < playerRanks.length; i++) {
     const code = playerRanks[i].code;
     let change = "none";
+    let delta = 0;
     // If it's a new day, then we should set yesterdayElo to the current elo
     // Everyone will have change "none" for this cycle
     if (newDay) {
@@ -128,6 +129,7 @@ exports.cacheManage = onSchedule("*/15 * * * *", async (event) => {
       // Make sure we carryover yesterdayElo to the new cache
       playerRanks[i].yesterdayElo = yesterdayElo;
       if (yesterdayElo !== undefined) {
+        delta = playerRanks[i].elo - yesterdayElo;
         if (playerRanks[i].elo > yesterdayElo) {
           change = "up";
         } else if (playerRanks[i].elo < yesterdayElo) {
@@ -139,6 +141,7 @@ exports.cacheManage = onSchedule("*/15 * * * *", async (event) => {
       }
     }
     playerRanks[i].rankChange = change;
+    playerRanks[i].eloDelta = delta;
   }
 
   // Update cache.json

@@ -14,8 +14,10 @@ export interface IRankInfo {
     wins: number;
     losses: number;
     character: string;
+    // TODO: Why are these optional i don't remember lol
     yesterdayElo?: number;
     rankChange?: string;
+    eloDelta?: number;
 }
 
 export async function getRanks(players: string[]): Promise<IRankInfo[]> {
