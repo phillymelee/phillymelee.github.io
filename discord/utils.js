@@ -40,9 +40,9 @@ async function generateLeaderboardMsg(message) {
     const player = playersSlice[i];
     const rankChange =
       player.rankChange === "up"
-        ? " ↑"
+        ? ` (+${Math.round(player.eloDelta)})`
         : player.rankChange === "down"
-        ? " ↓"
+        ? ` (${Math.round(player.eloDelta)})`
         : player.rankChange === "new"
         ? " ✦︎"
         : "";
