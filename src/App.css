@@ -472,12 +472,20 @@ a:active {
   background-color: #393e47;
   color: #fff;
   text-align: center;
-  padding: 3px 3px;
+  padding: 5px;
   border-radius: 10px;
   font-size: calc(6px + 1vmin);
-  margin-left: 3em;
+  margin-top: 2em;
+  left: -0.7em;
   position: absolute;
-  z-index: 1;  
+  z-index: 1;
+  display: none;
+}
+
+@media (min-width: 596px) {
+  .eloDelta {
+    display: inherit;
+  }
 }
 
 .positive {

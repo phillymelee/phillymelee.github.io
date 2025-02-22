@@ -83,8 +83,8 @@ function App() {
   };
 
   const onHoverStart = (
-    e: React.MouseEvent<HTMLElement>,
-    eloDelta: number
+    eloDelta: IRankInfo["eloDelta"],
+    code: IRankInfo["code"]
   ): void => {
     if (eloDelta !== 0) {
       const span = document.createElement("span");
@@ -92,25 +92,34 @@ function App() {
       span.className = `eloDelta ${isPositive ? "positive" : "negative"}`;
       span.id = "eloDelta";
       span.innerText = `${isPositive ? "+" : ""}${Math.round(eloDelta)}`;
-      e.currentTarget.appendChild(span);
+      document.getElementById(`ratingChangeIcon${code}`)?.appendChild(span);
     }
   };
 
-  const onHoverEnd = (e: React.MouseEvent<HTMLElement>): void => {
+  const onHoverEnd = (): void => {
     document.getElementById("eloDelta")?.remove();
   };
 
-  const renderChangeIcon = (change: IRankInfo["rankChange"]) => {
+  const renderChangeIcon = (
+    change: IRankInfo["rankChange"],
+    code: IRankInfo["code"]
+  ) => {
     switch (change) {
       case "up":
         return (
-          <span className="playerRatingChangeIcon playerRatingChangeIconUp">
+          <span
+            className="playerRatingChangeIcon playerRatingChangeIconUp"
+            id={`ratingChangeIcon${code}`}
+          >
             <i className="fas fa-arrow-up"></i>
           </span>
         );
       case "down":
         return (
-          <span className="playerRatingChangeIcon playerRatingChangeIconDown">
+          <span
+            className="playerRatingChangeIcon playerRatingChangeIconDown"
+            id={`ratingChangeIcon${code}`}
+          >
             <i className="fas fa-arrow-down"></i>
           </span>
         );
@@ -201,6 +210,13 @@ function App() {
                   <tr
                     className={`row ${shouldHavePorkersLine}`}
                     key={playerInfo.code}
+                    // Render elo delta on hover
+                    onMouseEnter={() => {
+                      onHoverStart(playerInfo.eloDelta, playerInfo.code);
+                    }}
+                    onMouseLeave={() => {
+                      onHoverEnd();
+                    }}
                   >
                     <td className="playerRankCell">
                       <div className="playerRank">
@@ -230,16 +246,7 @@ function App() {
                         </a>
                       </div>
                     </td>
-                    <td
-                      className="playerRatingCell"
-                      // Render elo delta on hover
-                      onMouseEnter={(e) => {
-                        onHoverStart(e, playerInfo.eloDelta);
-                      }}
-                      onMouseLeave={(e) => {
-                        onHoverEnd(e);
-                      }}
-                    >
+                    <td className="playerRatingCell">
                       <div className="playerRating">
                         <img
                           className={`playerRatingIcon ${playerInfo.rank.toLowerCase()}`}
@@ -254,7 +261,10 @@ function App() {
                         >
                           {Math.round(playerInfo.elo)}
                         </span>
-                        {renderChangeIcon(playerInfo.rankChange)}
+                        {renderChangeIcon(
+                          playerInfo.rankChange,
+                          playerInfo.code
+                        )}
                       </div>
                     </td>
                     <td className="playerRatioCell">
