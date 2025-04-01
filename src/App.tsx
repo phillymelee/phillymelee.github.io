@@ -86,12 +86,13 @@ function App() {
     eloDelta: IRankInfo["eloDelta"],
     code: IRankInfo["code"]
   ): void => {
-    if (eloDelta !== 0) {
+    const roundedEloDelta = Math.round(eloDelta);
+    if (roundedEloDelta !== 0) {
       const span = document.createElement("span");
       const isPositive = eloDelta > 0;
       span.className = `eloDelta ${isPositive ? "positive" : "negative"}`;
       span.id = "eloDelta";
-      span.innerText = `${isPositive ? "+" : ""}${Math.round(eloDelta)}`;
+      span.innerText = `${isPositive ? "+" : ""}${roundedEloDelta}`;
       document.getElementById(`ratingChangeIcon${code}`)?.appendChild(span);
     }
   };

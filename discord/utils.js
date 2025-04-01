@@ -38,8 +38,11 @@ async function generateLeaderboardMsg(message) {
   let msg = "";
   for (let i = 0; i < playersSlice.length; i++) {
     const player = playersSlice[i];
+    const eloDelta = Math.round(player.eloDelta);
     const rankChange =
-      player.rankChange === "up"
+      eloDelta === 0
+        ? ""
+        : player.rankChange === "up"
         ? ` (+${Math.round(player.eloDelta)})`
         : player.rankChange === "down"
         ? ` (${Math.round(player.eloDelta)})`
