@@ -37,7 +37,8 @@ async function getRankInfo(code: string): Promise<IRankInfo | undefined> {
         }),
     };
     await limiter.removeTokens(1);
-    const data = await (await fetch("https://gql-gateway-dot-slippi.uc.r.appspot.com/graphql", requestOptions)).json();
+    const url = "https://gql-gateway-2-dot-slippi.uc.r.appspot.com/graphql";
+    const data = await (await fetch(url, requestOptions)).json();
 
     if (data.data.getConnectCode === null) {
         // If the player no longer exists return undefined.
