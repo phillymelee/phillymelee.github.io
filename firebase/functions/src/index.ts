@@ -26,7 +26,7 @@ initializeApp(firebaseConfig);
 export const addPlayer = onRequest({ cors: true }, async (request, response) => {
   let code = request.headers.code;
   logger.info("Add Player:", code, { structuredData: true });
-  
+
   if (code === undefined || typeof code !== "string") {
     logger.info("Bad request: Missing player code", { structuredData: true });
     response.status(400).send({ message: "Missing player code." });
@@ -130,10 +130,9 @@ exports.cacheManage = onSchedule("*/15 * * * *", async (event) => {
       playerRanks[i].yesterdayElo = yesterdayElo;
       if (yesterdayElo !== undefined) {
         delta = playerRanks[i].elo - yesterdayElo;
-        if (playerRanks[i].elo > yesterdayElo) {
-          change = "up";
-        } else if (playerRanks[i].elo < yesterdayElo) {
-          change = "down";
+        // Only set rank change if the delta is at least 1
+        if (Math.round(delta) !== 0) {
+          change = playerRanks[i].elo > yesterdayElo ? "up" : "down";
         }
       } else {
         // If yesterdayElo is undefined, then the player is new
