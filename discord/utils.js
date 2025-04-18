@@ -39,16 +39,16 @@ async function generateLeaderboardMsg(message) {
   for (let i = 0; i < playersSlice.length; i++) {
     const player = playersSlice[i];
     const eloDelta = Math.round(player.eloDelta);
-    const rankChange =
-      eloDelta === 0
-        ? ""
-        : player.rankChange === "up"
-        ? ` (+${Math.round(player.eloDelta)})`
-        : player.rankChange === "down"
-        ? ` (${Math.round(player.eloDelta)})`
-        : player.rankChange === "new"
-        ? " ✦︎"
-        : "";
+    let rankChange;
+    if (player.rankChange === "new") {
+      rankChange = " ✦︎";
+    } else if (eloDelta === 0) {
+      rankChange = "";
+    } else if (player.rankChange === "up") {
+      rankChange = ` (+${Math.round(player.eloDelta)})`;
+    } else if (player.rankChange === "down") {
+      rankChange = ` (${Math.round(player.eloDelta)})`;
+    }
 
     let place = `${(page - 1) * 15 + (i + 1)}.`;
     if (place === "1.") {
