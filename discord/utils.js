@@ -59,9 +59,9 @@ async function generateLeaderboardMsg(message) {
       place = "🥉";
     }
 
-    msg += `${place} **${player.tag}** (${player.code}) - ${Math.round(
+    msg += `${place} **${player.tag}** (${player.code}) - **${Math.round(
       player.elo
-    )}${rankChange}\n`;
+    )}**${rankChange}\n`;
 
     // Porkers line
     if (player.code === "PORK#582" && i !== playersSlice.length - 1) {
