@@ -6,6 +6,17 @@ import * as logger from "firebase-functions/logger";
 
 const limiter = new RateLimiter({ tokensPerInterval: 1, interval: 'second' });
 
+export const slippiUrl = "https://internal.slippi.gg/graphql";
+export const getRequestOptions = (code: string) => ({
+  method: "POST",
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    "operationName": "UserProfilePageQuery",
+    "variables": { "cc": code, "uid": code },
+    "query": "fragment profileFields on NetplayProfile {\n  id\n  ratingOrdinal\n  ratingUpdateCount\n  wins\n  losses\n  dailyGlobalPlacement\n  dailyRegionalPlacement\n  continent\n  characters {\n    character\n    gameCount\n    __typename\n  }\n  __typename\n}\n\nfragment userProfilePage on User {\n  fbUid\n  displayName\n  connectCode {\n    code\n    __typename\n  }\n  status\n  activeSubscription {\n    level\n    hasGiftSub\n    __typename\n  }\n  rankedNetplayProfile {\n    ...profileFields\n    __typename\n  }\n  rankedNetplayProfileHistory {\n    ...profileFields\n    season {\n      id\n      startedAt\n      endedAt\n      name\n      status\n      __typename\n    }\n    __typename\n  }\n  __typename\n}\n\nquery UserProfilePageQuery($cc: String, $uid: String) {\n  getUser(fbUid: $uid, connectCode: $cc) {\n    ...userProfilePage\n    __typename\n  }\n}\n"
+  }),
+});
+
 export interface IRankInfo {
     tag: string;
     code: string;
@@ -27,20 +38,9 @@ export async function getRanks(players: string[]): Promise<IRankInfo[]> {
 };
 
 async function getRankInfo(code: string): Promise<IRankInfo | undefined> {
-    const requestOptions = {
-        method: "POST",
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            "operationName": "AccountManagementPageQuery",
-            "variables": { "cc": code, "uid": code },
-            "query": "fragment profileFieldsV2 on NetplayProfileV2 {\n  id\n  ratingOrdinal\n  ratingUpdateCount\n  wins\n  losses\n  dailyGlobalPlacement\n  dailyRegionalPlacement\n  continent\n  characters {\n    character\n    gameCount\n    __typename\n  }\n  __typename\n}\n\nfragment userProfilePage on User {\n  fbUid\n  displayName\n  connectCode {\n    code\n    __typename\n  }\n  status\n  activeSubscription {\n    level\n    hasGiftSub\n    __typename\n  }\n  rankedNetplayProfile {\n    ...profileFieldsV2\n    __typename\n  }\n  rankedNetplayProfileHistory {\n    ...profileFieldsV2\n    season {\n      id\n      startedAt\n      endedAt\n      name\n      status\n      __typename\n    }\n    __typename\n  }\n  __typename\n}\n\nquery AccountManagementPageQuery($cc: String!, $uid: String!) {\n  getUser(fbUid: $uid) {\n    ...userProfilePage\n    __typename\n  }\n  getConnectCode(code: $cc) {\n    user {\n      ...userProfilePage\n      __typename\n    }\n    __typename\n  }\n}\n"
-        }),
-    };
     await limiter.removeTokens(1);
-    const url = "https://gql-gateway-2-dot-slippi.uc.r.appspot.com/graphql";
-    const data = await (await fetch(url, requestOptions)).json();
-
-    if (data.data.getConnectCode === null) {
+    const data = await (await fetch(slippiUrl, getRequestOptions(code))).json();
+    if (data.data.getUser.connectCode === null) {
         // If the player no longer exists return undefined.
         // For now, we will not remove the player from the list. It's possible Slippi services are down and
         // all players are temporarily unavailable. We don't want to remove all players in that case.
@@ -49,9 +49,9 @@ async function getRankInfo(code: string): Promise<IRankInfo | undefined> {
         return undefined;
     }
 
-    const elo = data.data.getConnectCode.user.rankedNetplayProfile.ratingOrdinal;
+    const elo = data.data.getUser.rankedNetplayProfile.ratingOrdinal;
     // It seems that the dailyGlobalPlacement is only available for the top 300 players.
-    const isTop300 = data.data.getConnectCode.user.rankedNetplayProfile.dailyGlobalPlacement !== null;
+    const isTop300 = data.data.getUser.rankedNetplayProfile.dailyGlobalPlacement !== null;
 
     // Get most played character
     let character: string;
@@ -62,7 +62,7 @@ async function getRankInfo(code: string): Promise<IRankInfo | undefined> {
         character = "IGHT";
     }
     else {
-        const characters = data.data.getConnectCode.user.rankedNetplayProfile.characters;
+        const characters = data.data.getUser.rankedNetplayProfile.characters;
         if (characters.length === 0) {
             character = "";
         } else {
@@ -73,12 +73,12 @@ async function getRankInfo(code: string): Promise<IRankInfo | undefined> {
     }
 
     return {
-        tag: data.data.getConnectCode.user.displayName,
+        tag: data.data.getUser.displayName,
         code,
         rank: convertElo(elo, isTop300),
         elo,
-        wins: data.data.getConnectCode.user.rankedNetplayProfile.wins ?? 0,
-        losses: data.data.getConnectCode.user.rankedNetplayProfile.losses ?? 0,
+        wins: data.data.getUser.rankedNetplayProfile.wins ?? 0,
+        losses: data.data.getUser.rankedNetplayProfile.losses ?? 0,
         character,
     };
 };
