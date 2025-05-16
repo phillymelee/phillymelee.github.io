@@ -6,7 +6,7 @@ import { onRequest } from "firebase-functions/v2/https";
 import * as logger from "firebase-functions/logger";
 import { onSchedule } from "firebase-functions/v2/scheduler";
 import { getDownloadURL, getStorage, ref, uploadBytes } from "@firebase/storage";
-import { IRankInfo, getRanks } from "./utils";
+import { IRankInfo, getRanks, getRequestOptions, slippiUrl } from "./utils";
 
 config();
 const firebaseConfig = {
@@ -33,18 +33,8 @@ export const addPlayer = onRequest({ cors: true }, async (request, response) => 
     return;
   }
   code = code.toUpperCase();
-  const requestOptions = {
-    method: "POST",
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      "operationName": "AccountManagementPageQuery",
-      "variables": { "cc": code, "uid": code },
-      "query": "fragment profileFieldsV2 on NetplayProfileV2 {\n  id\n  ratingOrdinal\n  ratingUpdateCount\n  wins\n  losses\n  dailyGlobalPlacement\n  dailyRegionalPlacement\n  continent\n  characters {\n    character\n    gameCount\n    __typename\n  }\n  __typename\n}\n\nfragment userProfilePage on User {\n  fbUid\n  displayName\n  connectCode {\n    code\n    __typename\n  }\n  status\n  activeSubscription {\n    level\n    hasGiftSub\n    __typename\n  }\n  rankedNetplayProfile {\n    ...profileFieldsV2\n    __typename\n  }\n  rankedNetplayProfileHistory {\n    ...profileFieldsV2\n    season {\n      id\n      startedAt\n      endedAt\n      name\n      status\n      __typename\n    }\n    __typename\n  }\n  __typename\n}\n\nquery AccountManagementPageQuery($cc: String!, $uid: String!) {\n  getUser(fbUid: $uid) {\n    ...userProfilePage\n    __typename\n  }\n  getConnectCode(code: $cc) {\n    user {\n      ...userProfilePage\n      __typename\n    }\n    __typename\n  }\n}\n"
-    }),
-  };
-  const slippiUrl = "https://gql-gateway-2-dot-slippi.uc.r.appspot.com/graphql";
 
-  const data = await (await fetch(slippiUrl, requestOptions)).json();
+  const data = await (await fetch(slippiUrl, getRequestOptions(code))).json();
   if (data.data.getConnectCode === null) {
     logger.info(`Bad request: Player code ${code} not found.`, { structuredData: true });
     response.status(400).send({ message: `Player code ${code} not found.` });
