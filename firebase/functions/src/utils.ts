@@ -40,7 +40,7 @@ export async function getRanks(players: string[]): Promise<IRankInfo[]> {
 async function getRankInfo(code: string): Promise<IRankInfo | undefined> {
     await limiter.removeTokens(1);
     const data = await (await fetch(slippiUrl, getRequestOptions(code))).json();
-    if (data.data.getUser.connectCode === null) {
+    if (data?.data?.getUser?.connectCode === null) {
         // If the player no longer exists return undefined.
         // For now, we will not remove the player from the list. It's possible Slippi services are down and
         // all players are temporarily unavailable. We don't want to remove all players in that case.

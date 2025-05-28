@@ -35,7 +35,7 @@ export const addPlayer = onRequest({ cors: true }, async (request, response) => 
   code = code.toUpperCase();
 
   const data = await (await fetch(slippiUrl, getRequestOptions(code))).json();
-  if (data.getUser.connectCode === null) {
+  if (data?.getUser?.connectCode === null) {
     logger.info(`Bad request: Player code ${code} not found.`, { structuredData: true });
     response.status(400).send({ message: `Player code ${code} not found.` });
     return;
