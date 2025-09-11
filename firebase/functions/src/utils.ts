@@ -38,49 +38,55 @@ export async function getRanks(players: string[]): Promise<IRankInfo[]> {
 };
 
 async function getRankInfo(code: string): Promise<IRankInfo | undefined> {
-    await limiter.removeTokens(1);
-    const data = await (await fetch(slippiUrl, getRequestOptions(code))).json();
-    if (data?.data?.getUser?.connectCode === null) {
-        // If the player no longer exists return undefined.
-        // For now, we will not remove the player from the list. It's possible Slippi services are down and
-        // all players are temporarily unavailable. We don't want to remove all players in that case.
-        // TODO: Find a way to remove players that no longer exist if this becomes an issue.
-        logger.info(`Player ${code} not found while updating.`, { structuredData: true });
+    // TODO: Would prefer to avoid a giant try/catch :(
+    try {
+        await limiter.removeTokens(1);
+        const data = await (await fetch(slippiUrl, getRequestOptions(code))).json();
+        if (data?.data?.getUser?.connectCode === null) {
+            // If the player no longer exists return undefined.
+            // For now, we will not remove the player from the list. It's possible Slippi services are down and
+            // all players are temporarily unavailable. We don't want to remove all players in that case.
+            // TODO: Find a way to remove players that no longer exist if this becomes an issue.
+            logger.info(`Player ${code} not found while updating.`, { structuredData: true });
+            return undefined;
+        }
+
+        const elo = data.data.getUser.rankedNetplayProfile.ratingOrdinal;
+        // It seems that the dailyGlobalPlacement is only available for the top 300 players.
+        const isTop300 = data.data.getUser.rankedNetplayProfile.dailyGlobalPlacement !== null;
+
+        // Get most played character
+        let character: string;
+        if (code === "FUDG#228") {
+            character = "FUDGE";
+        }
+        else if (code === "IGHT#1") {
+            character = "IGHT";
+        }
+        else {
+            const characters = data.data.getUser.rankedNetplayProfile.characters;
+            if (characters.length === 0) {
+                character = "";
+            } else {
+                character = characters.reduce((mostCommon: any, current: any) => {
+                    return current.gameCount > mostCommon.gameCount ? current : mostCommon;
+                }).character;
+            }
+        }
+
+        return {
+            tag: data.data.getUser.displayName,
+            code,
+            rank: convertElo(elo, isTop300),
+            elo,
+            wins: data.data.getUser.rankedNetplayProfile.wins ?? 0,
+            losses: data.data.getUser.rankedNetplayProfile.losses ?? 0,
+            character,
+        };
+    } catch (error) {
+        logger.error(`Error fetching data for player ${code}: ${error}`, { structuredData: true });
         return undefined;
     }
-
-    const elo = data.data.getUser.rankedNetplayProfile.ratingOrdinal;
-    // It seems that the dailyGlobalPlacement is only available for the top 300 players.
-    const isTop300 = data.data.getUser.rankedNetplayProfile.dailyGlobalPlacement !== null;
-
-    // Get most played character
-    let character: string;
-    if (code === "FUDG#228") {
-        character = "FUDGE";
-    }
-    else if (code === "IGHT#1") {
-        character = "IGHT";
-    }
-    else {
-        const characters = data.data.getUser.rankedNetplayProfile.characters;
-        if (characters.length === 0) {
-            character = "";
-        } else {
-            character = characters.reduce((mostCommon: any, current: any) => {
-                return current.gameCount > mostCommon.gameCount ? current : mostCommon;
-            }).character;
-        }
-    }
-
-    return {
-        tag: data.data.getUser.displayName,
-        code,
-        rank: convertElo(elo, isTop300),
-        elo,
-        wins: data.data.getUser.rankedNetplayProfile.wins ?? 0,
-        losses: data.data.getUser.rankedNetplayProfile.losses ?? 0,
-        character,
-    };
 };
 
 function convertElo(elo: number, isTop300: boolean): string {
