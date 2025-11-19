@@ -73,12 +73,15 @@ export const getPlayerRanks = onRequest({ cors: true }, async (request, response
   response.send(cache.playerRanks);
 });
 
-// Updates cache every 5 minutes
 /**
  * Runs every 15th minute
  * Fetches player list from players.json, gets their rank/info from Slippi, and updates cache.json
  */
-exports.cacheManage = onSchedule("*/15 * * * *", async (event) => {
+exports.cacheManage = onSchedule({
+  schedule: "*/15 * * * *",
+  timeoutSeconds: 180,
+}, async (event) => {
+  const startTime = Date.now();
   // We will update each player's `yesterdayElo` value at 9:00AM UTC
   // This will be either 4 or 5 AM EST depending on daylight savings
   // Either way, this should be a good time to update yesterday's elo
@@ -101,9 +104,13 @@ exports.cacheManage = onSchedule("*/15 * * * *", async (event) => {
   const playersFileRef = ref(storage, "players.json");
   const playersUrl = await getDownloadURL(playersFileRef);
   const players = await (await fetch(playersUrl)).json();
+  
+  logger.info(`Fetching ranks for ${players.length} players`, { structuredData: true });
 
   // Get new ranks
   const playerRanks = await getRanks(players);
+  
+  logger.info(`Successfully fetched ${playerRanks.length} player ranks`, { structuredData: true });
 
   // Calculate rank change - Loop over each player and compare their old and new ranks
   for (let i = 0; i < playerRanks.length; i++) {
@@ -142,8 +149,10 @@ exports.cacheManage = onSchedule("*/15 * * * *", async (event) => {
   const cacheFileRef = ref(storage, "cache.json");
   const updatedContent = JSON.stringify(newCacheObject);
   const blob = new Blob([updatedContent], { type: 'application/json' });
-  logger.info("Cache updated:", newCacheObject, { structuredData: true });
   await uploadBytes(cacheFileRef, blob);
+  
+  const executionTime = ((Date.now() - startTime) / 1000).toFixed(2);
+  logger.info(`Cache updated successfully in ${executionTime}s`, { structuredData: true });
 });
 
 /**
