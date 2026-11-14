@@ -1,4 +1,20 @@
 /**
+ * Custom Colors
+ */
+:root {
+  --rank-header-color: #FFFFFF;
+  --player-header-color: #FFFFFF;
+  --rating-header-color: #FFFFFF;
+  --ratio-header-color: #FFFFFF;
+  --character-header-color: #FFFFFF;
+
+  /* Top 3 rank colors */
+  --rank-first-color: #F9AD35;
+  --rank-second-color: #CDD6DD;
+  --rank-third-color: #F88B3B;
+}
+
+/**
  * App
  */
 html,
@@ -12,6 +28,45 @@ body {
   justify-content: center;
   text-align: center;
   color: #e8e8e8;
+}
+
+/**
+ * Leaderboard Column Header Colors
+ */
+.playerRankHead {
+  color: var(--rank-header-color);
+}
+
+.playerInfoHead {
+  color: var(--player-header-color);
+}
+
+.playerRatingHead {
+  color: var(--rating-header-color);
+}
+
+.playerRatioHead {
+  color: var(--ratio-header-color);
+}
+
+.playerCharacterHead {
+  color: var(--character-header-color);
+}
+
+/* Top 3 player rank colors */
+.rankFirst {
+  color: var(--rank-first-color);
+  font-weight: 700;
+}
+
+.rankSecond {
+  color: var(--rank-second-color);
+  font-weight: 700;
+}
+
+.rankThird {
+  color: var(--rank-third-color);
+  font-weight: 700;
 }
 
 .App.logoView {

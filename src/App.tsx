@@ -16,8 +16,9 @@ const refreshRate = 15; // minutes between updates
 const updateOnMinutes = [1, 16, 31, 46]; // minutes of every hour to check if we should update
 
 function App() {
-  const [ranks, setRanks] = useState<IRankInfo[]>();
-  const [result, setResult] = useState<IAddPlayerResponse>();
+	const [ranks, setRanks] = useState<IRankInfo[]>();
+const [lastUpdated, setLastUpdated] = useState<number | null>();
+const [result, setResult] = useState<IAddPlayerResponse>();  
 
   // Player Input
   const Input = () => {
@@ -137,8 +138,13 @@ function App() {
 
   useEffect(() => {
     if (ranks === undefined) {
-      getRanks().then((ranks) => setRanks(ranks));
-    }
+  getRanks().then(({ ranks, lastUpdated }) => {
+    setRanks(ranks);
+    setLastUpdated(lastUpdated);
+  }).catch((error) => {
+    console.error("Failed to refresh leaderboard:", error);
+  });
+}
 
     const interval = setInterval(() => {
       const now = new Date();
@@ -146,8 +152,13 @@ function App() {
       // The server updates the ranks every 15 minutes, so we should check 1 minute after each update
       // to allow time for the server to processing
       if (updateOnMinutes.includes(now.getMinutes())) {
-        getRanks().then((ranks) => setRanks(ranks));
-      }
+  getRanks().then(({ ranks, lastUpdated }) => {
+    setRanks(ranks);
+    setLastUpdated(lastUpdated);
+  }).catch((error) => {
+    console.error("Failed to refresh leaderboard:", error);
+  });
+}
     }, 1000 * 60); // Run every minute
     // Clean up the interval on component unmount
     return () => clearInterval(interval);
@@ -179,11 +190,28 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+            <header className="App-header">
         <h1 className="title">Philly Melee Leaderboard</h1>
         <h2 className="updated">
-          Updates automatically every {refreshRate} minutes
+          Last updated:{" "}
+          {lastUpdated !== undefined && lastUpdated !== null
+            ? new Date(lastUpdated).toLocaleString("en-US", {
+                timeZone: "America/New_York",
+                month: "long",
+                day: "numeric",
+                year: "numeric",
+                hour: "numeric",
+                minute: "2-digit",
+                timeZoneName: "short",
+              })
+            : "Unavailable"}
         </h2>
+        <h2 className="updated">
+          Rankings refresh approximately every {refreshRate} minutes.
+        </h2>
+        <p className="updated">
+          New registrations may take up to 15 minutes to appear in the rankings.
+        </p>
       </header>
       <div className="App-body">
         <div className="tableWrapper">
@@ -194,7 +222,7 @@ function App() {
                 <th className="playerInfoHead">Player</th>
                 <th className="playerRatingHead">Rating</th>
                 <th className="playerRatioHead">W/L</th>
-                <th className="playerCharacterHead">Main</th>
+                <th className="playerCharacterHead">Characters</th>
               </tr>
             </thead>
             <tbody>
@@ -222,9 +250,19 @@ function App() {
                     <td className="playerRankCell">
                       <div className="playerRank">
                         <span className="playerRankHash">#</span>
-                        <span className="playerRankValue">{`${
-                          index + 1
-                        }`}</span>
+                        <span
+  className={`playerRankValue ${
+    index === 0
+      ? "rankFirst"
+      : index === 1
+        ? "rankSecond"
+        : index === 2
+          ? "rankThird"
+          : ""
+  }`}
+>
+  {index + 1}
+</span>
                       </div>
                     </td>
                     <td className="playerInfoCell">
@@ -309,7 +347,8 @@ function App() {
       </div>
 
       <div className="footer">
-        Made by <span className="skaht">skaht</span> -{" "}
+        Made by <span className="skaht">skaht</span> | Updated by{" "}
+<span className="skaht">Miffee</span> -{" "}
         <span className="icons">
           <a
             href="https://github.com/phillymelee/phillymelee.github.io"
