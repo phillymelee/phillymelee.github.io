@@ -1,4 +1,18 @@
 {
-  "lastUpdated": 1794685730219,
-  "playerRanks": []
+  "lastUpdated": 1794690214453,
+  "playerRanks": [
+    {
+      "tag": "WiiSportsResort",
+      "code": "HOBORG#0",
+      "rank": "Grandmaster",
+      "elo": 2446.29687888285,
+      "wins": 18,
+      "losses": 0,
+      "character": "LUIGI",
+      "secondary": "",
+      "tertiary": "",
+      "rankChange": "new",
+      "eloDelta": 0
+    }
+  ]
 }
