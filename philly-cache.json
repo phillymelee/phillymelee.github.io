@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1794691114495,
+  "lastUpdated": 1794693816861,
   "playerRanks": [
     {
       "tag": "WiiSportsResort",
@@ -13,6 +13,19 @@
       "tertiary": "",
       "eloDelta": 0,
       "rankChange": "new"
+    },
+    {
+      "tag": "bearo",
+      "code": "BEAR#192",
+      "rank": "Master 1",
+      "elo": 2224.2135732367424,
+      "wins": 25,
+      "losses": 21,
+      "character": "ROY",
+      "secondary": "",
+      "tertiary": "",
+      "rankChange": "new",
+      "eloDelta": 0
     }
   ]
 }
