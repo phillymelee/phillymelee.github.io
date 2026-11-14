@@ -331,6 +331,28 @@ td {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 4px;
+}
+
+.playerMainCharacter .playerCharacterIcon {
+  position: relative;
+  top: -1px;
+  height: calc(10px + 3vmin);
+  width: auto;
+}
+
+.playerSecondaryCharacter .playerCharacterIcon {
+  position: relative;
+  top: -1px;
+  height: calc(7px + 2.25vmin);
+  width: auto;
+}
+
+.playerTertiaryCharacter .playerCharacterIcon {
+  position: relative;
+  top: -1px;
+  height: calc(5.5px + 1.65vmin);
+  width: auto;
 }
 
 .playerCharacterIcon {

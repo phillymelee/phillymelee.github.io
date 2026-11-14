@@ -281,7 +281,19 @@ function App() {
                     </td>
                     <td className="playerCharacterCell">
                       <div className="playerCharacter">
-                        {renderCharacterIcon(playerInfo.character)}
+                        <span className="playerMainCharacter">
+                          {renderCharacterIcon(playerInfo.character)}
+                        </span>
+                        {playerInfo.secondary && (
+                          <span className="playerSecondaryCharacter">
+                            {renderCharacterIcon(playerInfo.secondary)}
+                          </span>
+                        )}
+                        {playerInfo.tertiary && (
+                          <span className="playerTertiaryCharacter">
+                            {renderCharacterIcon(playerInfo.tertiary)}
+                          </span>
+                        )}
                       </div>
                     </td>
                   </tr>

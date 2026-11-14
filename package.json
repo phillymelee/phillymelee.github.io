@@ -14,7 +14,7 @@
     "typescript": "^4.9.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && cp \"$HOME/melee-backend/data/philly-cache.json\" build/philly-cache.json",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",

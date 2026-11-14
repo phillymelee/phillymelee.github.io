@@ -8,6 +8,8 @@ export interface IRankInfo {
     wins: number;
     losses: number;
     character: string;
+    secondary: string;
+    tertiary?: string;
     rankChange: "up" | "down" | "new" | "none";
     eloDelta: number;
 }
