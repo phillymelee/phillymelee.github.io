@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1794690214453,
+  "lastUpdated": 1794691114495,
   "playerRanks": [
     {
       "tag": "WiiSportsResort",
@@ -11,8 +11,8 @@
       "character": "LUIGI",
       "secondary": "",
       "tertiary": "",
-      "rankChange": "new",
-      "eloDelta": 0
+      "eloDelta": 0,
+      "rankChange": "new"
     }
   ]
 }
