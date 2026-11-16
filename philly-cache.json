@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1794851946864,
+  "lastUpdated": 1794853320715,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -304,6 +304,19 @@
       "tertiary": "",
       "eloDelta": 0,
       "rankChange": "new"
+    },
+    {
+      "tag": "Granblue Player",
+      "code": "RAGN#406",
+      "rank": "Silver 2",
+      "elo": 1311.0212298163506,
+      "wins": 2,
+      "losses": 3,
+      "character": "FALCO",
+      "secondary": "MARTH",
+      "tertiary": "FOX",
+      "rankChange": "new",
+      "eloDelta": 0
     },
     {
       "tag": "Skypiea",
