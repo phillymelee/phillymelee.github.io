@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1794812243147,
+  "lastUpdated": 1794813144167,
   "playerRanks": [
     {
       "tag": "WiiSportsResort",
@@ -39,8 +39,8 @@
       "character": "MARTH",
       "secondary": "CAPTAIN_FALCON",
       "tertiary": "FOX",
-      "rankChange": "new",
-      "eloDelta": 0
+      "eloDelta": 0,
+      "rankChange": "new"
     },
     {
       "tag": "bearo",
