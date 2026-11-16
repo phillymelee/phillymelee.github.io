@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1794694717526,
+  "lastUpdated": 1794787518434,
   "playerRanks": [
     {
       "tag": "WiiSportsResort",
@@ -11,8 +11,23 @@
       "character": "LUIGI",
       "secondary": "",
       "tertiary": "",
+      "yesterdayElo": 2446.29687888285,
       "eloDelta": 0,
-      "rankChange": "new"
+      "rankChange": "none"
+    },
+    {
+      "tag": "Mr. Grabs",
+      "code": "STAV#838",
+      "rank": "Grandmaster",
+      "elo": 2329.6826817499523,
+      "wins": 15,
+      "losses": 8,
+      "character": "DR_MARIO",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 2329.6826817499523,
+      "eloDelta": 0,
+      "rankChange": "none"
     },
     {
       "tag": "bearo",
@@ -22,6 +37,20 @@
       "wins": 25,
       "losses": 21,
       "character": "ROY",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 2224.2135732367424,
+      "eloDelta": 0,
+      "rankChange": "none"
+    },
+    {
+      "tag": "phillyhoops",
+      "code": "PHL#712",
+      "rank": "Silver 3",
+      "elo": 1330.349998607026,
+      "wins": 2,
+      "losses": 4,
+      "character": "MARTH",
       "secondary": "",
       "tertiary": "",
       "eloDelta": 0,
