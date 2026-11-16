@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1794843843069,
+  "lastUpdated": 1794847444596,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -173,6 +173,19 @@
       "tertiary": "",
       "eloDelta": 0,
       "rankChange": "new"
+    },
+    {
+      "tag": "Arzada",
+      "code": "ZADA#734",
+      "rank": "Platinum 1",
+      "elo": 1828.9568368804987,
+      "wins": 10,
+      "losses": 11,
+      "character": "MARTH",
+      "secondary": "FOX",
+      "tertiary": "SHEIK",
+      "rankChange": "new",
+      "eloDelta": 0
     },
     {
       "tag": "GOOD MORNING",
