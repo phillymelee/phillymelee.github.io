@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1794820344314,
+  "lastUpdated": 1794821244351,
   "playerRanks": [
     {
       "tag": "WiiSportsResort",
@@ -12,8 +12,8 @@
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 2446.29687888285,
-      "rankChange": "none",
-      "eloDelta": 0
+      "eloDelta": 0,
+      "rankChange": "none"
     },
     {
       "tag": "Mr. Grabs",
@@ -26,8 +26,8 @@
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 2329.6826817499523,
-      "rankChange": "none",
-      "eloDelta": 0
+      "eloDelta": 0,
+      "rankChange": "none"
     },
     {
       "tag": "Sabrina Conrad",
@@ -40,8 +40,8 @@
       "secondary": "CAPTAIN_FALCON",
       "tertiary": "FOX",
       "yesterdayElo": 2300.277589681961,
-      "rankChange": "none",
-      "eloDelta": 0
+      "eloDelta": 0,
+      "rankChange": "none"
     },
     {
       "tag": "bearo",
@@ -54,8 +54,8 @@
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 2224.2135732367424,
-      "rankChange": "none",
-      "eloDelta": 0
+      "eloDelta": 0,
+      "rankChange": "none"
     },
     {
       "tag": "phillyhoops",
@@ -68,8 +68,8 @@
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1330.349998607026,
-      "rankChange": "none",
-      "eloDelta": 0
+      "eloDelta": 0,
+      "rankChange": "none"
     }
   ]
 }
