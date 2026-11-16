@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1794791119434,
+  "lastUpdated": 1794812243147,
   "playerRanks": [
     {
       "tag": "WiiSportsResort",
@@ -28,6 +28,19 @@
       "yesterdayElo": 2329.6826817499523,
       "eloDelta": 0,
       "rankChange": "none"
+    },
+    {
+      "tag": "Sabrina Conrad",
+      "code": "LYNX#718",
+      "rank": "Grandmaster",
+      "elo": 2300.277589681961,
+      "wins": 51,
+      "losses": 16,
+      "character": "MARTH",
+      "secondary": "CAPTAIN_FALCON",
+      "tertiary": "FOX",
+      "rankChange": "new",
+      "eloDelta": 0
     },
     {
       "tag": "bearo",
