@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1794866818987,
+  "lastUpdated": 1794867718953,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -149,19 +149,6 @@
       "rankChange": "new"
     },
     {
-      "tag": "beer woman",
-      "code": "GLG#888",
-      "rank": "Platinum 2",
-      "elo": 1893.257728703081,
-      "wins": 83,
-      "losses": 99,
-      "character": "YOSHI",
-      "secondary": "",
-      "tertiary": "",
-      "eloDelta": 0,
-      "rankChange": "new"
-    },
-    {
       "tag": "Lamp",
       "code": "LAMP#844",
       "rank": "Platinum 2",
@@ -170,6 +157,19 @@
       "losses": 3,
       "character": "FOX",
       "secondary": "CAPTAIN_FALCON",
+      "tertiary": "",
+      "eloDelta": 0,
+      "rankChange": "new"
+    },
+    {
+      "tag": "beer woman",
+      "code": "GLG#888",
+      "rank": "Platinum 2",
+      "elo": 1873.6252962623266,
+      "wins": 83,
+      "losses": 100,
+      "character": "YOSHI",
+      "secondary": "",
       "tertiary": "",
       "eloDelta": 0,
       "rankChange": "new"
