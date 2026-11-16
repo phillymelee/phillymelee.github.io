@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1794848344111,
+  "lastUpdated": 1794849181703,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -26,19 +26,6 @@
       "tertiary": "",
       "eloDelta": 0,
       "rankChange": "new"
-    },
-    {
-      "tag": "stupid song",
-      "code": "BATS#195",
-      "rank": "Grandmaster",
-      "elo": 2593.4499579277635,
-      "wins": 213,
-      "losses": 53,
-      "character": "PEACH",
-      "secondary": "SHEIK",
-      "tertiary": "FOX",
-      "rankChange": "new",
-      "eloDelta": 0
     },
     {
       "tag": "WiiSportsResort",
