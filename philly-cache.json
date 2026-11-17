@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1794867718953,
+  "lastUpdated": 1794882119020,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -31,15 +31,15 @@
       "tag": "WiiSportsResort",
       "code": "HOBORG#0",
       "rank": "Grandmaster",
-      "elo": 2446.29687888285,
-      "wins": 18,
+      "elo": 2454.9266822926893,
+      "wins": 19,
       "losses": 0,
       "character": "LUIGI",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 2446.29687888285,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": 8.629803409839496,
+      "rankChange": "up"
     },
     {
       "tag": "Estelle Bright",
