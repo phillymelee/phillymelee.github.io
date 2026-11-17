@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1794897420031,
+  "lastUpdated": 1794906422253,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -11,8 +11,9 @@
       "character": "MARTH",
       "secondary": "",
       "tertiary": "",
-      "eloDelta": 0,
-      "rankChange": "new"
+      "yesterdayElo": 2637.4042897885147,
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "WiiSportsResort",
@@ -24,9 +25,9 @@
       "character": "LUIGI",
       "secondary": "",
       "tertiary": "",
-      "yesterdayElo": 2446.29687888285,
-      "eloDelta": 168.56484034409368,
-      "rankChange": "up"
+      "yesterdayElo": 2614.8617192269435,
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "MarxistxAthena",
@@ -38,8 +39,9 @@
       "character": "JIGGLYPUFF",
       "secondary": "",
       "tertiary": "",
-      "eloDelta": 0,
-      "rankChange": "new"
+      "yesterdayElo": 2599.0948754311507,
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "Estelle Bright",
@@ -51,8 +53,9 @@
       "character": "SHEIK",
       "secondary": "SAMUS",
       "tertiary": "",
-      "eloDelta": 0,
-      "rankChange": "new"
+      "yesterdayElo": 2383.548707982678,
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "Mr. Grabs",
@@ -65,8 +68,8 @@
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 2329.6826817499523,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "Sabrina Conrad",
@@ -79,8 +82,8 @@
       "secondary": "CAPTAIN_FALCON",
       "tertiary": "FOX",
       "yesterdayElo": 2300.277589681961,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "bearo",
@@ -93,8 +96,8 @@
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 2224.2135732367424,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "no homie stocks",
@@ -106,8 +109,9 @@
       "character": "FOX",
       "secondary": "",
       "tertiary": "",
-      "eloDelta": 0,
-      "rankChange": "new"
+      "yesterdayElo": 2212.810218427224,
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "Jerry Childless",
@@ -119,8 +123,9 @@
       "character": "MARTH",
       "secondary": "",
       "tertiary": "",
-      "eloDelta": 0,
-      "rankChange": "new"
+      "yesterdayElo": 2207.74524763069,
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "Seed",
@@ -132,8 +137,9 @@
       "character": "FOX",
       "secondary": "",
       "tertiary": "",
-      "eloDelta": 0,
-      "rankChange": "new"
+      "yesterdayElo": 2057.144076636152,
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "SnoopingAsUsual",
@@ -145,8 +151,9 @@
       "character": "MARTH",
       "secondary": "PEACH",
       "tertiary": "",
-      "eloDelta": 0,
-      "rankChange": "new"
+      "yesterdayElo": 2052.723870508289,
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "Dr. Pissbucket",
@@ -158,8 +165,9 @@
       "character": "DR_MARIO",
       "secondary": "",
       "tertiary": "",
-      "eloDelta": 0,
-      "rankChange": "new"
+      "yesterdayElo": 1955.9975101059201,
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "Lamp",
@@ -171,8 +179,9 @@
       "character": "FOX",
       "secondary": "CAPTAIN_FALCON",
       "tertiary": "",
-      "eloDelta": 0,
-      "rankChange": "new"
+      "yesterdayElo": 1884.8177161651488,
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "beer woman",
@@ -184,8 +193,9 @@
       "character": "YOSHI",
       "secondary": "",
       "tertiary": "",
-      "eloDelta": 0,
-      "rankChange": "new"
+      "yesterdayElo": 1873.6252962623266,
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "GOOD MORNING",
@@ -197,8 +207,9 @@
       "character": "FOX",
       "secondary": "",
       "tertiary": "",
-      "eloDelta": 0,
-      "rankChange": "new"
+      "yesterdayElo": 1824.8488427386692,
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "travy",
@@ -210,8 +221,9 @@
       "character": "ICE_CLIMBERS",
       "secondary": "",
       "tertiary": "",
-      "eloDelta": 0,
-      "rankChange": "new"
+      "yesterdayElo": 1713.603591729123,
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "ZawsonTruu",
@@ -223,8 +235,9 @@
       "character": "JIGGLYPUFF",
       "secondary": "NESS",
       "tertiary": "GANONDORF",
-      "eloDelta": 0,
-      "rankChange": "new"
+      "yesterdayElo": 1660.5366976515697,
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "mage",
@@ -236,8 +249,9 @@
       "character": "CAPTAIN_FALCON",
       "secondary": "",
       "tertiary": "",
-      "eloDelta": 0,
-      "rankChange": "new"
+      "yesterdayElo": 1640.2931790911896,
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "Jay Birdie",
@@ -249,8 +263,9 @@
       "character": "MARTH",
       "secondary": "",
       "tertiary": "",
-      "eloDelta": 0,
-      "rankChange": "new"
+      "yesterdayElo": 1619.6365550285223,
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "DestinyOfMarge",
@@ -262,8 +277,9 @@
       "character": "MARTH",
       "secondary": "",
       "tertiary": "",
-      "eloDelta": 0,
-      "rankChange": "new"
+      "yesterdayElo": 1528.1066906733477,
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": ".",
@@ -275,8 +291,9 @@
       "character": "CAPTAIN_FALCON",
       "secondary": "",
       "tertiary": "",
-      "eloDelta": 0,
-      "rankChange": "new"
+      "yesterdayElo": 1453.182561460797,
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "Bair Trap",
@@ -288,8 +305,9 @@
       "character": "SHEIK",
       "secondary": "",
       "tertiary": "",
-      "eloDelta": 0,
-      "rankChange": "new"
+      "yesterdayElo": 1451.591331771751,
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "phillyhoops",
@@ -302,8 +320,8 @@
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1330.349998607026,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "Kirar",
@@ -315,8 +333,9 @@
       "character": "KIRBY",
       "secondary": "",
       "tertiary": "",
-      "eloDelta": 0,
-      "rankChange": "new"
+      "yesterdayElo": 1322.429711833262,
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "Granblue Player",
@@ -328,8 +347,9 @@
       "character": "FALCO",
       "secondary": "MARTH",
       "tertiary": "FOX",
-      "eloDelta": 0,
-      "rankChange": "new"
+      "yesterdayElo": 1307.430062028945,
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "Skypiea",
@@ -341,8 +361,9 @@
       "character": "YOSHI",
       "secondary": "",
       "tertiary": "",
-      "eloDelta": 0,
-      "rankChange": "new"
+      "yesterdayElo": 1281.7464113764372,
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "Tortuga (NERD)",
@@ -354,8 +375,9 @@
       "character": "MARTH",
       "secondary": "FOX",
       "tertiary": "CAPTAIN_FALCON",
-      "eloDelta": 0,
-      "rankChange": "new"
+      "yesterdayElo": 1239.9136897093135,
+      "rankChange": "none",
+      "eloDelta": 0
     },
     {
       "tag": "Philadelphia",
@@ -367,8 +389,9 @@
       "character": "ICE_CLIMBERS",
       "secondary": "CAPTAIN_FALCON",
       "tertiary": "FALCO",
-      "eloDelta": 0,
-      "rankChange": "new"
+      "yesterdayElo": 1235.041416534157,
+      "rankChange": "none",
+      "eloDelta": 0
     }
   ]
 }
