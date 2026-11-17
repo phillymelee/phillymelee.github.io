@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1794887521126,
+  "lastUpdated": 1794888420933,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -15,6 +15,20 @@
       "rankChange": "new"
     },
     {
+      "tag": "WiiSportsResort",
+      "code": "HOBORG#0",
+      "rank": "Grandmaster",
+      "elo": 2614.8617192269435,
+      "wins": 32,
+      "losses": 1,
+      "character": "LUIGI",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 2446.29687888285,
+      "eloDelta": 168.56484034409368,
+      "rankChange": "up"
+    },
+    {
       "tag": "MarxistxAthena",
       "code": "ATHENA#0",
       "rank": "Grandmaster",
@@ -26,20 +40,6 @@
       "tertiary": "",
       "eloDelta": 0,
       "rankChange": "new"
-    },
-    {
-      "tag": "WiiSportsResort",
-      "code": "HOBORG#0",
-      "rank": "Grandmaster",
-      "elo": 2584.9886134799826,
-      "wins": 30,
-      "losses": 1,
-      "character": "LUIGI",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 2446.29687888285,
-      "eloDelta": 138.69173459713284,
-      "rankChange": "up"
     },
     {
       "tag": "Estelle Bright",
