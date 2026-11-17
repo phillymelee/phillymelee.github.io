@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1794888420933,
+  "lastUpdated": 1794896520182,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -95,6 +95,19 @@
       "yesterdayElo": 2224.2135732367424,
       "eloDelta": 0,
       "rankChange": "none"
+    },
+    {
+      "tag": "no homie stocks",
+      "code": "JKJ#603",
+      "rank": "Master 1",
+      "elo": 2212.810218427224,
+      "wins": 10,
+      "losses": 8,
+      "character": "FOX",
+      "secondary": "",
+      "tertiary": "",
+      "rankChange": "new",
+      "eloDelta": 0
     },
     {
       "tag": "Jerry Childless",
