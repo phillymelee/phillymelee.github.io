@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1794886619068,
+  "lastUpdated": 1794887521126,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -31,14 +31,14 @@
       "tag": "WiiSportsResort",
       "code": "HOBORG#0",
       "rank": "Grandmaster",
-      "elo": 2545.9495101179596,
-      "wins": 28,
+      "elo": 2584.9886134799826,
+      "wins": 30,
       "losses": 1,
       "character": "LUIGI",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 2446.29687888285,
-      "eloDelta": 99.65263123510977,
+      "eloDelta": 138.69173459713284,
       "rankChange": "up"
     },
     {
@@ -230,8 +230,8 @@
       "tag": "Jay Birdie",
       "code": "JAYB#135",
       "rank": "Gold 2",
-      "elo": 1596.9414518809094,
-      "wins": 22,
+      "elo": 1619.6365550285223,
+      "wins": 23,
       "losses": 13,
       "character": "MARTH",
       "secondary": "",
