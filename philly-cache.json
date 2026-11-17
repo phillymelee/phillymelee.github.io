@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1794896520182,
+  "lastUpdated": 1794897420031,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -106,8 +106,8 @@
       "character": "FOX",
       "secondary": "",
       "tertiary": "",
-      "rankChange": "new",
-      "eloDelta": 0
+      "eloDelta": 0,
+      "rankChange": "new"
     },
     {
       "tag": "Jerry Childless",
