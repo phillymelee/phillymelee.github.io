@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1794975709341,
+  "lastUpdated": 1794976609421,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -47,14 +47,14 @@
       "tag": "Rean Schwarzer",
       "code": "PORK#582",
       "rank": "Grandmaster",
-      "elo": 2342.592693729804,
+      "elo": 2332.7609377247327,
       "wins": 31,
-      "losses": 16,
+      "losses": 17,
       "character": "SHEIK",
       "secondary": "SAMUS",
       "tertiary": "",
       "yesterdayElo": 2383.548707982678,
-      "eloDelta": -40.956014252873956,
+      "eloDelta": -50.78777025794534,
       "rankChange": "down"
     },
     {
