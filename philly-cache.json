@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1794982009396,
+  "lastUpdated": 1794982911322,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -44,6 +44,20 @@
       "rankChange": "none"
     },
     {
+      "tag": "Sabrina Conrad",
+      "code": "LYNX#718",
+      "rank": "Grandmaster",
+      "elo": 2368.8422429698776,
+      "wins": 56,
+      "losses": 17,
+      "character": "MARTH",
+      "secondary": "CAPTAIN_FALCON",
+      "tertiary": "FOX",
+      "yesterdayElo": 2300.277589681961,
+      "eloDelta": 68.56465328791637,
+      "rankChange": "up"
+    },
+    {
       "tag": "Rean Schwarzer",
       "code": "PORK#582",
       "rank": "Grandmaster",
@@ -56,20 +70,6 @@
       "yesterdayElo": 2383.548707982678,
       "eloDelta": -25.717315351233538,
       "rankChange": "down"
-    },
-    {
-      "tag": "Sabrina Conrad",
-      "code": "LYNX#718",
-      "rank": "Grandmaster",
-      "elo": 2353.2801222479347,
-      "wins": 55,
-      "losses": 17,
-      "character": "MARTH",
-      "secondary": "CAPTAIN_FALCON",
-      "tertiary": "FOX",
-      "yesterdayElo": 2300.277589681961,
-      "eloDelta": 53.002532565973524,
-      "rankChange": "up"
     },
     {
       "tag": "Mr. Grabs",
