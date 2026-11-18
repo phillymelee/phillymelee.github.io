@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1794980211538,
+  "lastUpdated": 1794981109432,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -58,6 +58,20 @@
       "rankChange": "down"
     },
     {
+      "tag": "Sabrina Conrad",
+      "code": "LYNX#718",
+      "rank": "Grandmaster",
+      "elo": 2349.9632807081875,
+      "wins": 54,
+      "losses": 16,
+      "character": "MARTH",
+      "secondary": "CAPTAIN_FALCON",
+      "tertiary": "FOX",
+      "yesterdayElo": 2300.277589681961,
+      "eloDelta": 49.68569102622632,
+      "rankChange": "up"
+    },
+    {
       "tag": "Mr. Grabs",
       "code": "STAV#838",
       "rank": "Grandmaster",
@@ -70,20 +84,6 @@
       "yesterdayElo": 2329.6826817499523,
       "eloDelta": 0,
       "rankChange": "none"
-    },
-    {
-      "tag": "Sabrina Conrad",
-      "code": "LYNX#718",
-      "rank": "Grandmaster",
-      "elo": 2321.4274785086623,
-      "wins": 52,
-      "losses": 16,
-      "character": "MARTH",
-      "secondary": "CAPTAIN_FALCON",
-      "tertiary": "FOX",
-      "yesterdayElo": 2300.277589681961,
-      "eloDelta": 21.149888826701044,
-      "rankChange": "up"
     },
     {
       "tag": "bearo",
