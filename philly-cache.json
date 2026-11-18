@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1794972111446,
+  "lastUpdated": 1794973009274,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -16,6 +16,20 @@
       "rankChange": "none"
     },
     {
+      "tag": "MarxistxAthena",
+      "code": "ATHENA#0",
+      "rank": "Grandmaster",
+      "elo": 2624.2348044446835,
+      "wins": 156,
+      "losses": 41,
+      "character": "JIGGLYPUFF",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 2599.0948754311507,
+      "eloDelta": 25.139929013532765,
+      "rankChange": "up"
+    },
+    {
       "tag": "HOBORG",
       "code": "HOBORG#0",
       "rank": "Grandmaster",
@@ -28,20 +42,6 @@
       "yesterdayElo": 2614.8617192269435,
       "eloDelta": 0,
       "rankChange": "none"
-    },
-    {
-      "tag": "MarxistxAthena",
-      "code": "ATHENA#0",
-      "rank": "Grandmaster",
-      "elo": 2610.2280978644517,
-      "wins": 155,
-      "losses": 41,
-      "character": "JIGGLYPUFF",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 2599.0948754311507,
-      "eloDelta": 11.133222433300944,
-      "rankChange": "up"
     },
     {
       "tag": "Rean Schwarzer",
@@ -198,31 +198,31 @@
       "rankChange": "none"
     },
     {
-      "tag": "GOOD MORNING",
-      "code": "SWAG#128",
-      "rank": "Platinum 1",
-      "elo": 1813.6907461924493,
-      "wins": 37,
-      "losses": 42,
-      "character": "FOX",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 1824.8488427386692,
-      "eloDelta": -11.158096546219895,
-      "rankChange": "down"
-    },
-    {
       "tag": "ZawsonTruu",
       "code": "DAWSON#0",
-      "rank": "Gold 3",
-      "elo": 1731.432565701401,
-      "wins": 7,
+      "rank": "Platinum 2",
+      "elo": 1862.851592535099,
+      "wins": 9,
       "losses": 11,
       "character": "JIGGLYPUFF",
       "secondary": "NESS",
       "tertiary": "GANONDORF",
       "yesterdayElo": 1660.5366976515697,
-      "eloDelta": 70.89586804983128,
+      "eloDelta": 202.31489488352918,
+      "rankChange": "up"
+    },
+    {
+      "tag": "GOOD MORNING",
+      "code": "SWAG#128",
+      "rank": "Platinum 1",
+      "elo": 1828.5265231396015,
+      "wins": 38,
+      "losses": 42,
+      "character": "FOX",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 1824.8488427386692,
+      "eloDelta": 3.6776804009323314,
       "rankChange": "up"
     },
     {
