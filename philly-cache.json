@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1794993711813,
+  "lastUpdated": 1795041628417,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -212,18 +212,18 @@
       "rankChange": "none"
     },
     {
-      "tag": "GOOD MORNING",
+      "tag": "marth player",
       "code": "SWAG#128",
       "rank": "Platinum 1",
-      "elo": 1797.6863075204556,
-      "wins": 41,
+      "elo": 1808.4890064533392,
+      "wins": 42,
       "losses": 48,
       "character": "FOX",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1797.6863075204556,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": 10.802698932883686,
+      "rankChange": "up"
     },
     {
       "tag": "travy",
@@ -242,16 +242,16 @@
     {
       "tag": "Jay Birdie",
       "code": "JAYB#135",
-      "rank": "Gold 3",
-      "elo": 1657.868795738086,
-      "wins": 26,
-      "losses": 14,
+      "rank": "Gold 2",
+      "elo": 1650.2892359316738,
+      "wins": 28,
+      "losses": 16,
       "character": "MARTH",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1657.868795738086,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": -7.579559806412135,
+      "rankChange": "down"
     },
     {
       "tag": "mage",
