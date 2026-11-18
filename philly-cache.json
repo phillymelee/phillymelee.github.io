@@ -1,18 +1,18 @@
 {
-  "lastUpdated": 1794973910737,
+  "lastUpdated": 1794974809296,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
       "code": "ATHENA#0",
       "rank": "Grandmaster",
-      "elo": 2650.95956542978,
-      "wins": 158,
+      "elo": 2669.1597284180116,
+      "wins": 160,
       "losses": 41,
       "character": "JIGGLYPUFF",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 2599.0948754311507,
-      "eloDelta": 51.864689998629274,
+      "eloDelta": 70.06485298686084,
       "rankChange": "up"
     },
     {
@@ -47,15 +47,15 @@
       "tag": "Rean Schwarzer",
       "code": "PORK#582",
       "rank": "Grandmaster",
-      "elo": 2383.548707982678,
+      "elo": 2367.920138082126,
       "wins": 31,
-      "losses": 14,
+      "losses": 15,
       "character": "SHEIK",
       "secondary": "SAMUS",
       "tertiary": "",
       "yesterdayElo": 2383.548707982678,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": -15.628569900552066,
+      "rankChange": "down"
     },
     {
       "tag": "Mr. Grabs",
@@ -215,14 +215,14 @@
       "tag": "GOOD MORNING",
       "code": "SWAG#128",
       "rank": "Platinum 1",
-      "elo": 1832.5048206702995,
-      "wins": 39,
-      "losses": 43,
+      "elo": 1835.5607683857888,
+      "wins": 40,
+      "losses": 44,
       "character": "FOX",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1824.8488427386692,
-      "eloDelta": 7.655977931630332,
+      "eloDelta": 10.711925647119642,
       "rankChange": "up"
     },
     {
@@ -240,6 +240,20 @@
       "rankChange": "none"
     },
     {
+      "tag": "Jay Birdie",
+      "code": "JAYB#135",
+      "rank": "Gold 3",
+      "elo": 1658.2603835340592,
+      "wins": 25,
+      "losses": 13,
+      "character": "MARTH",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 1619.6365550285223,
+      "eloDelta": 38.62382850553695,
+      "rankChange": "up"
+    },
+    {
       "tag": "mage",
       "code": "MAGE#880",
       "rank": "Gold 2",
@@ -250,20 +264,6 @@
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1640.2931790911896,
-      "eloDelta": 0,
-      "rankChange": "none"
-    },
-    {
-      "tag": "Jay Birdie",
-      "code": "JAYB#135",
-      "rank": "Gold 2",
-      "elo": 1619.6365550285223,
-      "wins": 23,
-      "losses": 13,
-      "character": "MARTH",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 1619.6365550285223,
       "eloDelta": 0,
       "rankChange": "none"
     },
