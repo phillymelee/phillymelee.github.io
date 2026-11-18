@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1794966709237,
+  "lastUpdated": 1794967609355,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -33,18 +33,18 @@
       "tag": "MarxistxAthena",
       "code": "ATHENA#0",
       "rank": "Grandmaster",
-      "elo": 2603.3065213063937,
-      "wins": 153,
+      "elo": 2604.160456439075,
+      "wins": 154,
       "losses": 41,
       "character": "JIGGLYPUFF",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 2599.0948754311507,
-      "eloDelta": 4.2116458752429935,
+      "eloDelta": 5.065581007924266,
       "rankChange": "up"
     },
     {
-      "tag": "Estelle Bright",
+      "tag": "Rean Schwarzer",
       "code": "PORK#582",
       "rank": "Grandmaster",
       "elo": 2383.548707982678,
