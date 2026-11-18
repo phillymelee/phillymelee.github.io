@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1794976609421,
+  "lastUpdated": 1794977509816,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -47,14 +47,14 @@
       "tag": "Rean Schwarzer",
       "code": "PORK#582",
       "rank": "Grandmaster",
-      "elo": 2332.7609377247327,
-      "wins": 31,
+      "elo": 2346.5524443369345,
+      "wins": 32,
       "losses": 17,
       "character": "SHEIK",
       "secondary": "SAMUS",
       "tertiary": "",
       "yesterdayElo": 2383.548707982678,
-      "eloDelta": -50.78777025794534,
+      "eloDelta": -36.99626364574351,
       "rankChange": "down"
     },
     {
@@ -215,15 +215,15 @@
       "tag": "GOOD MORNING",
       "code": "SWAG#128",
       "rank": "Platinum 1",
-      "elo": 1838.27450708063,
+      "elo": 1819.9098782416947,
       "wins": 41,
-      "losses": 46,
+      "losses": 47,
       "character": "FOX",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1824.8488427386692,
-      "eloDelta": 13.425664341960783,
-      "rankChange": "up"
+      "eloDelta": -4.9389644969744495,
+      "rankChange": "down"
     },
     {
       "tag": "travy",
