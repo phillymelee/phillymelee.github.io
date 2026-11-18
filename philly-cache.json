@@ -1,6 +1,20 @@
 {
-  "lastUpdated": 1794973009274,
+  "lastUpdated": 1794973910737,
   "playerRanks": [
+    {
+      "tag": "MarxistxAthena",
+      "code": "ATHENA#0",
+      "rank": "Grandmaster",
+      "elo": 2650.95956542978,
+      "wins": 158,
+      "losses": 41,
+      "character": "JIGGLYPUFF",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 2599.0948754311507,
+      "eloDelta": 51.864689998629274,
+      "rankChange": "up"
+    },
     {
       "tag": "Jude :3",
       "code": "GREC#116",
@@ -14,20 +28,6 @@
       "yesterdayElo": 2637.4042897885147,
       "eloDelta": 0,
       "rankChange": "none"
-    },
-    {
-      "tag": "MarxistxAthena",
-      "code": "ATHENA#0",
-      "rank": "Grandmaster",
-      "elo": 2624.2348044446835,
-      "wins": 156,
-      "losses": 41,
-      "character": "JIGGLYPUFF",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 2599.0948754311507,
-      "eloDelta": 25.139929013532765,
-      "rankChange": "up"
     },
     {
       "tag": "HOBORG",
@@ -215,14 +215,14 @@
       "tag": "GOOD MORNING",
       "code": "SWAG#128",
       "rank": "Platinum 1",
-      "elo": 1828.5265231396015,
-      "wins": 38,
-      "losses": 42,
+      "elo": 1832.5048206702995,
+      "wins": 39,
+      "losses": 43,
       "character": "FOX",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1824.8488427386692,
-      "eloDelta": 3.6776804009323314,
+      "eloDelta": 7.655977931630332,
       "rankChange": "up"
     },
     {
