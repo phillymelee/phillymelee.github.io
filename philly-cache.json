@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1794974809296,
+  "lastUpdated": 1794975709341,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -47,14 +47,14 @@
       "tag": "Rean Schwarzer",
       "code": "PORK#582",
       "rank": "Grandmaster",
-      "elo": 2367.920138082126,
+      "elo": 2342.592693729804,
       "wins": 31,
-      "losses": 15,
+      "losses": 16,
       "character": "SHEIK",
       "secondary": "SAMUS",
       "tertiary": "",
       "yesterdayElo": 2383.548707982678,
-      "eloDelta": -15.628569900552066,
+      "eloDelta": -40.956014252873956,
       "rankChange": "down"
     },
     {
@@ -215,14 +215,14 @@
       "tag": "GOOD MORNING",
       "code": "SWAG#128",
       "rank": "Platinum 1",
-      "elo": 1835.5607683857888,
-      "wins": 40,
-      "losses": 44,
+      "elo": 1838.27450708063,
+      "wins": 41,
+      "losses": 46,
       "character": "FOX",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1824.8488427386692,
-      "eloDelta": 10.711925647119642,
+      "eloDelta": 13.425664341960783,
       "rankChange": "up"
     },
     {
@@ -243,14 +243,14 @@
       "tag": "Jay Birdie",
       "code": "JAYB#135",
       "rank": "Gold 3",
-      "elo": 1658.2603835340592,
-      "wins": 25,
-      "losses": 13,
+      "elo": 1657.868795738086,
+      "wins": 26,
+      "losses": 14,
       "character": "MARTH",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1619.6365550285223,
-      "eloDelta": 38.62382850553695,
+      "eloDelta": 38.23224070956371,
       "rankChange": "up"
     },
     {
