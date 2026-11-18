@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1794982911322,
+  "lastUpdated": 1794983811341,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -47,14 +47,14 @@
       "tag": "Sabrina Conrad",
       "code": "LYNX#718",
       "rank": "Grandmaster",
-      "elo": 2368.8422429698776,
-      "wins": 56,
+      "elo": 2392.073488523575,
+      "wins": 57,
       "losses": 17,
       "character": "MARTH",
       "secondary": "CAPTAIN_FALCON",
       "tertiary": "FOX",
       "yesterdayElo": 2300.277589681961,
-      "eloDelta": 68.56465328791637,
+      "eloDelta": 91.79589884161396,
       "rankChange": "up"
     },
     {
