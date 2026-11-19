@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795105208431,
+  "lastUpdated": 1795106106680,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -383,14 +383,14 @@
       "tag": "Tortuga (NERD)",
       "code": "TREE#521",
       "rank": "Silver 2",
-      "elo": 1213.310693692332,
-      "wins": 11,
-      "losses": 14,
+      "elo": 1226.6437162757484,
+      "wins": 12,
+      "losses": 15,
       "character": "MARTH",
       "secondary": "FOX",
       "tertiary": "CAPTAIN_FALCON",
       "yesterdayElo": 1239.9136897093135,
-      "eloDelta": -26.60299601698148,
+      "eloDelta": -13.269973433565156,
       "rankChange": "down"
     }
   ]
