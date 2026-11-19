@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795131462820,
+  "lastUpdated": 1795132362726,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -198,6 +198,20 @@
       "rankChange": "none"
     },
     {
+      "tag": "team zain",
+      "code": "GLG#888",
+      "rank": "Platinum 1",
+      "elo": 1809.2453620163333,
+      "wins": 88,
+      "losses": 108,
+      "character": "YOSHI",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 1784.827188974367,
+      "eloDelta": 24.418173041966384,
+      "rankChange": "up"
+    },
+    {
       "tag": "marth player",
       "code": "SWAG#128",
       "rank": "Platinum 1",
@@ -210,20 +224,6 @@
       "yesterdayElo": 1802.4516700337886,
       "eloDelta": -2.944689090494194,
       "rankChange": "down"
-    },
-    {
-      "tag": "team zain",
-      "code": "GLG#888",
-      "rank": "Platinum 1",
-      "elo": 1792.9036146439155,
-      "wins": 87,
-      "losses": 108,
-      "character": "YOSHI",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 1784.827188974367,
-      "eloDelta": 8.076425669548598,
-      "rankChange": "up"
     },
     {
       "tag": "travy",
