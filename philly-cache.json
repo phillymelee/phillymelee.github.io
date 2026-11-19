@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795122311869,
+  "lastUpdated": 1795125165501,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -198,6 +198,20 @@
       "rankChange": "none"
     },
     {
+      "tag": "marth player",
+      "code": "SWAG#128",
+      "rank": "Platinum 1",
+      "elo": 1806.0098481384084,
+      "wins": 53,
+      "losses": 58,
+      "character": "FOX",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 1802.4516700337886,
+      "eloDelta": 3.5581781046198557,
+      "rankChange": "up"
+    },
+    {
       "tag": "beer woman",
       "code": "GLG#888",
       "rank": "Platinum 1",
@@ -210,20 +224,6 @@
       "yesterdayElo": 1784.827188974367,
       "eloDelta": 0,
       "rankChange": "none"
-    },
-    {
-      "tag": "marth player",
-      "code": "SWAG#128",
-      "rank": "Platinum 1",
-      "elo": 1781.6079416811917,
-      "wins": 49,
-      "losses": 56,
-      "character": "FOX",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 1802.4516700337886,
-      "eloDelta": -20.843728352596827,
-      "rankChange": "down"
     },
     {
       "tag": "travy",
