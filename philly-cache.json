@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795120509706,
+  "lastUpdated": 1795121411848,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -215,14 +215,14 @@
       "tag": "marth player",
       "code": "SWAG#128",
       "rank": "Platinum 1",
-      "elo": 1774.833270534646,
+      "elo": 1754.039772738152,
       "wins": 47,
-      "losses": 55,
+      "losses": 56,
       "character": "FOX",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1802.4516700337886,
-      "eloDelta": -27.61839949914247,
+      "eloDelta": -48.41189729563666,
       "rankChange": "down"
     },
     {
@@ -270,16 +270,16 @@
     {
       "tag": "DestinyOfMarge",
       "code": "SLAP#325",
-      "rank": "Gold 1",
-      "elo": 1528.1066906733477,
-      "wins": 8,
+      "rank": "Gold 2",
+      "elo": 1564.562150799593,
+      "wins": 9,
       "losses": 4,
       "character": "MARTH",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1528.1066906733477,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": 36.45546012624527,
+      "rankChange": "up"
     },
     {
       "tag": ".",
