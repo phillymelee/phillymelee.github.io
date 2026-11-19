@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795107906661,
+  "lastUpdated": 1795118706957,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -201,15 +201,15 @@
       "tag": "marth player",
       "code": "SWAG#128",
       "rank": "Platinum 1",
-      "elo": 1802.4516700337886,
-      "wins": 44,
-      "losses": 52,
+      "elo": 1792.9466542349585,
+      "wins": 45,
+      "losses": 53,
       "character": "FOX",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1802.4516700337886,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": -9.505015798830073,
+      "rankChange": "down"
     },
     {
       "tag": "beer woman",
