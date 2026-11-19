@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795119607004,
+  "lastUpdated": 1795120509706,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -215,14 +215,14 @@
       "tag": "marth player",
       "code": "SWAG#128",
       "rank": "Platinum 1",
-      "elo": 1777.8035158429557,
-      "wins": 46,
-      "losses": 54,
+      "elo": 1774.833270534646,
+      "wins": 47,
+      "losses": 55,
       "character": "FOX",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1802.4516700337886,
-      "eloDelta": -24.648154190832884,
+      "eloDelta": -27.61839949914247,
       "rankChange": "down"
     },
     {
