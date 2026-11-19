@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795126062735,
+  "lastUpdated": 1795127862793,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -212,18 +212,18 @@
       "rankChange": "down"
     },
     {
-      "tag": "beer woman",
+      "tag": "team zain",
       "code": "GLG#888",
       "rank": "Platinum 1",
-      "elo": 1784.827188974367,
+      "elo": 1775.5378441326143,
       "wins": 85,
-      "losses": 107,
+      "losses": 108,
       "character": "YOSHI",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1784.827188974367,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": -9.289344841752609,
+      "rankChange": "down"
     },
     {
       "tag": "travy",
