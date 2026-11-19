@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795080006339,
+  "lastUpdated": 1795101607249,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -89,15 +89,15 @@
       "tag": "bearo",
       "code": "BEAR#192",
       "rank": "Master 1",
-      "elo": 2253.324442260561,
-      "wins": 26,
-      "losses": 21,
+      "elo": 2245.614669848492,
+      "wins": 27,
+      "losses": 22,
       "character": "ROY",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 2253.324442260561,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": -7.7097724120690145,
+      "rankChange": "down"
     },
     {
       "tag": "no homie stocks",
