@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795101607249,
+  "lastUpdated": 1795102506732,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -89,14 +89,14 @@
       "tag": "bearo",
       "code": "BEAR#192",
       "rank": "Master 1",
-      "elo": 2245.614669848492,
-      "wins": 27,
+      "elo": 2251.2735969905084,
+      "wins": 28,
       "losses": 22,
       "character": "ROY",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 2253.324442260561,
-      "eloDelta": -7.7097724120690145,
+      "eloDelta": -2.0508452700528323,
       "rankChange": "down"
     },
     {
