@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795041969630,
+  "lastUpdated": 1795067405611,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -184,20 +184,6 @@
       "rankChange": "none"
     },
     {
-      "tag": "beer woman",
-      "code": "GLG#888",
-      "rank": "Platinum 2",
-      "elo": 1873.6252962623266,
-      "wins": 83,
-      "losses": 100,
-      "character": "YOSHI",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 1873.6252962623266,
-      "eloDelta": 0,
-      "rankChange": "none"
-    },
-    {
       "tag": "ZawsonTruu",
       "code": "DAWSON#0",
       "rank": "Platinum 2",
@@ -215,15 +201,29 @@
       "tag": "marth player",
       "code": "SWAG#128",
       "rank": "Platinum 1",
-      "elo": 1803.6346927842487,
-      "wins": 42,
-      "losses": 49,
+      "elo": 1802.4516700337886,
+      "wins": 44,
+      "losses": 52,
       "character": "FOX",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1797.6863075204556,
-      "eloDelta": 5.9483852637931705,
+      "eloDelta": 4.765362513333002,
       "rankChange": "up"
+    },
+    {
+      "tag": "beer woman",
+      "code": "GLG#888",
+      "rank": "Platinum 1",
+      "elo": 1784.827188974367,
+      "wins": 85,
+      "losses": 107,
+      "character": "YOSHI",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 1873.6252962623266,
+      "eloDelta": -88.79810728795974,
+      "rankChange": "down"
     },
     {
       "tag": "travy",
@@ -240,20 +240,6 @@
       "rankChange": "none"
     },
     {
-      "tag": "Jay Birdie",
-      "code": "JAYB#135",
-      "rank": "Gold 2",
-      "elo": 1650.2892359316738,
-      "wins": 28,
-      "losses": 16,
-      "character": "MARTH",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 1657.868795738086,
-      "eloDelta": -7.579559806412135,
-      "rankChange": "down"
-    },
-    {
       "tag": "mage",
       "code": "MAGE#880",
       "rank": "Gold 2",
@@ -266,6 +252,20 @@
       "yesterdayElo": 1640.2931790911896,
       "eloDelta": 0,
       "rankChange": "none"
+    },
+    {
+      "tag": "Jay Birdie",
+      "code": "JAYB#135",
+      "rank": "Gold 2",
+      "elo": 1626.4373283030977,
+      "wins": 28,
+      "losses": 17,
+      "character": "MARTH",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 1657.868795738086,
+      "eloDelta": -31.431467434988235,
+      "rankChange": "down"
     },
     {
       "tag": "DestinyOfMarge",
@@ -310,20 +310,6 @@
       "rankChange": "none"
     },
     {
-      "tag": "phillyhoops",
-      "code": "PHL#712",
-      "rank": "Silver 3",
-      "elo": 1330.349998607026,
-      "wins": 2,
-      "losses": 4,
-      "character": "MARTH",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 1330.349998607026,
-      "eloDelta": 0,
-      "rankChange": "none"
-    },
-    {
       "tag": "Kirar",
       "code": "CHMA#229",
       "rank": "Silver 3",
@@ -350,6 +336,20 @@
       "yesterdayElo": 1307.430062028945,
       "eloDelta": 0,
       "rankChange": "none"
+    },
+    {
+      "tag": "phillyhoops",
+      "code": "PHL#712",
+      "rank": "Silver 2",
+      "elo": 1304.2902440979958,
+      "wins": 2,
+      "losses": 5,
+      "character": "MARTH",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 1330.349998607026,
+      "eloDelta": -26.0597545090302,
+      "rankChange": "down"
     },
     {
       "tag": "Skypiea",
