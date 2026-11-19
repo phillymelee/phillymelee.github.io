@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795106106680,
+  "lastUpdated": 1795107006652,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -366,6 +366,20 @@
       "rankChange": "none"
     },
     {
+      "tag": "Tortuga (NERD)",
+      "code": "TREE#521",
+      "rank": "Silver 2",
+      "elo": 1259.6565138022265,
+      "wins": 13,
+      "losses": 15,
+      "character": "MARTH",
+      "secondary": "FOX",
+      "tertiary": "CAPTAIN_FALCON",
+      "yesterdayElo": 1239.9136897093135,
+      "eloDelta": 19.742824092912997,
+      "rankChange": "up"
+    },
+    {
       "tag": "Philadelphia",
       "code": "JEAN#0",
       "rank": "Silver 2",
@@ -378,20 +392,6 @@
       "yesterdayElo": 1235.041416534157,
       "eloDelta": 0,
       "rankChange": "none"
-    },
-    {
-      "tag": "Tortuga (NERD)",
-      "code": "TREE#521",
-      "rank": "Silver 2",
-      "elo": 1226.6437162757484,
-      "wins": 12,
-      "losses": 15,
-      "character": "MARTH",
-      "secondary": "FOX",
-      "tertiary": "CAPTAIN_FALCON",
-      "yesterdayElo": 1239.9136897093135,
-      "eloDelta": -13.269973433565156,
-      "rankChange": "down"
     }
   ]
 }
