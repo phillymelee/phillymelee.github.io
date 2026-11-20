@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795136865094,
+  "lastUpdated": 1795137765309,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -158,15 +158,15 @@
     {
       "tag": "Dr. Pissbucket",
       "code": "BORG#345",
-      "rank": "Platinum 3",
-      "elo": 1998.714185098618,
-      "wins": 17,
+      "rank": "Diamond 1",
+      "elo": 2020.2453450796088,
+      "wins": 18,
       "losses": 12,
       "character": "DR_MARIO",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1955.9975101059201,
-      "eloDelta": 42.71667499269779,
+      "eloDelta": 64.24783497368867,
       "rankChange": "up"
     },
     {
@@ -201,15 +201,15 @@
       "tag": "marth player",
       "code": "SWAG#128",
       "rank": "Platinum 1",
-      "elo": 1799.5069809432944,
-      "wins": 53,
+      "elo": 1818.3939910801241,
+      "wins": 55,
       "losses": 59,
       "character": "FOX",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1802.4516700337886,
-      "eloDelta": -2.944689090494194,
-      "rankChange": "down"
+      "eloDelta": 15.942321046335564,
+      "rankChange": "up"
     },
     {
       "tag": "team zain",
@@ -282,7 +282,7 @@
       "rankChange": "up"
     },
     {
-      "tag": ".",
+      "tag": "Arc!",
       "code": "LUNA#660",
       "rank": "Gold 1",
       "elo": 1453.182561460797,
