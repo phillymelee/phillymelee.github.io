@@ -1,20 +1,6 @@
 {
-  "lastUpdated": 1795144065174,
+  "lastUpdated": 1795144964917,
   "playerRanks": [
-    {
-      "tag": "MarxistxAthena",
-      "code": "ATHENA#0",
-      "rank": "Grandmaster",
-      "elo": 2643.829883319032,
-      "wins": 161,
-      "losses": 43,
-      "character": "JIGGLYPUFF",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 2669.1597284180116,
-      "eloDelta": -25.329845098979604,
-      "rankChange": "down"
-    },
     {
       "tag": "Jude :3",
       "code": "GREC#116",
@@ -42,6 +28,20 @@
       "yesterdayElo": 2614.8617192269435,
       "eloDelta": 0,
       "rankChange": "none"
+    },
+    {
+      "tag": "MarxistxAthena",
+      "code": "ATHENA#0",
+      "rank": "Grandmaster",
+      "elo": 2610.1106559694163,
+      "wins": 161,
+      "losses": 45,
+      "character": "JIGGLYPUFF",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 2669.1597284180116,
+      "eloDelta": -59.049072448595325,
+      "rankChange": "down"
     },
     {
       "tag": "Sabrina Conrad",
