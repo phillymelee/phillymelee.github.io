@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795139565009,
+  "lastUpdated": 1795140465403,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -215,14 +215,14 @@
       "tag": "team zain",
       "code": "GLG#888",
       "rank": "Platinum 1",
-      "elo": 1782.151303497129,
+      "elo": 1771.3190222458943,
       "wins": 88,
-      "losses": 110,
+      "losses": 111,
       "character": "YOSHI",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1784.827188974367,
-      "eloDelta": -2.675885477237898,
+      "eloDelta": -13.508166728472588,
       "rankChange": "down"
     },
     {
@@ -257,15 +257,15 @@
       "tag": "Jay Birdie",
       "code": "JAYB#135",
       "rank": "Gold 2",
-      "elo": 1626.4373283030977,
+      "elo": 1612.710999485749,
       "wins": 28,
-      "losses": 17,
+      "losses": 18,
       "character": "MARTH",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1626.4373283030977,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": -13.726328817348758,
+      "rankChange": "down"
     },
     {
       "tag": "DestinyOfMarge",
@@ -279,6 +279,20 @@
       "tertiary": "",
       "yesterdayElo": 1528.1066906733477,
       "eloDelta": 36.45546012624527,
+      "rankChange": "up"
+    },
+    {
+      "tag": "Granblue Player",
+      "code": "RAGN#406",
+      "rank": "Gold 1",
+      "elo": 1513.5612934098015,
+      "wins": 4,
+      "losses": 6,
+      "character": "FALCO",
+      "secondary": "MARTH",
+      "tertiary": "FOX",
+      "yesterdayElo": 1307.430062028945,
+      "eloDelta": 206.13123138085643,
       "rankChange": "up"
     },
     {
@@ -308,20 +322,6 @@
       "yesterdayElo": 1451.591331771751,
       "eloDelta": 0,
       "rankChange": "none"
-    },
-    {
-      "tag": "Granblue Player",
-      "code": "RAGN#406",
-      "rank": "Silver 3",
-      "elo": 1399.5917319397017,
-      "wins": 3,
-      "losses": 6,
-      "character": "FALCO",
-      "secondary": "MARTH",
-      "tertiary": "FOX",
-      "yesterdayElo": 1307.430062028945,
-      "eloDelta": 92.1616699107567,
-      "rankChange": "up"
     },
     {
       "tag": "Kirar",
