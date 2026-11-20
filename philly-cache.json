@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795137765309,
+  "lastUpdated": 1795138664943,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -324,20 +324,6 @@
       "rankChange": "none"
     },
     {
-      "tag": "Granblue Player",
-      "code": "RAGN#406",
-      "rank": "Silver 2",
-      "elo": 1307.430062028945,
-      "wins": 2,
-      "losses": 4,
-      "character": "FALCO",
-      "secondary": "MARTH",
-      "tertiary": "FOX",
-      "yesterdayElo": 1307.430062028945,
-      "eloDelta": 0,
-      "rankChange": "none"
-    },
-    {
       "tag": "phillyhoops",
       "code": "PHL#712",
       "rank": "Silver 2",
@@ -350,6 +336,20 @@
       "yesterdayElo": 1304.2902440979958,
       "eloDelta": 0,
       "rankChange": "none"
+    },
+    {
+      "tag": "Granblue Player",
+      "code": "RAGN#406",
+      "rank": "Silver 2",
+      "elo": 1295.134368488779,
+      "wins": 2,
+      "losses": 5,
+      "character": "FALCO",
+      "secondary": "MARTH",
+      "tertiary": "FOX",
+      "yesterdayElo": 1307.430062028945,
+      "eloDelta": -12.295693540165985,
+      "rankChange": "down"
     },
     {
       "tag": "Skypiea",
