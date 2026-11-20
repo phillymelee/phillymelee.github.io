@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795166565204,
+  "lastUpdated": 1795207967206,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -88,16 +88,16 @@
     {
       "tag": "bearo",
       "code": "BEAR#192",
-      "rank": "Master 1",
-      "elo": 2251.2735969905084,
-      "wins": 28,
+      "rank": "Master 2",
+      "elo": 2279.680988554962,
+      "wins": 29,
       "losses": 22,
       "character": "ROY",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 2251.2735969905084,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": 28.40739156445352,
+      "rankChange": "up"
     },
     {
       "tag": "no homie stocks",
