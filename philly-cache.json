@@ -1,19 +1,19 @@
 {
-  "lastUpdated": 1795134162957,
+  "lastUpdated": 1795135065179,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
       "code": "ATHENA#0",
       "rank": "Grandmaster",
-      "elo": 2669.1597284180116,
-      "wins": 160,
+      "elo": 2685.1774361021876,
+      "wins": 161,
       "losses": 41,
       "character": "JIGGLYPUFF",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 2669.1597284180116,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": 16.017707684176003,
+      "rankChange": "up"
     },
     {
       "tag": "Jude :3",
