@@ -1,19 +1,19 @@
 {
-  "lastUpdated": 1795143163196,
+  "lastUpdated": 1795144065174,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
       "code": "ATHENA#0",
       "rank": "Grandmaster",
-      "elo": 2685.1774361021876,
+      "elo": 2643.829883319032,
       "wins": 161,
-      "losses": 41,
+      "losses": 43,
       "character": "JIGGLYPUFF",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 2669.1597284180116,
-      "eloDelta": 16.017707684176003,
-      "rankChange": "up"
+      "eloDelta": -25.329845098979604,
+      "rankChange": "down"
     },
     {
       "tag": "Jude :3",
@@ -226,6 +226,20 @@
       "rankChange": "down"
     },
     {
+      "tag": "Arc!",
+      "code": "LUNA#660",
+      "rank": "Platinum 1",
+      "elo": 1768.147734240678,
+      "wins": 7,
+      "losses": 3,
+      "character": "CAPTAIN_FALCON",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 1453.182561460797,
+      "eloDelta": 314.96517277988096,
+      "rankChange": "up"
+    },
+    {
       "tag": "travy",
       "code": "TRAVY#0",
       "rank": "Gold 3",
@@ -238,20 +252,6 @@
       "yesterdayElo": 1713.603591729123,
       "eloDelta": 0,
       "rankChange": "none"
-    },
-    {
-      "tag": "Arc!",
-      "code": "LUNA#660",
-      "rank": "Gold 3",
-      "elo": 1694.2858758461603,
-      "wins": 6,
-      "losses": 3,
-      "character": "CAPTAIN_FALCON",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 1453.182561460797,
-      "eloDelta": 241.10331438536332,
-      "rankChange": "up"
     },
     {
       "tag": "mage",
