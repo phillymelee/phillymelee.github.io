@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795141365240,
+  "lastUpdated": 1795142263039,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -215,14 +215,14 @@
       "tag": "team zain",
       "code": "GLG#888",
       "rank": "Platinum 1",
-      "elo": 1771.3190222458943,
-      "wins": 88,
-      "losses": 111,
+      "elo": 1775.9007924821417,
+      "wins": 89,
+      "losses": 112,
       "character": "YOSHI",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1784.827188974367,
-      "eloDelta": -13.508166728472588,
+      "eloDelta": -8.926396492225194,
       "rankChange": "down"
     },
     {
@@ -238,6 +238,20 @@
       "yesterdayElo": 1713.603591729123,
       "eloDelta": 0,
       "rankChange": "none"
+    },
+    {
+      "tag": "Arc!",
+      "code": "LUNA#660",
+      "rank": "Gold 2",
+      "elo": 1648.4786989591885,
+      "wins": 5,
+      "losses": 2,
+      "character": "CAPTAIN_FALCON",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 1453.182561460797,
+      "eloDelta": 195.29613749839154,
+      "rankChange": "up"
     },
     {
       "tag": "mage",
@@ -266,20 +280,6 @@
       "yesterdayElo": 1626.4373283030977,
       "eloDelta": -13.726328817348758,
       "rankChange": "down"
-    },
-    {
-      "tag": "Arc!",
-      "code": "LUNA#660",
-      "rank": "Gold 2",
-      "elo": 1567.3307795375854,
-      "wins": 4,
-      "losses": 2,
-      "character": "CAPTAIN_FALCON",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 1453.182561460797,
-      "eloDelta": 114.14821807678845,
-      "rankChange": "up"
     },
     {
       "tag": "DestinyOfMarge",
