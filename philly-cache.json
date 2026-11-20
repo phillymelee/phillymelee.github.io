@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795138664943,
+  "lastUpdated": 1795139565009,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -201,14 +201,14 @@
       "tag": "marth player",
       "code": "SWAG#128",
       "rank": "Platinum 1",
-      "elo": 1818.3939910801241,
-      "wins": 55,
+      "elo": 1832.472365531492,
+      "wins": 56,
       "losses": 59,
       "character": "FOX",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1802.4516700337886,
-      "eloDelta": 15.942321046335564,
+      "eloDelta": 30.0206954977034,
       "rankChange": "up"
     },
     {
@@ -310,6 +310,20 @@
       "rankChange": "none"
     },
     {
+      "tag": "Granblue Player",
+      "code": "RAGN#406",
+      "rank": "Silver 3",
+      "elo": 1399.5917319397017,
+      "wins": 3,
+      "losses": 6,
+      "character": "FALCO",
+      "secondary": "MARTH",
+      "tertiary": "FOX",
+      "yesterdayElo": 1307.430062028945,
+      "eloDelta": 92.1616699107567,
+      "rankChange": "up"
+    },
+    {
       "tag": "Kirar",
       "code": "CHMA#229",
       "rank": "Silver 3",
@@ -336,20 +350,6 @@
       "yesterdayElo": 1304.2902440979958,
       "eloDelta": 0,
       "rankChange": "none"
-    },
-    {
-      "tag": "Granblue Player",
-      "code": "RAGN#406",
-      "rank": "Silver 2",
-      "elo": 1295.134368488779,
-      "wins": 2,
-      "losses": 5,
-      "character": "FALCO",
-      "secondary": "MARTH",
-      "tertiary": "FOX",
-      "yesterdayElo": 1307.430062028945,
-      "eloDelta": -12.295693540165985,
-      "rankChange": "down"
     },
     {
       "tag": "Skypiea",
