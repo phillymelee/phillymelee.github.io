@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795142263039,
+  "lastUpdated": 1795143163196,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -242,15 +242,15 @@
     {
       "tag": "Arc!",
       "code": "LUNA#660",
-      "rank": "Gold 2",
-      "elo": 1648.4786989591885,
-      "wins": 5,
-      "losses": 2,
+      "rank": "Gold 3",
+      "elo": 1694.2858758461603,
+      "wins": 6,
+      "losses": 3,
       "character": "CAPTAIN_FALCON",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1453.182561460797,
-      "eloDelta": 195.29613749839154,
+      "eloDelta": 241.10331438536332,
       "rankChange": "up"
     },
     {
