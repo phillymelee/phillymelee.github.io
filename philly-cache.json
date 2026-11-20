@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795133262769,
+  "lastUpdated": 1795134162957,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -215,15 +215,15 @@
       "tag": "team zain",
       "code": "GLG#888",
       "rank": "Platinum 1",
-      "elo": 1793.598890580919,
+      "elo": 1782.151303497129,
       "wins": 88,
-      "losses": 109,
+      "losses": 110,
       "character": "YOSHI",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1784.827188974367,
-      "eloDelta": 8.771701606552142,
-      "rankChange": "up"
+      "eloDelta": -2.675885477237898,
+      "rankChange": "down"
     },
     {
       "tag": "travy",
