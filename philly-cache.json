@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795135065179,
+  "lastUpdated": 1795136865094,
   "playerRanks": [
     {
       "tag": "MarxistxAthena",
@@ -159,15 +159,15 @@
       "tag": "Dr. Pissbucket",
       "code": "BORG#345",
       "rank": "Platinum 3",
-      "elo": 1955.9975101059201,
-      "wins": 15,
+      "elo": 1998.714185098618,
+      "wins": 17,
       "losses": 12,
       "character": "DR_MARIO",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1955.9975101059201,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": 42.71667499269779,
+      "rankChange": "up"
     },
     {
       "tag": "Lamp",
