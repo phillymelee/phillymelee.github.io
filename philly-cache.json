@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795227765380,
+  "lastUpdated": 1795229565382,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -44,6 +44,20 @@
       "rankChange": "none"
     },
     {
+      "tag": "Rean Schwarzer",
+      "code": "PORK#582",
+      "rank": "Grandmaster",
+      "elo": 2403.3493780599874,
+      "wins": 35,
+      "losses": 18,
+      "character": "SHEIK",
+      "secondary": "SAMUS",
+      "tertiary": "",
+      "yesterdayElo": 2357.8313926314445,
+      "eloDelta": 45.51798542854294,
+      "rankChange": "up"
+    },
+    {
       "tag": "Sabrina Conrad",
       "code": "LYNX#718",
       "rank": "Grandmaster",
@@ -56,20 +70,6 @@
       "yesterdayElo": 2392.073488523575,
       "eloDelta": 0,
       "rankChange": "none"
-    },
-    {
-      "tag": "Rean Schwarzer",
-      "code": "PORK#582",
-      "rank": "Grandmaster",
-      "elo": 2371.326802925655,
-      "wins": 34,
-      "losses": 18,
-      "character": "SHEIK",
-      "secondary": "SAMUS",
-      "tertiary": "",
-      "yesterdayElo": 2357.8313926314445,
-      "eloDelta": 13.495410294210615,
-      "rankChange": "up"
     },
     {
       "tag": "Mr. Grabs",
