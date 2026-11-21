@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795222367046,
+  "lastUpdated": 1795227765380,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -61,15 +61,15 @@
       "tag": "Rean Schwarzer",
       "code": "PORK#582",
       "rank": "Grandmaster",
-      "elo": 2357.8313926314445,
-      "wins": 33,
+      "elo": 2371.326802925655,
+      "wins": 34,
       "losses": 18,
       "character": "SHEIK",
       "secondary": "SAMUS",
       "tertiary": "",
       "yesterdayElo": 2357.8313926314445,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": 13.495410294210615,
+      "rankChange": "up"
     },
     {
       "tag": "Mr. Grabs",
