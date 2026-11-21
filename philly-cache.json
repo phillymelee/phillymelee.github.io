@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795218767098,
+  "lastUpdated": 1795219667058,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -215,15 +215,15 @@
       "tag": "team zain",
       "code": "GLG#888",
       "rank": "Platinum 1",
-      "elo": 1775.0043830864902,
-      "wins": 90,
+      "elo": 1791.8728392116593,
+      "wins": 91,
       "losses": 114,
       "character": "YOSHI",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1775.9007924821417,
-      "eloDelta": -0.8964093956515171,
-      "rankChange": "down"
+      "eloDelta": 15.972046729517615,
+      "rankChange": "up"
     },
     {
       "tag": "Arc!",
