@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795389768763,
+  "lastUpdated": 1795390668727,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -61,14 +61,14 @@
       "tag": "Rean Schwarzer",
       "code": "PORK#582",
       "rank": "Grandmaster",
-      "elo": 2387.4875552490157,
-      "wins": 38,
-      "losses": 21,
+      "elo": 2380.2408456092962,
+      "wins": 39,
+      "losses": 22,
       "character": "SHEIK",
       "secondary": "SAMUS",
       "tertiary": "",
       "yesterdayElo": 2396.5502243502997,
-      "eloDelta": -9.062669101283973,
+      "eloDelta": -16.309378741003457,
       "rankChange": "down"
     },
     {
@@ -215,15 +215,15 @@
       "tag": "TheElectrician?",
       "code": "GLG#888",
       "rank": "Platinum 1",
-      "elo": 1769.5344856696208,
-      "wins": 102,
-      "losses": 128,
+      "elo": 1773.187682899131,
+      "wins": 103,
+      "losses": 129,
       "character": "YOSHI",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1769.5344856696208,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": 3.6531972295101696,
+      "rankChange": "up"
     },
     {
       "tag": "Arc!",
