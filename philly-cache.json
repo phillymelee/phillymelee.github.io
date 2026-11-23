@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795468071878,
+  "lastUpdated": 1795468971997,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -198,6 +198,20 @@
       "rankChange": "none"
     },
     {
+      "tag": "TheElectrician?",
+      "code": "GLG#888",
+      "rank": "Platinum 1",
+      "elo": 1840.374447364236,
+      "wins": 116,
+      "losses": 136,
+      "character": "YOSHI",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 1770.2919481970957,
+      "eloDelta": 70.08249916714021,
+      "rankChange": "up"
+    },
+    {
       "tag": "marth player",
       "code": "SWAG#128",
       "rank": "Platinum 1",
@@ -210,20 +224,6 @@
       "yesterdayElo": 1832.472365531492,
       "eloDelta": 0,
       "rankChange": "none"
-    },
-    {
-      "tag": "TheElectrician?",
-      "code": "GLG#888",
-      "rank": "Platinum 1",
-      "elo": 1815.2475797600696,
-      "wins": 114,
-      "losses": 136,
-      "character": "YOSHI",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 1770.2919481970957,
-      "eloDelta": 44.95563156297385,
-      "rankChange": "up"
     },
     {
       "tag": "Arc!",
