@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795391570711,
+  "lastUpdated": 1795392470863,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -44,6 +44,20 @@
       "rankChange": "none"
     },
     {
+      "tag": "Rean Schwarzer",
+      "code": "PORK#582",
+      "rank": "Grandmaster",
+      "elo": 2392.2693657621494,
+      "wins": 41,
+      "losses": 22,
+      "character": "SHEIK",
+      "secondary": "SAMUS",
+      "tertiary": "",
+      "yesterdayElo": 2396.5502243502997,
+      "eloDelta": -4.280858588150295,
+      "rankChange": "down"
+    },
+    {
       "tag": "Sabrina Conrad",
       "code": "LYNX#718",
       "rank": "Grandmaster",
@@ -56,20 +70,6 @@
       "yesterdayElo": 2392.073488523575,
       "eloDelta": 0,
       "rankChange": "none"
-    },
-    {
-      "tag": "Rean Schwarzer",
-      "code": "PORK#582",
-      "rank": "Grandmaster",
-      "elo": 2389.3496252402547,
-      "wins": 40,
-      "losses": 22,
-      "character": "SHEIK",
-      "secondary": "SAMUS",
-      "tertiary": "",
-      "yesterdayElo": 2396.5502243502997,
-      "eloDelta": -7.200599110045005,
-      "rankChange": "down"
     },
     {
       "tag": "Mr. Grabs",
@@ -212,20 +212,6 @@
       "rankChange": "none"
     },
     {
-      "tag": "TheElectrician?",
-      "code": "GLG#888",
-      "rank": "Platinum 1",
-      "elo": 1773.187682899131,
-      "wins": 103,
-      "losses": 129,
-      "character": "YOSHI",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 1769.5344856696208,
-      "eloDelta": 3.6531972295101696,
-      "rankChange": "up"
-    },
-    {
       "tag": "Arc!",
       "code": "LUNA#660",
       "rank": "Platinum 1",
@@ -238,6 +224,20 @@
       "yesterdayElo": 1768.147734240678,
       "eloDelta": 0,
       "rankChange": "none"
+    },
+    {
+      "tag": "TheElectrician?",
+      "code": "GLG#888",
+      "rank": "Platinum 1",
+      "elo": 1759.9060565609116,
+      "wins": 103,
+      "losses": 130,
+      "character": "YOSHI",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 1769.5344856696208,
+      "eloDelta": -9.62842910870927,
+      "rankChange": "down"
     },
     {
       "tag": "travy",
