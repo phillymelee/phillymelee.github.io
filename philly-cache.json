@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795462669846,
+  "lastUpdated": 1795463569802,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -212,20 +212,6 @@
       "rankChange": "none"
     },
     {
-      "tag": "TheElectrician?",
-      "code": "GLG#888",
-      "rank": "Platinum 1",
-      "elo": 1776.6497369829713,
-      "wins": 107,
-      "losses": 132,
-      "character": "YOSHI",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 1770.2919481970957,
-      "eloDelta": 6.3577887858755275,
-      "rankChange": "up"
-    },
-    {
       "tag": "Arc!",
       "code": "LUNA#660",
       "rank": "Platinum 1",
@@ -238,6 +224,20 @@
       "yesterdayElo": 1768.147734240678,
       "eloDelta": 0,
       "rankChange": "none"
+    },
+    {
+      "tag": "TheElectrician?",
+      "code": "GLG#888",
+      "rank": "Platinum 1",
+      "elo": 1758.8479058625048,
+      "wins": 107,
+      "losses": 133,
+      "character": "YOSHI",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 1770.2919481970957,
+      "eloDelta": -11.444042334590904,
+      "rankChange": "down"
     },
     {
       "tag": "travy",
