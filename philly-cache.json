@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795396070904,
+  "lastUpdated": 1795401468976,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -285,15 +285,15 @@
       "tag": "DestinyOfMarge",
       "code": "SLAP#325",
       "rank": "Gold 2",
-      "elo": 1564.562150799593,
-      "wins": 9,
+      "elo": 1585.6264232777298,
+      "wins": 10,
       "losses": 4,
       "character": "MARTH",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1564.562150799593,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": 21.0642724781369,
+      "rankChange": "up"
     },
     {
       "tag": "Granblue Player",
