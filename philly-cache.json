@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795548172254,
+  "lastUpdated": 1795549072170,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -200,15 +200,15 @@
     {
       "tag": "TheElectrician?",
       "code": "GLG#888",
-      "rank": "Platinum 1",
-      "elo": 1833.051660436298,
-      "wins": 125,
+      "rank": "Platinum 2",
+      "elo": 1860.6500751654403,
+      "wins": 127,
       "losses": 144,
       "character": "YOSHI",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1861.2519497895828,
-      "eloDelta": -28.20028935328469,
+      "eloDelta": -0.6018746241425106,
       "rankChange": "down"
     },
     {
