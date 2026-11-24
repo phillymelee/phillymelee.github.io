@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795512172588,
+  "lastUpdated": 1795541872011,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -201,15 +201,15 @@
       "tag": "TheElectrician?",
       "code": "GLG#888",
       "rank": "Platinum 2",
-      "elo": 1861.2519497895828,
-      "wins": 118,
+      "elo": 1862.2254597320311,
+      "wins": 119,
       "losses": 137,
       "character": "YOSHI",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1861.2519497895828,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": 0.9735099424483451,
+      "rankChange": "up"
     },
     {
       "tag": "marth player",
@@ -336,6 +336,19 @@
       "yesterdayElo": 1451.591331771751,
       "eloDelta": 0,
       "rankChange": "none"
+    },
+    {
+      "tag": "maebi",
+      "code": "MAYB#108",
+      "rank": "Silver 3",
+      "elo": 1422.4392898132742,
+      "wins": 26,
+      "losses": 29,
+      "character": "PEACH",
+      "secondary": "",
+      "tertiary": "",
+      "rankChange": "new",
+      "eloDelta": 0
     },
     {
       "tag": "Kirar",
