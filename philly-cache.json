@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795470769942,
+  "lastUpdated": 1795482470185,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -366,6 +366,20 @@
       "rankChange": "none"
     },
     {
+      "tag": "Tortuga (NERD)",
+      "code": "TREE#521",
+      "rank": "Silver 2",
+      "elo": 1287.5262218409778,
+      "wins": 15,
+      "losses": 16,
+      "character": "MARTH",
+      "secondary": "FOX",
+      "tertiary": "CAPTAIN_FALCON",
+      "yesterdayElo": 1257.4373754109515,
+      "eloDelta": 30.08884643002625,
+      "rankChange": "up"
+    },
+    {
       "tag": "Skypiea",
       "code": "SKYE#503",
       "rank": "Silver 2",
@@ -376,20 +390,6 @@
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1281.7464113764372,
-      "eloDelta": 0,
-      "rankChange": "none"
-    },
-    {
-      "tag": "Tortuga (NERD)",
-      "code": "TREE#521",
-      "rank": "Silver 2",
-      "elo": 1257.4373754109515,
-      "wins": 14,
-      "losses": 16,
-      "character": "MARTH",
-      "secondary": "FOX",
-      "tertiary": "CAPTAIN_FALCON",
-      "yesterdayElo": 1257.4373754109515,
       "eloDelta": 0,
       "rankChange": "none"
     }
