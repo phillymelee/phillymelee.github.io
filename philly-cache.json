@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795541872011,
+  "lastUpdated": 1795542772100,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -184,6 +184,20 @@
       "rankChange": "none"
     },
     {
+      "tag": "TheElectrician?",
+      "code": "GLG#888",
+      "rank": "Platinum 2",
+      "elo": 1880.9512909254356,
+      "wins": 121,
+      "losses": 138,
+      "character": "YOSHI",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 1861.2519497895828,
+      "eloDelta": 19.69934113585282,
+      "rankChange": "up"
+    },
+    {
       "tag": "ZawsonTruu",
       "code": "DAWSON#0",
       "rank": "Platinum 2",
@@ -196,20 +210,6 @@
       "yesterdayElo": 1862.851592535099,
       "eloDelta": 0,
       "rankChange": "none"
-    },
-    {
-      "tag": "TheElectrician?",
-      "code": "GLG#888",
-      "rank": "Platinum 2",
-      "elo": 1862.2254597320311,
-      "wins": 119,
-      "losses": 137,
-      "character": "YOSHI",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 1861.2519497895828,
-      "eloDelta": 0.9735099424483451,
-      "rankChange": "up"
     },
     {
       "tag": "marth player",
@@ -347,8 +347,8 @@
       "character": "PEACH",
       "secondary": "",
       "tertiary": "",
-      "rankChange": "new",
-      "eloDelta": 0
+      "eloDelta": 0,
+      "rankChange": "new"
     },
     {
       "tag": "Kirar",
