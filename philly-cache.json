@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795637273616,
+  "lastUpdated": 1795638173663,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -44,6 +44,20 @@
       "rankChange": "none"
     },
     {
+      "tag": "Sabrina Conrad",
+      "code": "LYNX#718",
+      "rank": "Grandmaster",
+      "elo": 2454.9230164606497,
+      "wins": 60,
+      "losses": 17,
+      "character": "MARTH",
+      "secondary": "CAPTAIN_FALCON",
+      "tertiary": "FOX",
+      "yesterdayElo": 2392.073488523575,
+      "eloDelta": 62.84952793707453,
+      "rankChange": "up"
+    },
+    {
       "tag": "Silver Will",
       "code": "PORK#582",
       "rank": "Grandmaster",
@@ -56,20 +70,6 @@
       "yesterdayElo": 2447.6326455154203,
       "eloDelta": 0,
       "rankChange": "none"
-    },
-    {
-      "tag": "Sabrina Conrad",
-      "code": "LYNX#718",
-      "rank": "Grandmaster",
-      "elo": 2419.1154774723063,
-      "wins": 58,
-      "losses": 17,
-      "character": "MARTH",
-      "secondary": "CAPTAIN_FALCON",
-      "tertiary": "FOX",
-      "yesterdayElo": 2392.073488523575,
-      "eloDelta": 27.04198894873116,
-      "rankChange": "up"
     },
     {
       "tag": "Mr. Grabs",
