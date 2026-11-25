@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795584172658,
+  "lastUpdated": 1795585072613,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -170,31 +170,31 @@
       "rankChange": "none"
     },
     {
-      "tag": "travy",
-      "code": "TRAVY#0",
-      "rank": "Platinum 2",
-      "elo": 1925.0189092259304,
-      "wins": 13,
-      "losses": 2,
-      "character": "ICE_CLIMBERS",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 1713.603591729123,
-      "eloDelta": 211.41531749680735,
-      "rankChange": "up"
-    },
-    {
       "tag": "TheElectrician?",
       "code": "GLG#888",
       "rank": "Platinum 2",
-      "elo": 1888.768955602408,
-      "wins": 132,
-      "losses": 147,
+      "elo": 1894.1882154962575,
+      "wins": 133,
+      "losses": 148,
       "character": "YOSHI",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1861.2519497895828,
-      "eloDelta": 27.51700581282512,
+      "eloDelta": 32.9362657066747,
+      "rankChange": "up"
+    },
+    {
+      "tag": "travy",
+      "code": "TRAVY#0",
+      "rank": "Platinum 2",
+      "elo": 1893.5575279589661,
+      "wins": 13,
+      "losses": 3,
+      "character": "ICE_CLIMBERS",
+      "secondary": "LUIGI",
+      "tertiary": "",
+      "yesterdayElo": 1713.603591729123,
+      "eloDelta": 179.95393622984307,
       "rankChange": "up"
     },
     {
