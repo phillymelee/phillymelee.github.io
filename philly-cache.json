@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795572472560,
+  "lastUpdated": 1795573372669,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -242,16 +242,16 @@
     {
       "tag": "travy",
       "code": "TRAVY#0",
-      "rank": "Gold 3",
-      "elo": 1713.603591729123,
-      "wins": 7,
+      "rank": "Platinum 1",
+      "elo": 1751.9965291707763,
+      "wins": 8,
       "losses": 2,
       "character": "ICE_CLIMBERS",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1713.603591729123,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": 38.3929374416532,
+      "rankChange": "up"
     },
     {
       "tag": "mage",
