@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795634573491,
+  "lastUpdated": 1795636373550,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -254,6 +254,20 @@
       "rankChange": "none"
     },
     {
+      "tag": "Jay Birdie",
+      "code": "JAYB#135",
+      "rank": "Gold 2",
+      "elo": 1641.435334464375,
+      "wins": 38,
+      "losses": 27,
+      "character": "MARTH",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 1569.3317115986517,
+      "eloDelta": 72.10362286572331,
+      "rankChange": "up"
+    },
+    {
       "tag": "mage",
       "code": "MAGE#880",
       "rank": "Gold 2",
@@ -266,20 +280,6 @@
       "yesterdayElo": 1640.2931790911896,
       "eloDelta": 0,
       "rankChange": "none"
-    },
-    {
-      "tag": "Jay Birdie",
-      "code": "JAYB#135",
-      "rank": "Gold 2",
-      "elo": 1597.0215550189687,
-      "wins": 36,
-      "losses": 27,
-      "character": "MARTH",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 1569.3317115986517,
-      "eloDelta": 27.689843420316947,
-      "rankChange": "up"
     },
     {
       "tag": "DestinyOfMarge",
