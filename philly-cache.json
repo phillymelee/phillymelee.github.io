@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795622873349,
+  "lastUpdated": 1795623773352,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -170,6 +170,20 @@
       "rankChange": "none"
     },
     {
+      "tag": "ZawsonTruu",
+      "code": "DAWSON#0",
+      "rank": "Platinum 3",
+      "elo": 1930.5152514471706,
+      "wins": 11,
+      "losses": 12,
+      "character": "JIGGLYPUFF",
+      "secondary": "NESS",
+      "tertiary": "GANONDORF",
+      "yesterdayElo": 1862.851592535099,
+      "eloDelta": 67.6636589120717,
+      "rankChange": "up"
+    },
+    {
       "tag": "TheElectrician?",
       "code": "GLG#888",
       "rank": "Platinum 2",
@@ -210,20 +224,6 @@
       "yesterdayElo": 1884.8177161651488,
       "eloDelta": 0,
       "rankChange": "none"
-    },
-    {
-      "tag": "ZawsonTruu",
-      "code": "DAWSON#0",
-      "rank": "Platinum 2",
-      "elo": 1846.2219487753457,
-      "wins": 9,
-      "losses": 12,
-      "character": "JIGGLYPUFF",
-      "secondary": "NESS",
-      "tertiary": "GANONDORF",
-      "yesterdayElo": 1862.851592535099,
-      "eloDelta": -16.629643759753208,
-      "rankChange": "down"
     },
     {
       "tag": "marth player",
@@ -271,14 +271,14 @@
       "tag": "Jay Birdie",
       "code": "JAYB#135",
       "rank": "Gold 2",
-      "elo": 1600.8004820435897,
+      "elo": 1597.0215550189687,
       "wins": 36,
-      "losses": 26,
+      "losses": 27,
       "character": "MARTH",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1569.3317115986517,
-      "eloDelta": 31.468770444937945,
+      "eloDelta": 27.689843420316947,
       "rankChange": "up"
     },
     {
