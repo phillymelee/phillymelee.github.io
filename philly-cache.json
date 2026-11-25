@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795558972359,
+  "lastUpdated": 1795569772580,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -284,16 +284,16 @@
     {
       "tag": "Jay Birdie",
       "code": "JAYB#135",
-      "rank": "Gold 2",
-      "elo": 1563.1438152337396,
+      "rank": "Gold 1",
+      "elo": 1530.1651452301235,
       "wins": 28,
-      "losses": 21,
+      "losses": 23,
       "character": "MARTH",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1563.1438152337396,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": -32.978670003616116,
+      "rankChange": "down"
     },
     {
       "tag": "Granblue Player",
