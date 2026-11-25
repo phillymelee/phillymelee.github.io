@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795576972675,
+  "lastUpdated": 1795577872606,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -47,14 +47,14 @@
       "tag": "Silver Will",
       "code": "PORK#582",
       "rank": "Grandmaster",
-      "elo": 2440.431617040847,
-      "wins": 45,
-      "losses": 22,
+      "elo": 2433.313526752192,
+      "wins": 46,
+      "losses": 23,
       "character": "SHEIK",
       "secondary": "SAMUS",
       "tertiary": "",
       "yesterdayElo": 2392.2693657621494,
-      "eloDelta": 48.16225127869757,
+      "eloDelta": 41.044160990042656,
       "rankChange": "up"
     },
     {
@@ -198,20 +198,6 @@
       "rankChange": "none"
     },
     {
-      "tag": "TheElectrician?",
-      "code": "GLG#888",
-      "rank": "Platinum 2",
-      "elo": 1844.86654306891,
-      "wins": 128,
-      "losses": 146,
-      "character": "YOSHI",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 1861.2519497895828,
-      "eloDelta": -16.38540672067279,
-      "rankChange": "down"
-    },
-    {
       "tag": "travy",
       "code": "TRAVY#0",
       "rank": "Platinum 1",
@@ -224,6 +210,20 @@
       "yesterdayElo": 1713.603591729123,
       "eloDelta": 124.01965629521783,
       "rankChange": "up"
+    },
+    {
+      "tag": "TheElectrician?",
+      "code": "GLG#888",
+      "rank": "Platinum 1",
+      "elo": 1836.5643419352336,
+      "wins": 128,
+      "losses": 147,
+      "character": "YOSHI",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 1861.2519497895828,
+      "eloDelta": -24.687607854349153,
+      "rankChange": "down"
     },
     {
       "tag": "marth player",
