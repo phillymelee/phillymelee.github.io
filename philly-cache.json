@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795621973369,
+  "lastUpdated": 1795622873349,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -215,15 +215,15 @@
       "tag": "ZawsonTruu",
       "code": "DAWSON#0",
       "rank": "Platinum 2",
-      "elo": 1862.851592535099,
+      "elo": 1846.2219487753457,
       "wins": 9,
-      "losses": 11,
+      "losses": 12,
       "character": "JIGGLYPUFF",
       "secondary": "NESS",
       "tertiary": "GANONDORF",
       "yesterdayElo": 1862.851592535099,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": -16.629643759753208,
+      "rankChange": "down"
     },
     {
       "tag": "marth player",
@@ -268,6 +268,20 @@
       "rankChange": "none"
     },
     {
+      "tag": "Jay Birdie",
+      "code": "JAYB#135",
+      "rank": "Gold 2",
+      "elo": 1600.8004820435897,
+      "wins": 36,
+      "losses": 26,
+      "character": "MARTH",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 1569.3317115986517,
+      "eloDelta": 31.468770444937945,
+      "rankChange": "up"
+    },
+    {
       "tag": "DestinyOfMarge",
       "code": "SLAP#325",
       "rank": "Gold 2",
@@ -280,20 +294,6 @@
       "yesterdayElo": 1585.073224802922,
       "eloDelta": 0,
       "rankChange": "none"
-    },
-    {
-      "tag": "Jay Birdie",
-      "code": "JAYB#135",
-      "rank": "Gold 2",
-      "elo": 1583.8264687347487,
-      "wins": 34,
-      "losses": 26,
-      "character": "MARTH",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 1569.3317115986517,
-      "eloDelta": 14.49475713609695,
-      "rankChange": "up"
     },
     {
       "tag": "Granblue Player",
