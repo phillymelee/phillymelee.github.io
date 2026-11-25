@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795638173663,
+  "lastUpdated": 1795650773875,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -33,15 +33,15 @@
       "tag": "MarxistxAthena",
       "code": "ATHENA#0",
       "rank": "Grandmaster",
-      "elo": 2567.520482618487,
-      "wins": 163,
+      "elo": 2577.764649738036,
+      "wins": 164,
       "losses": 48,
       "character": "JIGGLYPUFF",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 2567.520482618487,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": 10.24416711954882,
+      "rankChange": "up"
     },
     {
       "tag": "Sabrina Conrad",
