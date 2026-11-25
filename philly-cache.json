@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795636373550,
+  "lastUpdated": 1795637273616,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -61,15 +61,15 @@
       "tag": "Sabrina Conrad",
       "code": "LYNX#718",
       "rank": "Grandmaster",
-      "elo": 2392.073488523575,
-      "wins": 57,
+      "elo": 2419.1154774723063,
+      "wins": 58,
       "losses": 17,
       "character": "MARTH",
       "secondary": "CAPTAIN_FALCON",
       "tertiary": "FOX",
       "yesterdayElo": 2392.073488523575,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": 27.04198894873116,
+      "rankChange": "up"
     },
     {
       "tag": "Mr. Grabs",
@@ -254,20 +254,6 @@
       "rankChange": "none"
     },
     {
-      "tag": "Jay Birdie",
-      "code": "JAYB#135",
-      "rank": "Gold 2",
-      "elo": 1641.435334464375,
-      "wins": 38,
-      "losses": 27,
-      "character": "MARTH",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 1569.3317115986517,
-      "eloDelta": 72.10362286572331,
-      "rankChange": "up"
-    },
-    {
       "tag": "mage",
       "code": "MAGE#880",
       "rank": "Gold 2",
@@ -280,6 +266,20 @@
       "yesterdayElo": 1640.2931790911896,
       "eloDelta": 0,
       "rankChange": "none"
+    },
+    {
+      "tag": "Jay Birdie",
+      "code": "JAYB#135",
+      "rank": "Gold 2",
+      "elo": 1624.853686817807,
+      "wins": 38,
+      "losses": 28,
+      "character": "MARTH",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 1569.3317115986517,
+      "eloDelta": 55.521975219155365,
+      "rankChange": "up"
     },
     {
       "tag": "DestinyOfMarge",
