@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795574272606,
+  "lastUpdated": 1795575172720,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -47,15 +47,15 @@
       "tag": "Silver Will",
       "code": "PORK#582",
       "rank": "Grandmaster",
-      "elo": 2392.2693657621494,
-      "wins": 41,
+      "elo": 2412.5464894806946,
+      "wins": 42,
       "losses": 22,
       "character": "SHEIK",
       "secondary": "SAMUS",
       "tertiary": "",
       "yesterdayElo": 2392.2693657621494,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": 20.277123718545226,
+      "rankChange": "up"
     },
     {
       "tag": "Sabrina Conrad",
@@ -212,6 +212,20 @@
       "rankChange": "down"
     },
     {
+      "tag": "travy",
+      "code": "TRAVY#0",
+      "rank": "Platinum 1",
+      "elo": 1837.623248024341,
+      "wins": 10,
+      "losses": 2,
+      "character": "ICE_CLIMBERS",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 1713.603591729123,
+      "eloDelta": 124.01965629521783,
+      "rankChange": "up"
+    },
+    {
       "tag": "marth player",
       "code": "SWAG#128",
       "rank": "Platinum 1",
@@ -224,20 +238,6 @@
       "yesterdayElo": 1832.472365531492,
       "eloDelta": 0,
       "rankChange": "none"
-    },
-    {
-      "tag": "travy",
-      "code": "TRAVY#0",
-      "rank": "Platinum 1",
-      "elo": 1788.2118321452137,
-      "wins": 9,
-      "losses": 2,
-      "character": "ICE_CLIMBERS",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 1713.603591729123,
-      "eloDelta": 74.60824041609067,
-      "rankChange": "up"
     },
     {
       "tag": "Arc!",
