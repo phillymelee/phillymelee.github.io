@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795662473884,
+  "lastUpdated": 1795663373993,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -33,14 +33,28 @@
       "tag": "MarxistxAthena",
       "code": "ATHENA#0",
       "rank": "Grandmaster",
-      "elo": 2579.143295131934,
+      "elo": 2554.491605534,
       "wins": 165,
-      "losses": 48,
+      "losses": 49,
       "character": "JIGGLYPUFF",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 2567.520482618487,
-      "eloDelta": 11.62281251344666,
+      "eloDelta": -13.028877084487249,
+      "rankChange": "down"
+    },
+    {
+      "tag": "Silver Will",
+      "code": "PORK#582",
+      "rank": "Grandmaster",
+      "elo": 2460.736636447009,
+      "wins": 48,
+      "losses": 23,
+      "character": "SHEIK",
+      "secondary": "SAMUS",
+      "tertiary": "",
+      "yesterdayElo": 2447.6326455154203,
+      "eloDelta": 13.103990931588669,
       "rankChange": "up"
     },
     {
@@ -56,20 +70,6 @@
       "yesterdayElo": 2392.073488523575,
       "eloDelta": 62.84952793707453,
       "rankChange": "up"
-    },
-    {
-      "tag": "Silver Will",
-      "code": "PORK#582",
-      "rank": "Grandmaster",
-      "elo": 2447.6326455154203,
-      "wins": 47,
-      "losses": 23,
-      "character": "SHEIK",
-      "secondary": "SAMUS",
-      "tertiary": "",
-      "yesterdayElo": 2447.6326455154203,
-      "eloDelta": 0,
-      "rankChange": "none"
     },
     {
       "tag": "Mr. Grabs",
@@ -198,20 +198,6 @@
       "rankChange": "up"
     },
     {
-      "tag": "TheElectrician?",
-      "code": "GLG#888",
-      "rank": "Platinum 2",
-      "elo": 1898.7868911716255,
-      "wins": 134,
-      "losses": 149,
-      "character": "YOSHI",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 1894.1882154962575,
-      "eloDelta": 4.598675675367986,
-      "rankChange": "up"
-    },
-    {
       "tag": "Lamp",
       "code": "LAMP#844",
       "rank": "Platinum 2",
@@ -224,6 +210,20 @@
       "yesterdayElo": 1884.8177161651488,
       "eloDelta": 0,
       "rankChange": "none"
+    },
+    {
+      "tag": "TheElectrician?",
+      "code": "GLG#888",
+      "rank": "Platinum 2",
+      "elo": 1880.1599899449673,
+      "wins": 134,
+      "losses": 151,
+      "character": "YOSHI",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 1894.1882154962575,
+      "eloDelta": -14.028225551290234,
+      "rankChange": "down"
     },
     {
       "tag": "marth player",
