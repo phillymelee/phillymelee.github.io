@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795680474239,
+  "lastUpdated": 1795682274271,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -61,14 +61,14 @@
       "tag": "Sabrina Conrad",
       "code": "LYNX#718",
       "rank": "Grandmaster",
-      "elo": 2443.9142331890807,
-      "wins": 61,
+      "elo": 2459.866768296495,
+      "wins": 63,
       "losses": 18,
       "character": "MARTH",
       "secondary": "CAPTAIN_FALCON",
       "tertiary": "FOX",
       "yesterdayElo": 2392.073488523575,
-      "eloDelta": 51.840744665505554,
+      "eloDelta": 67.79327977291996,
       "rankChange": "up"
     },
     {
