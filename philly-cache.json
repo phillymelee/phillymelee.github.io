@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795699375636,
+  "lastUpdated": 1795710175670,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -353,16 +353,16 @@
     {
       "tag": "maebi",
       "code": "MAYB#108",
-      "rank": "Gold 1",
-      "elo": 1445.6896951698006,
+      "rank": "Silver 3",
+      "elo": 1424.723616987459,
       "wins": 28,
-      "losses": 30,
+      "losses": 31,
       "character": "PEACH",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1445.6896951698006,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": -20.966078182341562,
+      "rankChange": "down"
     },
     {
       "tag": "Kirar",
