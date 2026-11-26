@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795693074591,
+  "lastUpdated": 1795698475642,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -98,6 +98,19 @@
       "yesterdayElo": 2279.680988554962,
       "eloDelta": 0,
       "rankChange": "none"
+    },
+    {
+      "tag": "HappyFriendFall",
+      "code": "AXIS#944",
+      "rank": "Master 1",
+      "elo": 2220.7982474696473,
+      "wins": 16,
+      "losses": 7,
+      "character": "MARTH",
+      "secondary": "",
+      "tertiary": "",
+      "rankChange": "new",
+      "eloDelta": 0
     },
     {
       "tag": "no homie stocks",
