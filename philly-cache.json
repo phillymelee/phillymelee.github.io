@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795657973889,
+  "lastUpdated": 1795658873891,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -324,20 +324,6 @@
       "rankChange": "none"
     },
     {
-      "tag": "maebi",
-      "code": "MAYB#108",
-      "rank": "Gold 1",
-      "elo": 1460.3062621060528,
-      "wins": 28,
-      "losses": 29,
-      "character": "PEACH",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 1422.4392898132742,
-      "eloDelta": 37.866972292778655,
-      "rankChange": "up"
-    },
-    {
       "tag": "Bair Trap",
       "code": "SHA#834",
       "rank": "Gold 1",
@@ -350,6 +336,20 @@
       "yesterdayElo": 1451.591331771751,
       "eloDelta": 0,
       "rankChange": "none"
+    },
+    {
+      "tag": "maebi",
+      "code": "MAYB#108",
+      "rank": "Gold 1",
+      "elo": 1445.6896951698006,
+      "wins": 28,
+      "losses": 30,
+      "character": "PEACH",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 1422.4392898132742,
+      "eloDelta": 23.25040535652647,
+      "rankChange": "up"
     },
     {
       "tag": "Kirar",
