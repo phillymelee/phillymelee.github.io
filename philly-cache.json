@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795661574513,
+  "lastUpdated": 1795662473884,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -33,14 +33,14 @@
       "tag": "MarxistxAthena",
       "code": "ATHENA#0",
       "rank": "Grandmaster",
-      "elo": 2577.764649738036,
-      "wins": 164,
+      "elo": 2579.143295131934,
+      "wins": 165,
       "losses": 48,
       "character": "JIGGLYPUFF",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 2567.520482618487,
-      "eloDelta": 10.24416711954882,
+      "eloDelta": 11.62281251344666,
       "rankChange": "up"
     },
     {
@@ -201,15 +201,15 @@
       "tag": "TheElectrician?",
       "code": "GLG#888",
       "rank": "Platinum 2",
-      "elo": 1888.1302468592612,
-      "wins": 133,
+      "elo": 1898.7868911716255,
+      "wins": 134,
       "losses": 149,
       "character": "YOSHI",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1894.1882154962575,
-      "eloDelta": -6.057968636996293,
-      "rankChange": "down"
+      "eloDelta": 4.598675675367986,
+      "rankChange": "up"
     },
     {
       "tag": "Lamp",
