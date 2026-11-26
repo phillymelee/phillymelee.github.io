@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795667874013,
+  "lastUpdated": 1795671474102,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -30,20 +30,6 @@
       "rankChange": "none"
     },
     {
-      "tag": "MarxistxAthena",
-      "code": "ATHENA#0",
-      "rank": "Grandmaster",
-      "elo": 2497.0820355804062,
-      "wins": 165,
-      "losses": 52,
-      "character": "JIGGLYPUFF",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 2567.520482618487,
-      "eloDelta": -70.438447038081,
-      "rankChange": "down"
-    },
-    {
       "tag": "Silver Will",
       "code": "PORK#582",
       "rank": "Grandmaster",
@@ -56,6 +42,20 @@
       "yesterdayElo": 2447.6326455154203,
       "eloDelta": 38.538687306913744,
       "rankChange": "up"
+    },
+    {
+      "tag": "MarxistxAthena",
+      "code": "ATHENA#0",
+      "rank": "Grandmaster",
+      "elo": 2473.919122636682,
+      "wins": 165,
+      "losses": 53,
+      "character": "JIGGLYPUFF",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 2567.520482618487,
+      "eloDelta": -93.60135998180522,
+      "rankChange": "down"
     },
     {
       "tag": "Sabrina Conrad",
