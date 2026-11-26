@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795698475642,
+  "lastUpdated": 1795699375636,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -109,8 +109,8 @@
       "character": "MARTH",
       "secondary": "",
       "tertiary": "",
-      "rankChange": "new",
-      "eloDelta": 0
+      "eloDelta": 0,
+      "rankChange": "new"
     },
     {
       "tag": "no homie stocks",
