@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795791567365,
+  "lastUpdated": 1795796967455,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -351,17 +351,17 @@
       "rankChange": "none"
     },
     {
-      "tag": "puella aeternus",
+      "tag": "maebi",
       "code": "MAYB#108",
       "rank": "Silver 3",
-      "elo": 1424.723616987459,
+      "elo": 1407.1405337930544,
       "wins": 28,
-      "losses": 31,
+      "losses": 32,
       "character": "PEACH",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 1445.6896951698006,
-      "eloDelta": -20.966078182341562,
+      "eloDelta": -38.54916137674627,
       "rankChange": "down"
     },
     {
