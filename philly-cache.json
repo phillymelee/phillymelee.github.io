@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795812269577,
+  "lastUpdated": 1795813169421,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -113,6 +113,20 @@
       "rankChange": "new"
     },
     {
+      "tag": "no homie stocks",
+      "code": "JKJ#603",
+      "rank": "Master 1",
+      "elo": 2217.148361408113,
+      "wins": 12,
+      "losses": 9,
+      "character": "FOX",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 2212.810218427224,
+      "eloDelta": 4.338142980889188,
+      "rankChange": "up"
+    },
+    {
       "tag": "Jerry Childless",
       "code": "ABEL#142",
       "rank": "Master 1",
@@ -125,20 +139,6 @@
       "yesterdayElo": 2207.74524763069,
       "eloDelta": 0,
       "rankChange": "none"
-    },
-    {
-      "tag": "no homie stocks",
-      "code": "JKJ#603",
-      "rank": "Diamond 3",
-      "elo": 2181.838456470673,
-      "wins": 11,
-      "losses": 9,
-      "character": "FOX",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 2212.810218427224,
-      "eloDelta": -30.971761956550836,
-      "rankChange": "down"
     },
     {
       "tag": "Seed",
