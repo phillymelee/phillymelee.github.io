@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795823069631,
+  "lastUpdated": 1795823969758,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -47,15 +47,15 @@
       "tag": "Silver Will",
       "code": "PORK#582",
       "rank": "Grandmaster",
-      "elo": 2464.815760952207,
-      "wins": 50,
+      "elo": 2489.499774166097,
+      "wins": 51,
       "losses": 25,
       "character": "SHEIK",
       "secondary": "SAMUS",
       "tertiary": "",
       "yesterdayElo": 2486.171332822334,
-      "eloDelta": -21.355571870127278,
-      "rankChange": "down"
+      "eloDelta": 3.3284413437627336,
+      "rankChange": "up"
     },
     {
       "tag": "MarxistxAthena",
