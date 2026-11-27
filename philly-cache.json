@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795796967455,
+  "lastUpdated": 1795802370547,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -379,20 +379,6 @@
       "rankChange": "none"
     },
     {
-      "tag": "Tortuga (NERD)",
-      "code": "TREE#521",
-      "rank": "Silver 2",
-      "elo": 1314.030965098709,
-      "wins": 16,
-      "losses": 16,
-      "character": "MARTH",
-      "secondary": "FOX",
-      "tertiary": "CAPTAIN_FALCON",
-      "yesterdayElo": 1314.030965098709,
-      "eloDelta": 0,
-      "rankChange": "none"
-    },
-    {
       "tag": "phillyhoops",
       "code": "PHL#712",
       "rank": "Silver 2",
@@ -419,6 +405,20 @@
       "yesterdayElo": 1281.7464113764372,
       "eloDelta": 0,
       "rankChange": "none"
+    },
+    {
+      "tag": "Tortuga (NERD)",
+      "code": "TREE#521",
+      "rank": "Silver 2",
+      "elo": 1275.8868579193427,
+      "wins": 16,
+      "losses": 18,
+      "character": "MARTH",
+      "secondary": "FOX",
+      "tertiary": "CAPTAIN_FALCON",
+      "yesterdayElo": 1314.030965098709,
+      "eloDelta": -38.1441071793663,
+      "rankChange": "down"
     }
   ]
 }
