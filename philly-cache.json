@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795710175670,
+  "lastUpdated": 1795772671475,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -47,29 +47,29 @@
       "tag": "Silver Will",
       "code": "PORK#582",
       "rank": "Grandmaster",
-      "elo": 2486.171332822334,
+      "elo": 2468.8516537825108,
       "wins": 49,
-      "losses": 23,
+      "losses": 24,
       "character": "SHEIK",
       "secondary": "SAMUS",
       "tertiary": "",
       "yesterdayElo": 2486.171332822334,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": -17.319679039823313,
+      "rankChange": "down"
     },
     {
       "tag": "MarxistxAthena",
       "code": "ATHENA#0",
       "rank": "Grandmaster",
-      "elo": 2473.919122636682,
-      "wins": 165,
-      "losses": 53,
+      "elo": 2433.0178690324447,
+      "wins": 170,
+      "losses": 58,
       "character": "JIGGLYPUFF",
       "secondary": "",
       "tertiary": "",
       "yesterdayElo": 2473.919122636682,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": -40.901253604237354,
+      "rankChange": "down"
     },
     {
       "tag": "Mr. Grabs",
@@ -211,20 +211,6 @@
       "rankChange": "none"
     },
     {
-      "tag": "TheElectrician?",
-      "code": "GLG#888",
-      "rank": "Platinum 2",
-      "elo": 1894.5596368810427,
-      "wins": 135,
-      "losses": 151,
-      "character": "YOSHI",
-      "secondary": "",
-      "tertiary": "",
-      "yesterdayElo": 1894.5596368810427,
-      "eloDelta": 0,
-      "rankChange": "none"
-    },
-    {
       "tag": "Lamp",
       "code": "LAMP#844",
       "rank": "Platinum 2",
@@ -237,6 +223,20 @@
       "yesterdayElo": 1884.8177161651488,
       "eloDelta": 0,
       "rankChange": "none"
+    },
+    {
+      "tag": "TheElectrician?",
+      "code": "GLG#888",
+      "rank": "Platinum 2",
+      "elo": 1878.9821268110531,
+      "wins": 137,
+      "losses": 156,
+      "character": "YOSHI",
+      "secondary": "",
+      "tertiary": "",
+      "yesterdayElo": 1894.5596368810427,
+      "eloDelta": -15.577510069989557,
+      "rankChange": "down"
     },
     {
       "tag": "marth player",
