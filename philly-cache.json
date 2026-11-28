@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795858171241,
+  "lastUpdated": 1795861769338,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -75,15 +75,15 @@
       "tag": "J.Grady",
       "code": "ALPR#942",
       "rank": "Grandmaster",
-      "elo": 2386.567757385528,
-      "wins": 147,
+      "elo": 2393.879937374478,
+      "wins": 149,
       "losses": 67,
       "character": "FALCO",
       "secondary": "FOX",
       "tertiary": "",
       "yesterdayElo": 2386.567757385528,
-      "eloDelta": 0,
-      "rankChange": "none"
+      "eloDelta": 7.3121799889499925,
+      "rankChange": "up"
     },
     {
       "tag": "Mr. Grabs",
