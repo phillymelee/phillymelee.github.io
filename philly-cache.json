@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795825770645,
+  "lastUpdated": 1795826670771,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -81,8 +81,8 @@
       "character": "FALCO",
       "secondary": "FOX",
       "tertiary": "",
-      "rankChange": "new",
-      "eloDelta": 0
+      "eloDelta": 0,
+      "rankChange": "new"
     },
     {
       "tag": "Mr. Grabs",
