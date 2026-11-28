@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795863569563,
+  "lastUpdated": 1795864469431,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -75,14 +75,14 @@
       "tag": "J.Grady",
       "code": "ALPR#942",
       "rank": "Grandmaster",
-      "elo": 2378.938805277702,
-      "wins": 151,
+      "elo": 2380.3446796054427,
+      "wins": 152,
       "losses": 68,
       "character": "FALCO",
       "secondary": "FOX",
       "tertiary": "",
       "yesterdayElo": 2386.567757385528,
-      "eloDelta": -7.628952107825626,
+      "eloDelta": -6.223077780085077,
       "rankChange": "down"
     },
     {
