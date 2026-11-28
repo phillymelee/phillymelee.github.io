@@ -1,5 +1,5 @@
 {
-  "lastUpdated": 1795823969758,
+  "lastUpdated": 1795824869790,
   "playerRanks": [
     {
       "tag": "Jude :3",
@@ -410,14 +410,14 @@
       "tag": "Tortuga (NERD)",
       "code": "TREE#521",
       "rank": "Silver 2",
-      "elo": 1275.8868579193427,
-      "wins": 16,
-      "losses": 18,
+      "elo": 1276.9807021985948,
+      "wins": 17,
+      "losses": 19,
       "character": "MARTH",
       "secondary": "FOX",
       "tertiary": "CAPTAIN_FALCON",
       "yesterdayElo": 1314.030965098709,
-      "eloDelta": -38.1441071793663,
+      "eloDelta": -37.05026290011415,
       "rankChange": "down"
     }
   ]
